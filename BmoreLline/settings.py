@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 import dj_database_url
+from django.core.exceptions import ImproperlyConfigured
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -48,6 +49,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
+                'lifeline_core.brand.site_brand',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -62,6 +64,17 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 
 SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
 
+
+if os.environ.get("DYNO"):
+    if not DATABASE_URL or not os.environ.get("SECRET_KEY") or SECRET_KEY == "dev-insecure-key":
+        raise ImproperlyConfigured("Set DATABASE_URL and SECRET_KEY on the Heroku app.")
+    if DEBUG:
+        raise ImproperlyConfigured("Disable DEBUG on the Heroku app.")
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = 3600
 
 if DATABASE_URL:
     # On Heroku/production – likely Postgres

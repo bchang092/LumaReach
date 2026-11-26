@@ -1,0 +1,4 @@
+.page-pulse:not([hidden]) { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px; padding:12px; background:#0c1a25; color:#c7dbe5; font:14px/1.45 system-ui,sans-serif; }
+.page-pulse button { cursor:pointer; width:auto; min-height:34px; margin:0; padding:4px 12px; border:1px solid #52727f; border-radius:20px; color:#e8f1f5; background:transparent; font:inherit; }
+.page-pulse button:hover,.page-pulse button:focus-visible { border-color:#35d6c0; }
+.page-pulse [role=status]:empty { display:none; }

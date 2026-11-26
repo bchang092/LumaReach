@@ -1,0 +1,795 @@
+{
+  "layers": {
+    "constraint": "Reported access, population, cost, insurance, food format, and site-hour facts. Not universal eligibility.",
+    "need": "Need category and specific service subtype. No service inferred from organization name or old category."
+  },
+  "scope_policy": "All constraints require program-scope confirmation before hard eligibility filtering. Population served is not an exclusion rule. Office hours are not program intake hours.",
+  "tags": [
+    {
+      "category": "access",
+      "label": "access / appointment reported",
+      "layer": "constraint",
+      "resource_count": 158,
+      "tag": "access.appointment_reported"
+    },
+    {
+      "category": "access",
+      "label": "access / referral required reported",
+      "layer": "constraint",
+      "resource_count": 6,
+      "tag": "access.referral_required_reported"
+    },
+    {
+      "category": "access",
+      "label": "access / telehealth reported",
+      "layer": "constraint",
+      "resource_count": 57,
+      "tag": "access.telehealth_reported"
+    },
+    {
+      "category": "access",
+      "label": "access / walk in reported",
+      "layer": "constraint",
+      "resource_count": 14,
+      "tag": "access.walk_in_reported"
+    },
+    {
+      "category": "accessibility",
+      "label": "accessibility / accessible units reported",
+      "layer": "constraint",
+      "resource_count": 5,
+      "tag": "accessibility.accessible_units_reported"
+    },
+    {
+      "category": "accessibility",
+      "label": "accessibility / wheelchair entrance reported",
+      "layer": "constraint",
+      "resource_count": 118,
+      "tag": "accessibility.wheelchair_entrance_reported"
+    },
+    {
+      "category": "accessibility",
+      "label": "accessibility / wheelchair parking reported",
+      "layer": "constraint",
+      "resource_count": 49,
+      "tag": "accessibility.wheelchair_parking_reported"
+    },
+    {
+      "category": "accessibility",
+      "label": "accessibility / wheelchair transport reported",
+      "layer": "constraint",
+      "resource_count": 3,
+      "tag": "accessibility.wheelchair_transport_reported"
+    },
+    {
+      "category": "age",
+      "label": "age / adults served",
+      "layer": "constraint",
+      "resource_count": 257,
+      "tag": "age.adults_served"
+    },
+    {
+      "category": "age",
+      "label": "age / all ages reported",
+      "layer": "constraint",
+      "resource_count": 30,
+      "tag": "age.all_ages_reported"
+    },
+    {
+      "category": "age",
+      "label": "age / children served",
+      "layer": "constraint",
+      "resource_count": 148,
+      "tag": "age.children_served"
+    },
+    {
+      "category": "age",
+      "label": "age / older adults served",
+      "layer": "constraint",
+      "resource_count": 231,
+      "tag": "age.older_adults_served"
+    },
+    {
+      "category": "age",
+      "label": "age / threshold reported",
+      "layer": "constraint",
+      "resource_count": 109,
+      "tag": "age.threshold_reported"
+    },
+    {
+      "category": "age",
+      "label": "age / youth served",
+      "layer": "constraint",
+      "resource_count": 124,
+      "tag": "age.youth_served"
+    },
+    {
+      "category": "cost",
+      "label": "cost / free program reported",
+      "layer": "constraint",
+      "resource_count": 46,
+      "tag": "cost.free_program_reported"
+    },
+    {
+      "category": "cost",
+      "label": "cost / low cost reported",
+      "layer": "constraint",
+      "resource_count": 4,
+      "tag": "cost.low_cost_reported"
+    },
+    {
+      "category": "cost",
+      "label": "cost / private pay reported",
+      "layer": "constraint",
+      "resource_count": 29,
+      "tag": "cost.private_pay_reported"
+    },
+    {
+      "category": "cost",
+      "label": "cost / sliding scale reported",
+      "layer": "constraint",
+      "resource_count": 19,
+      "tag": "cost.sliding_scale_reported"
+    },
+    {
+      "category": "documents",
+      "label": "documents / requirements reported",
+      "layer": "constraint",
+      "resource_count": 2,
+      "tag": "documents.requirements_reported"
+    },
+    {
+      "category": "eligibility",
+      "label": "eligibility / income condition reported",
+      "layer": "constraint",
+      "resource_count": 31,
+      "tag": "eligibility.income_condition_reported"
+    },
+    {
+      "category": "food",
+      "label": "food / client choice reported",
+      "layer": "constraint",
+      "resource_count": 7,
+      "tag": "food.client_choice_reported"
+    },
+    {
+      "category": "food",
+      "label": "food / drive through reported",
+      "layer": "constraint",
+      "resource_count": 7,
+      "tag": "food.drive_through_reported"
+    },
+    {
+      "category": "food",
+      "label": "food / fresh produce reported",
+      "layer": "constraint",
+      "resource_count": 5,
+      "tag": "food.fresh_produce_reported"
+    },
+    {
+      "category": "food",
+      "label": "food / frozen items reported",
+      "layer": "constraint",
+      "resource_count": 4,
+      "tag": "food.frozen_items_reported"
+    },
+    {
+      "category": "food",
+      "label": "food / nonperishable reported",
+      "layer": "constraint",
+      "resource_count": 6,
+      "tag": "food.nonperishable_reported"
+    },
+    {
+      "category": "food",
+      "label": "food / pet food reported",
+      "layer": "constraint",
+      "resource_count": 2,
+      "tag": "food.pet_food_reported"
+    },
+    {
+      "category": "hours",
+      "label": "hours / continuous site hours reported",
+      "layer": "constraint",
+      "resource_count": 203,
+      "tag": "hours.continuous_site_hours_reported"
+    },
+    {
+      "category": "hours",
+      "label": "hours / evening site hours reported",
+      "layer": "constraint",
+      "resource_count": 224,
+      "tag": "hours.evening_site_hours_reported"
+    },
+    {
+      "category": "hours",
+      "label": "hours / weekend site hours reported",
+      "layer": "constraint",
+      "resource_count": 452,
+      "tag": "hours.weekend_site_hours_reported"
+    },
+    {
+      "category": "insurance",
+      "label": "insurance / carefirst reported",
+      "layer": "constraint",
+      "resource_count": 3,
+      "tag": "insurance.carefirst_reported"
+    },
+    {
+      "category": "insurance",
+      "label": "insurance / medicaid reported",
+      "layer": "constraint",
+      "resource_count": 35,
+      "tag": "insurance.medicaid_reported"
+    },
+    {
+      "category": "insurance",
+      "label": "insurance / medicare reported",
+      "layer": "constraint",
+      "resource_count": 13,
+      "tag": "insurance.medicare_reported"
+    },
+    {
+      "category": "language",
+      "label": "language / asl reported",
+      "layer": "constraint",
+      "resource_count": 5,
+      "tag": "language.asl_reported"
+    },
+    {
+      "category": "language",
+      "label": "language / english reported",
+      "layer": "constraint",
+      "resource_count": 1,
+      "tag": "language.english_reported"
+    },
+    {
+      "category": "language",
+      "label": "language / spanish reported",
+      "layer": "constraint",
+      "resource_count": 1,
+      "tag": "language.spanish_reported"
+    },
+    {
+      "category": "benefits",
+      "label": "benefits / enrollment navigation",
+      "layer": "need",
+      "resource_count": 20,
+      "tag": "need:benefits.enrollment_navigation"
+    },
+    {
+      "category": "care",
+      "label": "care / adult day",
+      "layer": "need",
+      "resource_count": 50,
+      "tag": "need:care.adult_day"
+    },
+    {
+      "category": "care",
+      "label": "care / assisted living",
+      "layer": "need",
+      "resource_count": 146,
+      "tag": "need:care.assisted_living"
+    },
+    {
+      "category": "care",
+      "label": "care / home",
+      "layer": "need",
+      "resource_count": 66,
+      "tag": "need:care.home"
+    },
+    {
+      "category": "care",
+      "label": "care / hospice palliative",
+      "layer": "need",
+      "resource_count": 13,
+      "tag": "need:care.hospice_palliative"
+    },
+    {
+      "category": "care",
+      "label": "care / memory",
+      "layer": "need",
+      "resource_count": 46,
+      "tag": "need:care.memory"
+    },
+    {
+      "category": "care",
+      "label": "care / residential unspecified",
+      "layer": "need",
+      "resource_count": 11,
+      "tag": "need:care.residential_unspecified"
+    },
+    {
+      "category": "care",
+      "label": "care / respite",
+      "layer": "need",
+      "resource_count": 30,
+      "tag": "need:care.respite"
+    },
+    {
+      "category": "care",
+      "label": "care / skilled nursing",
+      "layer": "need",
+      "resource_count": 83,
+      "tag": "need:care.skilled_nursing"
+    },
+    {
+      "category": "childcare",
+      "label": "childcare / early learning",
+      "layer": "need",
+      "resource_count": 15,
+      "tag": "need:childcare.early_learning"
+    },
+    {
+      "category": "community",
+      "label": "community / social recreation",
+      "layer": "need",
+      "resource_count": 66,
+      "tag": "need:community.social_recreation"
+    },
+    {
+      "category": "crisis",
+      "label": "crisis / intervention",
+      "layer": "need",
+      "resource_count": 28,
+      "tag": "need:crisis.intervention"
+    },
+    {
+      "category": "digital",
+      "label": "digital / computers internet",
+      "layer": "need",
+      "resource_count": 34,
+      "tag": "need:digital.computers_internet"
+    },
+    {
+      "category": "disability",
+      "label": "disability / independent living",
+      "layer": "need",
+      "resource_count": 36,
+      "tag": "need:disability.independent_living"
+    },
+    {
+      "category": "disaster",
+      "label": "disaster / preparedness",
+      "layer": "need",
+      "resource_count": 2,
+      "tag": "need:disaster.preparedness"
+    },
+    {
+      "category": "education",
+      "label": "education / learning",
+      "layer": "need",
+      "resource_count": 64,
+      "tag": "need:education.learning"
+    },
+    {
+      "category": "employment",
+      "label": "employment / training search",
+      "layer": "need",
+      "resource_count": 90,
+      "tag": "need:employment.training_search"
+    },
+    {
+      "category": "essentials",
+      "label": "essentials / clothing supplies",
+      "layer": "need",
+      "resource_count": 49,
+      "tag": "need:essentials.clothing_supplies"
+    },
+    {
+      "category": "family",
+      "label": "family / youth parenting",
+      "layer": "need",
+      "resource_count": 43,
+      "tag": "need:family.youth_parenting"
+    },
+    {
+      "category": "financial",
+      "label": "financial / counseling",
+      "layer": "need",
+      "resource_count": 7,
+      "tag": "need:financial.counseling"
+    },
+    {
+      "category": "financial",
+      "label": "financial / disaster grants",
+      "layer": "need",
+      "resource_count": 1,
+      "tag": "need:financial.disaster_grants"
+    },
+    {
+      "category": "financial",
+      "label": "financial / emergency assistance",
+      "layer": "need",
+      "resource_count": 20,
+      "tag": "need:financial.emergency_assistance"
+    },
+    {
+      "category": "financial",
+      "label": "financial / tax help",
+      "layer": "need",
+      "resource_count": 6,
+      "tag": "need:financial.tax_help"
+    },
+    {
+      "category": "food",
+      "label": "food / delivery",
+      "layer": "need",
+      "resource_count": 8,
+      "tag": "need:food.delivery"
+    },
+    {
+      "category": "food",
+      "label": "food / general assistance",
+      "layer": "need",
+      "resource_count": 31,
+      "tag": "need:food.general_assistance"
+    },
+    {
+      "category": "food",
+      "label": "food / medically tailored",
+      "layer": "need",
+      "resource_count": 4,
+      "tag": "need:food.medically_tailored"
+    },
+    {
+      "category": "food",
+      "label": "food / pantry",
+      "layer": "need",
+      "resource_count": 115,
+      "tag": "need:food.pantry"
+    },
+    {
+      "category": "food",
+      "label": "food / prepared meals",
+      "layer": "need",
+      "resource_count": 32,
+      "tag": "need:food.prepared_meals"
+    },
+    {
+      "category": "housing",
+      "label": "housing / accessibility modifications",
+      "layer": "need",
+      "resource_count": 4,
+      "tag": "need:housing.accessibility_modifications"
+    },
+    {
+      "category": "housing",
+      "label": "housing / counseling navigation",
+      "layer": "need",
+      "resource_count": 36,
+      "tag": "need:housing.counseling_navigation"
+    },
+    {
+      "category": "housing",
+      "label": "housing / emergency shelter",
+      "layer": "need",
+      "resource_count": 18,
+      "tag": "need:housing.emergency_shelter"
+    },
+    {
+      "category": "housing",
+      "label": "housing / homeownership repairs",
+      "layer": "need",
+      "resource_count": 14,
+      "tag": "need:housing.homeownership_repairs"
+    },
+    {
+      "category": "housing",
+      "label": "housing / medical lodging",
+      "layer": "need",
+      "resource_count": 2,
+      "tag": "need:housing.medical_lodging"
+    },
+    {
+      "category": "housing",
+      "label": "housing / rent eviction help",
+      "layer": "need",
+      "resource_count": 15,
+      "tag": "need:housing.rent_eviction_help"
+    },
+    {
+      "category": "housing",
+      "label": "housing / rental",
+      "layer": "need",
+      "resource_count": 172,
+      "tag": "need:housing.rental"
+    },
+    {
+      "category": "housing",
+      "label": "housing / supportive transitional",
+      "layer": "need",
+      "resource_count": 41,
+      "tag": "need:housing.supportive_transitional"
+    },
+    {
+      "category": "immigration",
+      "label": "immigration / support",
+      "layer": "need",
+      "resource_count": 11,
+      "tag": "need:immigration.support"
+    },
+    {
+      "category": "language",
+      "label": "language / interpretation",
+      "layer": "need",
+      "resource_count": 7,
+      "tag": "need:language.interpretation"
+    },
+    {
+      "category": "legal",
+      "label": "legal / advocacy information",
+      "layer": "need",
+      "resource_count": 9,
+      "tag": "need:legal.advocacy_information"
+    },
+    {
+      "category": "legal",
+      "label": "legal / assistance",
+      "layer": "need",
+      "resource_count": 41,
+      "tag": "need:legal.assistance"
+    },
+    {
+      "category": "legal",
+      "label": "legal / civil aid",
+      "layer": "need",
+      "resource_count": 2,
+      "tag": "need:legal.civil_aid"
+    },
+    {
+      "category": "legal",
+      "label": "legal / criminal defense",
+      "layer": "need",
+      "resource_count": 13,
+      "tag": "need:legal.criminal_defense"
+    },
+    {
+      "category": "legal",
+      "label": "legal / elder estate",
+      "layer": "need",
+      "resource_count": 2,
+      "tag": "need:legal.elder_estate"
+    },
+    {
+      "category": "legal",
+      "label": "legal / expungement",
+      "layer": "need",
+      "resource_count": 1,
+      "tag": "need:legal.expungement"
+    },
+    {
+      "category": "legal",
+      "label": "legal / housing disputes",
+      "layer": "need",
+      "resource_count": 2,
+      "tag": "need:legal.housing_disputes"
+    },
+    {
+      "category": "legal",
+      "label": "legal / identity documents",
+      "layer": "need",
+      "resource_count": 6,
+      "tag": "need:legal.identity_documents"
+    },
+    {
+      "category": "legal",
+      "label": "legal / immigration",
+      "layer": "need",
+      "resource_count": 4,
+      "tag": "need:legal.immigration"
+    },
+    {
+      "category": "medical",
+      "label": "medical / cost assistance",
+      "layer": "need",
+      "resource_count": 6,
+      "tag": "need:medical.cost_assistance"
+    },
+    {
+      "category": "medical",
+      "label": "medical / dental",
+      "layer": "need",
+      "resource_count": 11,
+      "tag": "need:medical.dental"
+    },
+    {
+      "category": "medical",
+      "label": "medical / emergency",
+      "layer": "need",
+      "resource_count": 29,
+      "tag": "need:medical.emergency"
+    },
+    {
+      "category": "medical",
+      "label": "medical / equipment",
+      "layer": "need",
+      "resource_count": 17,
+      "tag": "need:medical.equipment"
+    },
+    {
+      "category": "medical",
+      "label": "medical / general",
+      "layer": "need",
+      "resource_count": 109,
+      "tag": "need:medical.general"
+    },
+    {
+      "category": "medical",
+      "label": "medical / patient support",
+      "layer": "need",
+      "resource_count": 6,
+      "tag": "need:medical.patient_support"
+    },
+    {
+      "category": "medical",
+      "label": "medical / prescriptions",
+      "layer": "need",
+      "resource_count": 21,
+      "tag": "need:medical.prescriptions"
+    },
+    {
+      "category": "medical",
+      "label": "medical / rehabilitation",
+      "layer": "need",
+      "resource_count": 75,
+      "tag": "need:medical.rehabilitation"
+    },
+    {
+      "category": "medical",
+      "label": "medical / sexual reproductive",
+      "layer": "need",
+      "resource_count": 22,
+      "tag": "need:medical.sexual_reproductive"
+    },
+    {
+      "category": "mental_health",
+      "label": "mental health / clinical",
+      "layer": "need",
+      "resource_count": 238,
+      "tag": "need:mental_health.clinical"
+    },
+    {
+      "category": "mental_health",
+      "label": "mental health / peer support",
+      "layer": "need",
+      "resource_count": 24,
+      "tag": "need:mental_health.peer_support"
+    },
+    {
+      "category": "navigation",
+      "label": "navigation / case management",
+      "layer": "need",
+      "resource_count": 92,
+      "tag": "need:navigation.case_management"
+    },
+    {
+      "category": "pets",
+      "label": "pets / food veterinary",
+      "layer": "need",
+      "resource_count": 4,
+      "tag": "need:pets.food_veterinary"
+    },
+    {
+      "category": "safety",
+      "label": "safety / child protection",
+      "layer": "need",
+      "resource_count": 5,
+      "tag": "need:safety.child_protection"
+    },
+    {
+      "category": "safety",
+      "label": "safety / survivor support",
+      "layer": "need",
+      "resource_count": 16,
+      "tag": "need:safety.survivor_support"
+    },
+    {
+      "category": "substance_use",
+      "label": "substance use / detox",
+      "layer": "need",
+      "resource_count": 6,
+      "tag": "need:substance_use.detox"
+    },
+    {
+      "category": "substance_use",
+      "label": "substance use / harm reduction",
+      "layer": "need",
+      "resource_count": 4,
+      "tag": "need:substance_use.harm_reduction"
+    },
+    {
+      "category": "substance_use",
+      "label": "substance use / medications",
+      "layer": "need",
+      "resource_count": 14,
+      "tag": "need:substance_use.medications"
+    },
+    {
+      "category": "substance_use",
+      "label": "substance use / treatment",
+      "layer": "need",
+      "resource_count": 90,
+      "tag": "need:substance_use.treatment"
+    },
+    {
+      "category": "transportation",
+      "label": "transportation / assistance",
+      "layer": "need",
+      "resource_count": 42,
+      "tag": "need:transportation.assistance"
+    },
+    {
+      "category": "utilities",
+      "label": "utilities / bill assistance",
+      "layer": "need",
+      "resource_count": 15,
+      "tag": "need:utilities.bill_assistance"
+    },
+    {
+      "category": "population",
+      "label": "population / disabilities served",
+      "layer": "constraint",
+      "resource_count": 64,
+      "tag": "population.disabilities_served"
+    },
+    {
+      "category": "population",
+      "label": "population / homelessness served",
+      "layer": "constraint",
+      "resource_count": 13,
+      "tag": "population.homelessness_served"
+    },
+    {
+      "category": "population",
+      "label": "population / immigrants served",
+      "layer": "constraint",
+      "resource_count": 5,
+      "tag": "population.immigrants_served"
+    },
+    {
+      "category": "population",
+      "label": "population / veterans served",
+      "layer": "constraint",
+      "resource_count": 35,
+      "tag": "population.veterans_served"
+    },
+    {
+      "category": "service_area",
+      "label": "service area / baltimore city reported",
+      "layer": "constraint",
+      "resource_count": 11,
+      "tag": "service_area.baltimore_city_reported"
+    },
+    {
+      "category": "service_area",
+      "label": "service area / baltimore county reported",
+      "layer": "constraint",
+      "resource_count": 2,
+      "tag": "service_area.baltimore_county_reported"
+    },
+    {
+      "category": "service_area",
+      "label": "service area / local restriction reported",
+      "layer": "constraint",
+      "resource_count": 6,
+      "tag": "service_area.local_restriction_reported"
+    },
+    {
+      "category": "service_area",
+      "label": "service area / maryland reported",
+      "layer": "constraint",
+      "resource_count": 16,
+      "tag": "service_area.maryland_reported"
+    },
+    {
+      "category": "service_area",
+      "label": "service area / nationwide reported",
+      "layer": "constraint",
+      "resource_count": 6,
+      "tag": "service_area.nationwide_reported"
+    }
+  ],
+  "unknown_policy": "Missing evidence is unknown, never false or unrestricted.",
+  "version": "2026-10-24.v1"
+}

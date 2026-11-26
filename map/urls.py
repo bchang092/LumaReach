@@ -12,7 +12,20 @@ from .views import (
     ping,
 )
 
+from .intake_api import intake_page, mcp_search_page, triage_api, outcome_api
+from .curation import review_resource
+from .voice_api import transcribe_api
+
+from .activity import record_activity
+
 urlpatterns = [
+    path("api/page-activity/", record_activity, name="page_activity"),
+    path("api/transcribe/", transcribe_api, name="transcribe_api"),
+    path("help/", intake_page, name="intake"),
+    path("help/mcp/", mcp_search_page, name="mcp_search"),
+    path("api/triage/", triage_api, name="triage_api"),
+    path("api/recommendation-feedback/", outcome_api, name="outcome_api"),
+    path("review/<str:token>/", review_resource, name="resource_review"),
     path("",home_page, name = "homepage"),
     path("actions/", actions_page, name="actions"),
     path("about/", about_page, name="about"),

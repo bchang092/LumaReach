@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'page_activity.css' %}">
+<div class="page-pulse" data-page="{{ page_key }}" data-endpoint="{% url 'page_activity' %}" data-token="{{ csrf_token }}" hidden>
+  <span>Was this page helpful?</span>
+  <button type="button" data-vote="helpful" aria-label="Yes, this page was helpful">Yes</button>
+  <button type="button" data-vote="unhelpful" aria-label="No, this page was not helpful">No</button>
+  <span role="status"></span>
+</div>
+<script src="{% static 'page_activity.js' %}" defer></script>

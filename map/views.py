@@ -1,24 +1,29 @@
-from pathlib import Path
+from scripts.resource_source import MASTER as XLSX_PATH, SHEET as XLSX_SHEET
 import math
 import random
 from functools import partial
 
+from lifeline_core.schemas import MAX_NEED_TEXT_LENGTH
 from django.conf import settings
 from django.db import transaction
 from django.http import Http404, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
+from django.views.decorators.cache import cache_control
+from django.views.decorators.debug import sensitive_post_parameters
+from lifeline_core.safety import safety_status
+from lifeline_core.service import find_resources
 
 from .models import CommunityFeedback
+from lifeline_core.display import description_for_display
 from .feedback_security import reserve_submission_attempt, turnstile_ready, verify_turnstile
 from .feedback_notifications import notify_feedback_received
 from .triage import build_triage_result
 
 
 # Resource data is read directly from the current master workbook (not SQLite).
-XLSX_PATH = Path(settings.BASE_DIR) / "input_data" / "09092026_MASTER_SHEET.xlsx"
-XLSX_SHEET = "Scraper-Verified"
+
 
 
 def _to_float(x):
@@ -264,12 +269,16 @@ def _load_resources_from_xlsx():
                 "address": address,
                 "email": email,
                 "description": desc,
+                "display_description": description_for_display(rid,desc),
                 "restrictions": restrictions,
                 "days": days,
                 "link": link,
                 "legit": to_bool_flag(legit_raw),
                 "confirmed": to_bool_flag(confirmed_raw),
                 "classification": classification,
+                "reliability_score": grab(row, "Reliability Score", default=None),
+                "source_confidence": grab(row, "Confidence", default=None),
+                "date_verified": grab(row, "Date Verified", default=None),
                 "condensed_reliability_description": condensed_reliability_description,
                 "call_notes": call_notes,
                 "tags": tags,
@@ -294,6 +303,15 @@ def _load_resources_from_xlsx():
 def resources_map(request):
     """Main map view – loads data from Excel and passes it into the template."""
     resources, diag = _load_resources_from_xlsx()
+    try:
+        from lifeline_core.repository import directory
+        index=directory()
+        for resource in resources:
+            tagged=index.records.get(int(resource['id']),{})
+            resource['tags']=[tag for tag in tagged.get('tags',[]) if tag.startswith('need:') and tagged['evidence'][tag]['scope']=='described_service']
+    except (OSError,ValueError,RuntimeError):
+        # Preserve browsing when a new workbook has not yet been retagged.
+        pass
     categories = sorted({r.get("category") for r in resources if r.get("category")})
     print("Categories passed to template:", categories)
     consolidated_categories = diag.get("consolidated_categories", [])
@@ -459,6 +477,8 @@ QUESTION_DEFAULTS = {
 }
 
 
+@cache_control(no_store=True)
+@sensitive_post_parameters()
 def questionnaire_page(request):
     if request.method == "POST":
         def get(name):
@@ -489,8 +509,18 @@ def questionnaire_page(request):
                 }
             )
 
+        note = get("need_text")
+        if any(answers.get(field) == 'yes' for field in ('immediate_danger', 'mental_health_crisis', 'unsafe_home')) or safety_status(note) != 'clear':
+            from lifeline_core.repository import SafetyDirectory
+            return render(request, 'crisis.html', {'resources': SafetyDirectory().safety_records()})
+        if len(note) > MAX_NEED_TEXT_LENGTH:
+            return HttpResponse(f"Please shorten your optional details to {MAX_NEED_TEXT_LENGTH:,} characters.", status=400)
+
         resources, _diag = _load_resources_from_xlsx()
         triage_result = build_triage_result(answers, resources)
+        if note:
+            # The optional note supplements the structured plan and stays on this server.
+            triage_result["note_result"] = find_resources(note, limit=3, use_llm=False)
         triage_result["total_recommended"] = triage_result["resource_count"]
         triage_result["default_assumptions"] = default_assumptions
         triage_result["default_assumption_count"] = len(default_assumptions)
@@ -501,7 +531,7 @@ def questionnaire_page(request):
             triage_result,
         )
 
-    return render(request, "questionnaire.html")
+    return render(request, "questionnaire.html", {"max_need_text_length": MAX_NEED_TEXT_LENGTH})
 
 
 def actions_page(request):

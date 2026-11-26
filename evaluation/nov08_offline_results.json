@@ -1,0 +1,1694 @@
+{
+  "source_sha256": "d36da671b9ec19ef8b94aa6512682bbcefb987b82567f07775cc084baa138d41",
+  "live_llm_requested": false,
+  "live_model_validated": false,
+  "interpretation": "Service-tag precision is an automated proxy, not caseworker-adjudicated eligibility or successful referrals. No-match may be correct when hard constraints are unverified. Variants are not independent cases.",
+  "summary": {
+    "inputs": 64,
+    "exact_category_accuracy": 0.984375,
+    "mean_category_recall": 0.984375,
+    "exact_route_accuracy": 0.734375,
+    "crisis_inputs": 10,
+    "crisis_passed": 10,
+    "grounding_passed": 64,
+    "returned_matches": 24,
+    "mean_precision_at_3_service_proxy": 1.0,
+    "mean_precision_at_10_service_proxy": 1.0,
+    "ranked_and_bounded_passed": 64,
+    "abstentions": 20,
+    "modes": {
+      "local": 54,
+      "safety_first": 10
+    },
+    "failures": [
+      {
+        "id": "food_04",
+        "needs": [
+          "need:food.pantry"
+        ],
+        "expected_needs": [
+          "need:food.pantry"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "food_06",
+        "needs": [
+          "need:food.pantry"
+        ],
+        "expected_needs": [
+          "need:food.pantry"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "housing_03",
+        "needs": [
+          "need:housing.rental"
+        ],
+        "expected_needs": [
+          "need:housing.rental"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "housing_06",
+        "needs": [
+          "need:housing.accessibility_modifications"
+        ],
+        "expected_needs": [
+          "need:housing.accessibility_modifications"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "medical_01",
+        "needs": [
+          "need:medical.general"
+        ],
+        "expected_needs": [
+          "need:medical.general"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "medical_02",
+        "needs": [
+          "need:medical.prescriptions",
+          "need:medical.cost_assistance"
+        ],
+        "expected_needs": [
+          "need:medical.prescriptions",
+          "need:medical.cost_assistance"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "medical_03",
+        "needs": [
+          "need:medical.dental"
+        ],
+        "expected_needs": [
+          "need:medical.dental"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "mental_01",
+        "needs": [
+          "need:mental_health.clinical"
+        ],
+        "expected_needs": [
+          "need:mental_health.clinical"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "mental_03",
+        "needs": [
+          "need:mental_health.peer_support"
+        ],
+        "expected_needs": [
+          "need:mental_health.peer_support"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "mental_04",
+        "needs": [
+          "need:substance_use.treatment"
+        ],
+        "expected_needs": [
+          "need:substance_use.treatment"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "mental_05",
+        "needs": [
+          "need:substance_use.harm_reduction"
+        ],
+        "expected_needs": [
+          "need:substance_use.harm_reduction"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "mental_06",
+        "needs": [
+          "need:substance_use.medications"
+        ],
+        "expected_needs": [
+          "need:substance_use.medications"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "support_05",
+        "needs": [
+          "need:essentials.clothing_supplies"
+        ],
+        "expected_needs": [
+          "need:essentials.clothing_supplies"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "support_06",
+        "needs": [
+          "need:financial.tax_help"
+        ],
+        "expected_needs": [
+          "need:financial.tax_help"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "spanish_03",
+        "needs": [
+          "need:mental_health.clinical"
+        ],
+        "expected_needs": [
+          "need:mental_health.clinical"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "spanish_05",
+        "needs": [
+          "need:legal.assistance",
+          "need:immigration.support"
+        ],
+        "expected_needs": [
+          "need:immigration.support",
+          "need:legal.assistance"
+        ],
+        "route": "no_match",
+        "expected_route": "matches"
+      },
+      {
+        "id": "adversarial_01",
+        "needs": [
+          "need:food.pantry"
+        ],
+        "expected_needs": [
+          "need:food.general_assistance"
+        ],
+        "route": "no_match",
+        "expected_route": "follow_up"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "food_01",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.prepared_meals"
+      ],
+      "expected_needs": [
+        "need:food.prepared_meals"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        210,
+        211,
+        127,
+        42,
+        160,
+        1065,
+        178,
+        204
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.4
+    },
+    {
+      "id": "food_02",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.pantry"
+      ],
+      "expected_needs": [
+        "need:food.pantry"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        87,
+        89,
+        210,
+        93,
+        201,
+        79,
+        1078,
+        122,
+        98,
+        207
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.2
+    },
+    {
+      "id": "food_03",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.delivery"
+      ],
+      "expected_needs": [
+        "need:food.delivery"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.4
+    },
+    {
+      "id": "food_04",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.pantry"
+      ],
+      "expected_needs": [
+        "need:food.pantry"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.4
+    },
+    {
+      "id": "food_05",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.medically_tailored"
+      ],
+      "expected_needs": [
+        "need:food.medically_tailored"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "food_06",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.pantry"
+      ],
+      "expected_needs": [
+        "need:food.pantry"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.7
+    },
+    {
+      "id": "food_07",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:pets.food_veterinary"
+      ],
+      "expected_needs": [
+        "need:pets.food_veterinary"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        1344
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.9
+    },
+    {
+      "id": "food_08",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:benefits.enrollment_navigation"
+      ],
+      "expected_needs": [
+        "need:benefits.enrollment_navigation"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        157
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.7
+    },
+    {
+      "id": "food_09",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.general_assistance"
+      ],
+      "expected_needs": [
+        "need:food.general_assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "food_10",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.delivery"
+      ],
+      "expected_needs": [
+        "need:food.delivery"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.2
+    },
+    {
+      "id": "food_11",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.pantry"
+      ],
+      "expected_needs": [
+        "need:food.pantry"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "food_12",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:care.assisted_living"
+      ],
+      "expected_needs": [
+        "need:care.assisted_living"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        631,
+        668,
+        438,
+        602,
+        400,
+        572,
+        538,
+        543,
+        605,
+        618
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 4.9
+    },
+    {
+      "id": "housing_01",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:housing.rent_eviction_help",
+        "need:legal.assistance"
+      ],
+      "expected_needs": [
+        "need:housing.rent_eviction_help",
+        "need:legal.assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        1075
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.7
+    },
+    {
+      "id": "housing_02",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:housing.emergency_shelter"
+      ],
+      "expected_needs": [
+        "need:housing.emergency_shelter"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        174
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.4
+    },
+    {
+      "id": "housing_03",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:housing.rental"
+      ],
+      "expected_needs": [
+        "need:housing.rental"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.0
+    },
+    {
+      "id": "housing_04",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:housing.medical_lodging"
+      ],
+      "expected_needs": [
+        "need:housing.medical_lodging"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        1041
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.7
+    },
+    {
+      "id": "housing_05",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:care.memory"
+      ],
+      "expected_needs": [
+        "need:care.memory"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        605,
+        603,
+        422,
+        321,
+        611,
+        529,
+        512,
+        438,
+        720,
+        253
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.8
+    },
+    {
+      "id": "housing_06",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:housing.accessibility_modifications"
+      ],
+      "expected_needs": [
+        "need:housing.accessibility_modifications"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.8
+    },
+    {
+      "id": "multi_01",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:utilities.bill_assistance",
+        "need:food.general_assistance"
+      ],
+      "expected_needs": [
+        "need:utilities.bill_assistance",
+        "need:food.general_assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "multi_02",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:employment.training_search",
+        "need:transportation.assistance"
+      ],
+      "expected_needs": [
+        "need:employment.training_search",
+        "need:transportation.assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        393,
+        323,
+        527,
+        449,
+        386,
+        392,
+        350,
+        408,
+        553,
+        369
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.3
+    },
+    {
+      "id": "multi_03",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.pantry",
+        "need:legal.identity_documents"
+      ],
+      "expected_needs": [
+        "need:legal.identity_documents",
+        "need:food.pantry"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        210,
+        87,
+        89,
+        1078,
+        79,
+        94,
+        93,
+        98,
+        201,
+        42
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.0
+    },
+    {
+      "id": "multi_04",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:housing.supportive_transitional",
+        "need:employment.training_search"
+      ],
+      "expected_needs": [
+        "need:housing.supportive_transitional",
+        "need:employment.training_search"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        692,
+        680,
+        839,
+        997,
+        797,
+        735,
+        681,
+        449,
+        11,
+        527
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 4.3
+    },
+    {
+      "id": "multi_05",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:care.home",
+        "need:care.respite"
+      ],
+      "expected_needs": [
+        "need:care.home",
+        "need:care.respite"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        794,
+        1255,
+        1240,
+        1323,
+        366,
+        719,
+        253,
+        265,
+        332,
+        1329
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.9
+    },
+    {
+      "id": "medical_01",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:medical.general"
+      ],
+      "expected_needs": [
+        "need:medical.general"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.9
+    },
+    {
+      "id": "medical_02",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:medical.prescriptions",
+        "need:medical.cost_assistance"
+      ],
+      "expected_needs": [
+        "need:medical.prescriptions",
+        "need:medical.cost_assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.1
+    },
+    {
+      "id": "medical_03",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:medical.dental"
+      ],
+      "expected_needs": [
+        "need:medical.dental"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.9
+    },
+    {
+      "id": "medical_04",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:benefits.enrollment_navigation"
+      ],
+      "expected_needs": [
+        "need:benefits.enrollment_navigation"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        1042
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.1
+    },
+    {
+      "id": "medical_05",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:transportation.assistance"
+      ],
+      "expected_needs": [
+        "need:transportation.assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        792
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.9
+    },
+    {
+      "id": "medical_06",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:medical.equipment"
+      ],
+      "expected_needs": [
+        "need:medical.equipment"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        1362
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.8
+    },
+    {
+      "id": "mental_01",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:mental_health.clinical"
+      ],
+      "expected_needs": [
+        "need:mental_health.clinical"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 4.6
+    },
+    {
+      "id": "mental_02",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:mental_health.clinical"
+      ],
+      "expected_needs": [
+        "need:mental_health.clinical"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        734,
+        990,
+        975,
+        998,
+        832,
+        1201,
+        989,
+        830,
+        1000,
+        912
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 5.1
+    },
+    {
+      "id": "mental_03",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:mental_health.peer_support"
+      ],
+      "expected_needs": [
+        "need:mental_health.peer_support"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.1
+    },
+    {
+      "id": "mental_04",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:substance_use.treatment"
+      ],
+      "expected_needs": [
+        "need:substance_use.treatment"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.9
+    },
+    {
+      "id": "mental_05",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:substance_use.harm_reduction"
+      ],
+      "expected_needs": [
+        "need:substance_use.harm_reduction"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.8
+    },
+    {
+      "id": "mental_06",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:substance_use.medications"
+      ],
+      "expected_needs": [
+        "need:substance_use.medications"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.9
+    },
+    {
+      "id": "support_01",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:childcare.early_learning"
+      ],
+      "expected_needs": [
+        "need:childcare.early_learning"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        20
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.1
+    },
+    {
+      "id": "support_02",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:employment.training_search"
+      ],
+      "expected_needs": [
+        "need:employment.training_search"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        797,
+        1242,
+        692,
+        735,
+        681,
+        449,
+        323,
+        11,
+        350,
+        997
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.8
+    },
+    {
+      "id": "support_03",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:legal.assistance",
+        "need:immigration.support"
+      ],
+      "expected_needs": [
+        "need:immigration.support",
+        "need:legal.assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        1132
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.7
+    },
+    {
+      "id": "support_04",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:employment.training_search",
+        "need:digital.computers_internet"
+      ],
+      "expected_needs": [
+        "need:digital.computers_internet",
+        "need:employment.training_search"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        449,
+        527,
+        350,
+        393,
+        553,
+        408,
+        323,
+        386,
+        392,
+        369
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 4.2
+    },
+    {
+      "id": "support_05",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:essentials.clothing_supplies"
+      ],
+      "expected_needs": [
+        "need:essentials.clothing_supplies"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.2
+    },
+    {
+      "id": "support_06",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:financial.tax_help"
+      ],
+      "expected_needs": [
+        "need:financial.tax_help"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 1.7
+    },
+    {
+      "id": "vague_01",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.2
+    },
+    {
+      "id": "vague_02",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:navigation.case_management"
+      ],
+      "expected_needs": [
+        "need:navigation.case_management"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "vague_03",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.2
+    },
+    {
+      "id": "spanish_01",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.prepared_meals"
+      ],
+      "expected_needs": [
+        "need:food.prepared_meals"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        210,
+        211,
+        127,
+        42,
+        1065,
+        160,
+        178,
+        204
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.6
+    },
+    {
+      "id": "spanish_02",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:utilities.bill_assistance",
+        "need:benefits.enrollment_navigation"
+      ],
+      "expected_needs": [
+        "need:utilities.bill_assistance",
+        "need:benefits.enrollment_navigation"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        157,
+        1075,
+        772
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.3
+    },
+    {
+      "id": "spanish_03",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:mental_health.clinical"
+      ],
+      "expected_needs": [
+        "need:mental_health.clinical"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 4.7
+    },
+    {
+      "id": "spanish_04",
+      "route": "matches",
+      "expected_route": "matches",
+      "needs": [
+        "need:food.pantry",
+        "need:essentials.clothing_supplies"
+      ],
+      "expected_needs": [
+        "need:essentials.clothing_supplies",
+        "need:food.pantry"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [
+        210,
+        87,
+        89,
+        98,
+        93,
+        1078,
+        94,
+        79,
+        201,
+        207
+      ],
+      "precision_at_3_service_proxy": 1.0,
+      "precision_at_10_service_proxy": 1.0,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 3.9
+    },
+    {
+      "id": "spanish_05",
+      "route": "no_match",
+      "expected_route": "matches",
+      "needs": [
+        "need:legal.assistance",
+        "need:immigration.support"
+      ],
+      "expected_needs": [
+        "need:immigration.support",
+        "need:legal.assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.6
+    },
+    {
+      "id": "crisis_01",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.2
+    },
+    {
+      "id": "crisis_02",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_03",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_04",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_05",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_06",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_07",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_08",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_09",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "crisis_10",
+      "route": "crisis",
+      "expected_route": "crisis",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "safety_first",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "id": "adversarial_01",
+      "route": "no_match",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.pantry"
+      ],
+      "expected_needs": [
+        "need:food.general_assistance"
+      ],
+      "category_exact": false,
+      "category_recall": 0.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.7
+    },
+    {
+      "id": "adversarial_02",
+      "route": "no_match",
+      "expected_route": "no_match",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "adversarial_03",
+      "route": "follow_up",
+      "expected_route": "follow_up",
+      "needs": [
+        "need:food.general_assistance"
+      ],
+      "expected_needs": [
+        "need:food.general_assistance"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.3
+    },
+    {
+      "id": "no_match_01",
+      "route": "no_match",
+      "expected_route": "no_match",
+      "needs": [
+        "need:food.delivery"
+      ],
+      "expected_needs": [
+        "need:food.delivery"
+      ],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 2.0
+    },
+    {
+      "id": "no_match_02",
+      "route": "no_match",
+      "expected_route": "no_match",
+      "needs": [],
+      "expected_needs": [],
+      "category_exact": true,
+      "category_recall": 1.0,
+      "safe_crisis": true,
+      "grounded": true,
+      "mode": "local",
+      "top_ids": [],
+      "precision_at_3_service_proxy": null,
+      "precision_at_10_service_proxy": null,
+      "ranked_and_bounded": true,
+      "elapsed_ms": 0.2
+    }
+  ]
+}

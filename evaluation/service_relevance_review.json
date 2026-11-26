@@ -1,0 +1,432 @@
+{
+  "reviewer": "Codex implementation review, not independent caseworker validation",
+  "method": "Read returned top-three descriptions against each authored request; assess supported service relevance and partial coverage, not individual eligibility or availability. Earlier errors prompted specificity gates. This is a development regression set, not held-out accuracy.",
+  "reviewed_recommendations": 53,
+  "supported": 53,
+  "reviews": [
+    {
+      "case_id": "food_01",
+      "resource_id": 210,
+      "description": "A community-run hospitality program that operates a soup kitchen and a food pantry, providing meals and food distribution from a physical site in Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Descriptions explicitly offer soup-kitchen/community meal/meal-service options; no promise of service today.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_01",
+      "resource_id": 211,
+      "description": "A church-based food ministry that operates a pantry and runs food distribution and community meal programs, and that organizes volunteers and accepts in-kind and monetary donations to support those activities.",
+      "service_relevance": "supported",
+      "notes": "Descriptions explicitly offer soup-kitchen/community meal/meal-service options; no promise of service today.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_01",
+      "resource_id": 127,
+      "description": "Google Maps lists this site at Cherry Hill United Methodist Church as a food distribution center / food program and the listing indicates grocery pickup and meal-service options.",
+      "service_relevance": "supported",
+      "notes": "Descriptions explicitly offer soup-kitchen/community meal/meal-service options; no promise of service today.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_02",
+      "resource_id": 87,
+      "description": "Trinity Presbyterian Church operates a community food pantry (The Nancy Bennett Food Pantry) that provides scheduled in-person food distribution at the church location in the Walbrook neighborhood of Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Public grocery pantries are stated. Ranking does not establish ZIP-specific access.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_02",
+      "resource_id": 79,
+      "description": "A community food pantry in East Baltimore that distributes a balanced selection of grocery items (including meat, milk, fruit, vegetables, bread, and pantry staples) to local residents on a weekly Saturday distribution. The pantry is run by volunteers and sets up so visitors can choose among available food options.",
+      "service_relevance": "supported",
+      "notes": "Public grocery pantries are stated. Ranking does not establish ZIP-specific access.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_02",
+      "resource_id": 201,
+      "description": "A church-hosted, on-site food pantry that distributes non-perishable food items to local residents at the Hampden United Methodist Church location.",
+      "service_relevance": "supported",
+      "notes": "Public grocery pantries are stated. Ranking does not establish ZIP-specific access.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_07",
+      "resource_id": 1344,
+      "description": "Maryland SPCA is an animal shelter in Baltimore that provides care for animals and runs community programs such as free veterinary clinics for underserved communities, a pet food pantry, spay/neuter services, and volunteer opportunities.",
+      "service_relevance": "supported",
+      "notes": "The SPCA explicitly has a pet food pantry. Animal control without pet food was removed.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_08",
+      "resource_id": 157,
+      "description": "A Harford County community action agency location offering on-site food pantry services and energy-assistance programs along with related client support such as SNAP application help and family/budget counseling programs.",
+      "service_relevance": "supported",
+      "notes": "SNAP application help is explicit; generic health-insurance enrollment was removed.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_12",
+      "resource_id": 631,
+      "description": "Trinity Home Care & Assisted Living LLC provides a small residential home health care and assisted-living setting in Baltimore, offering around-the-clock care, home-cooked meals, transportation to appointments, and social activities in a home-like environment.",
+      "service_relevance": "supported",
+      "notes": "Assisted living is explicit; meals remain residential services.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_12",
+      "resource_id": 668,
+      "description": "Westfield Assisted Living at Hillendale offers assisted living services in Parkville, providing residential senior living with around-the-clock licensed staff and help with daily activities.",
+      "service_relevance": "supported",
+      "notes": "Assisted living is explicit; meals remain residential services.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "food_12",
+      "resource_id": 400,
+      "description": "A small, residential assisted living home that provides 24/7, on-site care in a home-like setting, offering help with daily living activities, medication oversight, meals, housekeeping, social and recreational activities, and coordination of medical care and transportation.",
+      "service_relevance": "supported",
+      "notes": "Assisted living is explicit; meals remain residential services.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_01",
+      "resource_id": 1075,
+      "description": "Southwest Emergency Services (SWES) operates a community pantry and assistance program in Arbutus, MD, providing groceries and personal care items and offering financial help to prevent eviction and utility shutoffs for eligible households.",
+      "service_relevance": "supported",
+      "notes": "Emergency eviction-prevention assistance is explicit. Section 8 apartment rental assistance was removed; legal need may remain unmet.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_02",
+      "resource_id": 174,
+      "description": "A local homeless shelter and support center that provides emergency shelter and related services aimed at preventing homelessness and helping people transition toward stable housing, employment, and self-sufficiency.",
+      "service_relevance": "supported",
+      "notes": "Explicit emergency homeless shelter remains; violence-specific and generic housing entries were removed.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_02",
+      "resource_id": 684,
+      "description": "The Family Crisis Center of Baltimore County provides crisis intervention and shelter services for individuals and families affected by domestic violence, including a 24/7 helpline and advocate support aimed at safety and long-term stability in Baltimore County.",
+      "service_relevance": "supported",
+      "notes": "Explicit emergency homeless shelter remains; violence-specific and generic housing entries were removed.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_04",
+      "resource_id": 1041,
+      "description": "Ronald McDonald House Maryland provides a home-like lodging near a hospital for families with a child receiving medical care, offering private family rooms, shared kitchens, meals, and supportive programs to help families stay close during treatment.",
+      "service_relevance": "supported",
+      "notes": "Hospital-family lodging explicitly covers a child receiving care.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_05",
+      "resource_id": 605,
+      "description": "Symphony Manor Premier Assisted Living and Memory Care is a Baltimore senior living community offering assisted living and memory care with chef-prepared dining, engaging activities, private dining options, on-site transportation, and a well-maintained environment near Roland Park.",
+      "service_relevance": "supported",
+      "notes": "Memory care is explicit, with no invented eligibility or price.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_05",
+      "resource_id": 321,
+      "description": "A physical senior living community that provides assisted living and specialized memory-care services with personalized care plans, on-site dining, and life-enrichment programs focused on engagement and a homelike environment.",
+      "service_relevance": "supported",
+      "notes": "Memory care is explicit, with no invented eligibility or price.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "housing_05",
+      "resource_id": 603,
+      "description": "Sunrise of Pikesville is a senior living community offering assisted living and memory care. It provides 24-hour personalized care, chef‑prepared meals, housekeeping, social and wellness activities, transportation, and a Reminiscence memory‑care program across its assisted living and memory care options.",
+      "service_relevance": "supported",
+      "notes": "Memory care is explicit, with no invented eligibility or price.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_02",
+      "resource_id": 393,
+      "description": "A neighborhood public library branch offering in-person access to library collections and community services, including free Wi‑Fi, public computers, printing/photocopying, ADA-accessible facilities, children and teen sections and programs, job and career assistance, meeting-room reservations, and regular community events.",
+      "service_relevance": "supported",
+      "notes": "Library job/career help is explicit; clinic rides were removed, so transportation remains unmet.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_02",
+      "resource_id": 449,
+      "description": "A public branch of the Enoch Pratt Free Library serving the Highlandtown/Canton area that provides typical library services such as in‑building public internet access and Wi‑Fi, public computers, circulating collections (including Spanish language materials), printing/photocopying, children and teen collections and programs, job and career assistance, meeting room reservations, and community programs. The site also describes a community market stocked with free food and household goods for local residents in need.",
+      "service_relevance": "supported",
+      "notes": "Library job/career help is explicit; clinic rides were removed, so transportation remains unmet.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_02",
+      "resource_id": 323,
+      "description": "A public library branch offering in-person library services at a physical location, including on-site computer access, Wi‑Fi, printing/photocopying, children’s and teen collections and programs, job-and-career help, meeting room reservations, and regular community events.",
+      "service_relevance": "supported",
+      "notes": "Library job/career help is explicit; clinic rides were removed, so transportation remains unmet.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_03",
+      "resource_id": 210,
+      "description": "A community-run hospitality program that operates a soup kitchen and a food pantry, providing meals and food distribution from a physical site in Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Pantry matches cover food; Paul’s Place explicitly describes ID/birth-certificate help.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_03",
+      "resource_id": 42,
+      "description": "A physical community outreach center in Southwest Baltimore offering onsite programs and services to support individuals and families. Available services reported in provider information and reviewer tags include a regular lunch/feeding program, clothing and interview-attire assistance, help obtaining IDs or birth certificates, and housing-related case-management support. Services are delivered in person at the listed Ward Street location.",
+      "service_relevance": "supported",
+      "notes": "Pantry matches cover food; Paul’s Place explicitly describes ID/birth-certificate help.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_03",
+      "resource_id": 87,
+      "description": "Trinity Presbyterian Church operates a community food pantry (The Nancy Bennett Food Pantry) that provides scheduled in-person food distribution at the church location in the Walbrook neighborhood of Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Pantry matches cover food; Paul’s Place explicitly describes ID/birth-certificate help.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_04",
+      "resource_id": 839,
+      "description": "Intensive Outpatient Program (IOP) for substance use treatment, with related mental health supports; the program also offers recovery housing.",
+      "service_relevance": "supported",
+      "notes": "Recovery housing or employment/workforce support is explicit; no claim that a bed is available.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_04",
+      "resource_id": 692,
+      "description": "Allover Healthcare Group LLC provides community-based behavioral health services, including psychiatric rehabilitation programs, outpatient and intensive outpatient substance use disorder treatment, and driver-education-related programs. The organization lists programs for adults, adolescents, and children, along with community housing and employment support, and an autism waiver program as part of its services.",
+      "service_relevance": "supported",
+      "notes": "Recovery housing or employment/workforce support is explicit; no claim that a bed is available.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_04",
+      "resource_id": 680,
+      "description": "Maryland Center for Veterans Education and Training (MCVET) provides housing support and related veteran services, including workforce development, behavioral health services, and community support for veterans in Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Recovery housing or employment/workforce support is explicit; no claim that a bed is available.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_05",
+      "resource_id": 1255,
+      "description": "One Nation Healthcare Solutions, Inc. provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+      "service_relevance": "supported",
+      "notes": "Nursing/home care and respite are distinguished. Companion care can cover respite only.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_05",
+      "resource_id": 794,
+      "description": "LifeKey Health provides nurse-led in-home health care and support services, including personal care, skilled nursing, memory care programs, respite care, housekeeping, and caregiver matching, with 24/7 client support to help people stay safely at home.",
+      "service_relevance": "supported",
+      "notes": "Nursing/home care and respite are distinguished. Companion care can cover respite only.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "multi_05",
+      "resource_id": 1240,
+      "description": "Ameri Home Care Services LLC provides in-home care solutions, offering companionship, help with daily activities, medication reminders, and respite care for clients in their own homes.",
+      "service_relevance": "supported",
+      "notes": "Nursing/home care and respite are distinguished. Companion care can cover respite only.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "medical_04",
+      "resource_id": 1042,
+      "description": "Maryland Health Benefit Exchange (MHBE) is a state government office that administers Maryland's health benefits marketplace and related enrollment services.",
+      "service_relevance": "supported",
+      "notes": "State health-benefit marketplace enrollment matches the request.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "medical_05",
+      "resource_id": 792,
+      "description": "Butler Medical Transport provides non-emergency medical transportation and inter-facility transfer services, supported by a fleet of vehicles and a stated focus on patient-centered transportation.",
+      "service_relevance": "supported",
+      "notes": "Non-emergency medical transportation is explicit, without eligibility or payment promises.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "medical_06",
+      "resource_id": 1362,
+      "description": "Equipment Connections for Children provides no‑charge loans of adaptive mobility equipment to children with disabilities and maintains an inventory and loan program, along with educational workshops for families.",
+      "service_relevance": "supported",
+      "notes": "No-charge child adaptive-equipment loans directly support the stated age and cost constraints.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "mental_02",
+      "resource_id": 824,
+      "description": "Outpatient mental health clinic offering behavioral health services.",
+      "service_relevance": "supported",
+      "notes": "Outpatient mental/behavioral health descriptions support therapy; current safety is explicitly stated in the input.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "mental_02",
+      "resource_id": 1007,
+      "description": "In-person mental health clinic offering behavioral health services.",
+      "service_relevance": "supported",
+      "notes": "Outpatient mental/behavioral health descriptions support therapy; current safety is explicitly stated in the input.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "mental_02",
+      "resource_id": 975,
+      "description": "Family's First LLC runs an outpatient mental health clinic in Catonsville, providing therapy for children, youth, and adults and medication management through licensed clinicians; it serves families and individuals seeking mental health support.",
+      "service_relevance": "supported",
+      "notes": "Outpatient mental/behavioral health descriptions support therapy; current safety is explicitly stated in the input.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_01",
+      "resource_id": 20,
+      "description": "A Head Start center operated by Catholic Charities located in Baltimore that provides early childhood / Head Start daycare and related program activities at the Head Start of Baltimore City site. The presence of this Head Start location is corroborated by the Google Maps listing and the organization’s official website.",
+      "service_relevance": "supported",
+      "notes": "Head Start childcare is explicit; adult daycare and survivor-only childcare were removed.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_02",
+      "resource_id": 1242,
+      "description": "In-person training center offering educational and vocational training services.",
+      "service_relevance": "supported",
+      "notes": "Educational/vocational or workforce training is described. Veterans-only services were removed for a request without veteran status.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_02",
+      "resource_id": 797,
+      "description": "An automotive service center offering auto repair and maintenance for various makes and models, sale of quality pre-owned vehicles, and vehicle donation programs, with workforce training supported by its mission.",
+      "service_relevance": "supported",
+      "notes": "Educational/vocational or workforce training is described. Veterans-only services were removed for a request without veteran status.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_02",
+      "resource_id": 735,
+      "description": "Emerge Inc is a Maryland-based organization supporting individuals with developmental, physical, and mental health disabilities. It offers residential arrangements geared to the needs of the individual, along with day services and employment and pre-employment support to help customers live, learn, and work in their communities.",
+      "service_relevance": "supported",
+      "notes": "Educational/vocational or workforce training is described. Veterans-only services were removed for a request without veteran status.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_03",
+      "resource_id": 1132,
+      "description": "Immigration Outreach Service Center (IOSC) in Baltimore provides immigration-related social services and runs an immigration legal clinic offering one-on-one attorney consultations. The clinic is held weekly on Wednesdays with a check-in window of 9:30 to 11:30 a.m.; in-person consultations cost $90 and Zoom consultations cost $100.",
+      "service_relevance": "supported",
+      "notes": "Immigration legal consultation is explicit. Broader refugee support is not presented as legal representation.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_04",
+      "resource_id": 449,
+      "description": "A public branch of the Enoch Pratt Free Library serving the Highlandtown/Canton area that provides typical library services such as in‑building public internet access and Wi‑Fi, public computers, circulating collections (including Spanish language materials), printing/photocopying, children and teen collections and programs, job and career assistance, meeting room reservations, and community programs. The site also describes a community market stocked with free food and household goods for local residents in need.",
+      "service_relevance": "supported",
+      "notes": "Public internet/printing and job/career support are explicit.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_04",
+      "resource_id": 350,
+      "description": "A neighborhood branch of the Enoch Pratt Free Library offering in‑person library services including lending of books and media, public computers and Wi‑Fi, printing/copying, programs for children and teens, job-and-career help, and reservable meeting space.",
+      "service_relevance": "supported",
+      "notes": "Public internet/printing and job/career support are explicit.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "support_04",
+      "resource_id": 527,
+      "description": "Patterson Park Branch of the Enoch Pratt Free Library is a public library branch offering a broad range of library services to the public, including free Wi‑Fi, public computers, printing, ESL classes, children's and teen areas, job and career assistance, and community programs and events.",
+      "service_relevance": "supported",
+      "notes": "Public internet/printing and job/career support are explicit.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_01",
+      "resource_id": 210,
+      "description": "A community-run hospitality program that operates a soup kitchen and a food pantry, providing meals and food distribution from a physical site in Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Prepared-meal services match the request; input language is not silently converted into a guaranteed provider-language constraint.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_01",
+      "resource_id": 211,
+      "description": "A church-based food ministry that operates a pantry and runs food distribution and community meal programs, and that organizes volunteers and accepts in-kind and monetary donations to support those activities.",
+      "service_relevance": "supported",
+      "notes": "Prepared-meal services match the request; input language is not silently converted into a guaranteed provider-language constraint.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_01",
+      "resource_id": 127,
+      "description": "Google Maps lists this site at Cherry Hill United Methodist Church as a food distribution center / food program and the listing indicates grocery pickup and meal-service options.",
+      "service_relevance": "supported",
+      "notes": "Prepared-meal services match the request; input language is not silently converted into a guaranteed provider-language constraint.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_02",
+      "resource_id": 157,
+      "description": "A Harford County community action agency location offering on-site food pantry services and energy-assistance programs along with related client support such as SNAP application help and family/budget counseling programs.",
+      "service_relevance": "supported",
+      "notes": "Utility assistance and SNAP help are kept as separate matched needs.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_02",
+      "resource_id": 1075,
+      "description": "Southwest Emergency Services (SWES) operates a community pantry and assistance program in Arbutus, MD, providing groceries and personal care items and offering financial help to prevent eviction and utility shutoffs for eligible households.",
+      "service_relevance": "supported",
+      "notes": "Utility assistance and SNAP help are kept as separate matched needs.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_02",
+      "resource_id": 772,
+      "description": "Fuel Fund of Maryland is a nonprofit that provides financial assistance and educational resources to help Maryland households with utility bills, focusing on BGE customers at risk of power disconnection.",
+      "service_relevance": "supported",
+      "notes": "Utility assistance and SNAP help are kept as separate matched needs.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_04",
+      "resource_id": 210,
+      "description": "A community-run hospitality program that operates a soup kitchen and a food pantry, providing meals and food distribution from a physical site in Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Pantries cover groceries only; diapers are disclosed as unmet.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_04",
+      "resource_id": 87,
+      "description": "Trinity Presbyterian Church operates a community food pantry (The Nancy Bennett Food Pantry) that provides scheduled in-person food distribution at the church location in the Walbrook neighborhood of Baltimore.",
+      "service_relevance": "supported",
+      "notes": "Pantries cover groceries only; diapers are disclosed as unmet.",
+      "eligibility_verified": false
+    },
+    {
+      "case_id": "spanish_04",
+      "resource_id": 89,
+      "description": "Operates an on-site food distribution (food pantry) that provides packaged food to community members through in-person distribution sessions.",
+      "service_relevance": "supported",
+      "notes": "Pantries cover groceries only; diapers are disclosed as unmet.",
+      "eligibility_verified": false
+    }
+  ]
+}

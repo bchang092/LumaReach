@@ -1,0 +1,5 @@
+/db.sqlite3
+/.local
+/.venv
+/MISC
+/input_data/archive

@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "status": "additional_authored_challenge_set_before_evaluation",
+  "cases": [
+    {
+      "id": "challenge_crisis_01",
+      "text": "I want to die and I have a plan",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_02",
+      "text": "I am thinking about ending my life",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_03",
+      "text": "I have been hurting myself tonight",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_04",
+      "text": "I might hurt myself if I stay alone",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_05",
+      "text": "Everyone would be better off without me",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_06",
+      "text": "I swallowed all the tablets",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_07",
+      "text": "He is not breathing after taking fentanyl",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_08",
+      "text": "She is unconscious on the floor",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_09",
+      "text": "My baby is choking",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_10",
+      "text": "My son is being abused by his father",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_11",
+      "text": "I am fifteen and my uncle is touching me sexually",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_12",
+      "text": "My husband says he will kill me",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_13",
+      "text": "My ex is stalking me outside and I am scared",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_14",
+      "text": "I cannot stay safe tonight",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_15",
+      "text": "Quiero matarme ahora",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_16",
+      "text": "No quiero seguir viviendo",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_17",
+      "text": "Mi esposo tiene un arma y me amenaza",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_18",
+      "text": "Mi hija esta en peligro ahora",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_19",
+      "text": "Me estoy cortando y no puedo parar",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_20",
+      "text": "Tome demasiadas pastillas",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_21",
+      "text": "My partner is strangling me",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_22",
+      "text": "I am bleeding heavily after cutting myself",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_23",
+      "text": "I took too many pills and now feel sleepy",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_24",
+      "text": "I need food but first I need to stop myself from jumping off this bridge",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_25",
+      "text": "I have a gun and might shoot myself",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_26",
+      "text": "My child is locked alone in a hot car",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_27",
+      "text": "Having a stroke, one side of my face drooping",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_28",
+      "text": "My dad wont wake up after drugs",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_29",
+      "text": "I dont feel safe with my partner who is beating me",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_crisis_30",
+      "text": "No puedo respirar y me duele el pecho",
+      "expected_needs": [],
+      "expected_route": "crisis",
+      "normal_matches_allowed": false
+    },
+    {
+      "id": "challenge_noncrisis_01",
+      "text": "I am not suicidal and need groceries",
+      "expected_needs": [
+        "need:food.pantry"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_02",
+      "text": "I survived an overdose years ago. I am safe now and looking for a therapist",
+      "expected_needs": [
+        "need:mental_health.clinical"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_03",
+      "text": "I need pantry food in west Baltimore",
+      "expected_needs": [
+        "need:food.pantry"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_04",
+      "text": "Ready to eat meals please, no kitchen",
+      "expected_needs": [
+        "need:food.prepared_meals"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_05",
+      "text": "Need groceries and a birth certificate",
+      "expected_needs": [
+        "need:food.pantry",
+        "need:legal.identity_documents"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_06",
+      "text": "Need help applying for SNAP",
+      "expected_needs": [
+        "need:benefits.enrollment_navigation"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_07",
+      "text": "Food?",
+      "expected_needs": [
+        "need:food.general_assistance"
+      ],
+      "expected_route": "follow_up"
+    },
+    {
+      "id": "challenge_noncrisis_08",
+      "text": "I need internet for job applications",
+      "expected_needs": [
+        "need:digital.computers_internet",
+        "need:employment.training_search"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_09",
+      "text": "Need a dentist who takes Medicaid",
+      "expected_needs": [
+        "need:medical.dental"
+      ],
+      "expected_route": "matches"
+    },
+    {
+      "id": "challenge_noncrisis_10",
+      "text": "What help is there?",
+      "expected_needs": [],
+      "expected_route": "follow_up"
+    }
+  ]
+}

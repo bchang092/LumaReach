@@ -1,0 +1,123 @@
+// Actual Chromium rendering, HTTP search and synthetic microphone capture.
+// The audio API is mocked; this does not measure real transcription quality.
+const { chromium }=require('../.local/browser-tests/node_modules/playwright');
+const assert=require('node:assert/strict');
+const {spawn,execFileSync}=require('node:child_process');
+const fs=require('node:fs');const os=require('node:os');const path=require('node:path');
+(async()=>{
+ const temp=fs.mkdtempSync(path.join(os.tmpdir(),'lifeline-browser-'));
+ const env={...process.env,DJANGO_SETTINGS_MODULE:'BmoreLline.test_settings',LIFELINE_TEST_DB:path.join(temp,'db.sqlite3'),TRIAGE_USE_LLM:'false',VOICE_USE_API:'true',OPENAI_API_KEY:'synthetic-test-only',PYTHONDONTWRITEBYTECODE:'1'};
+ execFileSync('.venv/bin/python',['-B','manage.py','migrate','--noinput'],{env,stdio:'ignore'});
+ const server=spawn('.venv/bin/python',['-B','manage.py','runserver','127.0.0.1:8765','--noreload'],{env,stdio:'ignore'});
+ let browser;
+ try{
+  for(let i=0;i<100;i++){try{if((await fetch('http://127.0.0.1:8765/help/')).ok)break;}catch{}await new Promise(r=>setTimeout(r,100));}
+  browser=await chromium.launch({headless:true,args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
+  const context=await browser.newContext({permissions:['microphone'],viewport:{width:1440,height:1000}});
+  const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  async function verifyTextLimit(field) {
+    assert.ok(await field.isVisible());
+    await field.fill('a'.repeat(9999));
+    await field.press('End');
+    await page.keyboard.insertText('bc');
+    assert.equal(await field.inputValue(), 'a'.repeat(9999) + 'b');
+    await field.fill('');
+  }
+  const base='http://127.0.0.1:8765';
+  const triageRequests=[];
+  page.on('request',req=>{if(req.url().endsWith('/api/triage/'))triageRequests.push(req)});
+  await page.goto(base+'/actions/');
+  await page.getByRole('link',{name:'Start Guided Help'}).click();
+  await page.waitForURL(base+'/help/');
+  await page.getByRole('link',{name:'Start the questionnaire'}).click();
+  await page.waitForURL(base+'/questionnaire/');
+  await verifyTextLimit(page.locator('#plan-note'));
+  await page.locator('input[name="food_today"][value="ongoing"]').check();
+  await page.getByRole('button',{name:/Get My Help Plan/i}).click();
+  await page.getByRole('heading',{name:'Your help plan'}).waitFor();
+  assert.equal(triageRequests.length,0);
+  await page.goto(base+'/help/');
+  await page.setViewportSize({width:390,height:844});
+  const questionnaireLink=page.getByRole('link',{name:'Start the questionnaire'});
+  const mcpLink=page.getByRole('link',{name:'Search with MCP'});
+  assert.ok((await mcpLink.boundingBox()).y>(await questionnaireLink.boundingBox()).y);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+  await page.addScriptTag({path:require.resolve('../.local/browser-tests/node_modules/axe-core/axe.min.js')});
+  const chooserAudit=await page.evaluate(()=>axe.run(document.querySelector('main')));
+  assert.deepEqual(chooserAudit.violations.filter(v=>['serious','critical'].includes(v.impact)).map(v=>v.id),[]);
+  await mcpLink.focus();
+  await page.keyboard.press('Enter');
+  await page.waitForURL(base+'/help/mcp/');
+  await page.goBack();
+  await page.waitForURL(base+'/help/');
+  await mcpLink.click();
+  await page.waitForURL(base+'/help/mcp/');
+  await page.setViewportSize({width:1440,height:1000});
+  await page.getByRole('button',{name:'Find resources'}).click();
+  await page.getByText('Choose a service or add your own words to search.').waitFor();
+  assert.equal(triageRequests.length,0);
+  await page.getByRole('checkbox',{name:'Groceries',exact:true}).check();
+  await page.getByRole('button',{name:'Find resources'}).click();
+  await page.locator('.resource-card').nth(9).waitFor();
+  assert.equal(await page.locator('.resource-card').count(),10);
+  assert.match(await page.locator('.resource-card h3').first().innerText(),/^1\./);
+  assert.match(await page.locator('.resource-card h3').last().innerText(),/^10\./);
+  await page.addScriptTag({path:require.resolve('../.local/browser-tests/node_modules/axe-core/axe.min.js')});
+  const audit=await page.evaluate(async()=>await axe.run(document.querySelector('main')));
+  assert.deepEqual(audit.violations.filter(v=>['serious','critical'].includes(v.impact)).map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);
+  fs.mkdirSync('.local/browser-results',{recursive:true});
+  await page.screenshot({path:'.local/browser-results/desktop.png',fullPage:true});
+  await page.screenshot({path:'.local/browser-results/desktop-viewport.png'});
+  await page.getByRole('button',{name:'Clear search'}).click();
+  await page.locator('#need-text').fill('I need groceries. I need a dentist.');
+  await page.getByRole('button',{name:'Find resources'}).click();
+  const priorities=page.locator('.priorities > li > details');
+  await priorities.nth(1).waitFor();
+  for(const panel of await priorities.all()){
+    await panel.locator('summary').first().focus();
+    await page.keyboard.press('Enter');
+    await panel.locator('.resource-card').first().waitFor();
+  }
+  assert.doesNotMatch(await page.locator('#results').innerText(),/Still to check/);
+  await page.getByRole('button',{name:'Clear search'}).click();
+  await verifyTextLimit(page.locator('#need-text'));
+  await page.locator('#need-text').fill('I need help finding a doctor.');
+  await page.getByRole('button',{name:'Find resources'}).click();
+  await page.locator('.resource-card').first().waitFor();
+  assert.doesNotMatch(await page.locator('#results').innerText(),/Ronald McDonald/);
+  await page.setViewportSize({width:390,height:844});
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
+  await page.screenshot({path:'.local/browser-results/mobile.png',fullPage:true});
+  await page.screenshot({path:'.local/browser-results/mobile-viewport.png'});
+  await page.getByRole('button',{name:'Clear search'}).click();
+  let audioBytes=0;
+  await page.route('**/api/transcribe/**',async route=>{audioBytes=route.request().postDataBuffer().length;await route.fulfill({json:{text:'I need groceries from a food pantry'}});});
+  await page.getByRole('button',{name:'Speak instead'}).click();
+  await page.getByRole('button',{name:'Stop recording'}).waitFor();
+  await page.waitForTimeout(1200);
+  await page.getByRole('button',{name:'Stop recording'}).click();
+  await page.waitForFunction(()=>document.querySelector('#need-text').value.includes('groceries'));
+  assert.ok(audioBytes>16);assert.equal(await page.locator('.resource-card').count(),0);
+  await page.getByRole('button',{name:'Find resources'}).click();
+  await page.locator('.resource-card').nth(9).waitFor();
+  const vote = page.waitForResponse(r=>r.url().endsWith('/api/page-activity/') && r.request().postData().includes('event=helpful'));
+  await page.getByRole('button',{name:'Yes, this page was helpful'}).click();
+  assert.equal((await vote).status(),204);
+  await page.getByText('Thank you for your feedback.',{exact:true}).waitFor();
+  const counters = JSON.parse(execFileSync('.venv/bin/python',['-B','-c',`import json, sqlite3, os; print(json.dumps(sqlite3.connect(os.environ["LIFELINE_TEST_DB"]).execute("select views, clicks, helpful from map_pageactivity where page='mcp-search'").fetchone()))`],{env,encoding:'utf8'}));
+  assert.ok(counters[0]>=1 && counters[1]>=1 && counters[2]===1);
+  assert.ok(triageRequests.length >= 3);
+  const basic=await browser.newContext({javaScriptEnabled:false});
+  const basicPage=await basic.newPage();
+  await basicPage.goto(base+'/help/');
+  await basicPage.getByRole('link',{name:'Start the questionnaire'}).click();
+  await basicPage.locator('input[name="immediate_danger"][value="yes"]').check();
+  await basicPage.locator('button[type="submit"]').click();
+  await basicPage.getByRole('heading',{name:'Get immediate support'}).waitFor();
+  await basic.close();
+  assert.deepEqual(errors,[]);
+  console.log(JSON.stringify({browser:'Chromium',ranked_cards:10,doctor_regression:'passed',mobile_width:390,horizontal_overflow:false,serious_or_critical_a11y_issues:0,synthetic_audio_bytes:audioBytes,voice_auto_submit:false,page_errors:errors},null,2));
+ }finally{
+  if(browser)await browser.close();server.kill();await new Promise(resolve=>server.once('exit',resolve));fs.rmSync(temp,{recursive:true,force:true});
+ }
+})().catch(e=>{console.error(e);process.exitCode=1;});

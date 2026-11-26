@@ -1,0 +1,12 @@
+<section class="path-band" id="{{ anchor }}" aria-labelledby="{{ anchor }}-title">
+  <div class="home-wrap path-grid">
+    <div class="path-copy"><span class="path-number" aria-hidden="true">{{ number }}</span>
+      <div class="path-stack">
+        <h2 id="{{ anchor }}-title">{{ title }}{% if badge %} <small>{{ badge }}</small>{% endif %}</h2>
+        <p>{{ description }}</p>
+        {% include 'partials/home/button.html' with href=buttonHref label=buttonLabel only %}
+      </div>
+    </div>
+    <div class="path-preview">{% include visual %}</div>
+  </div>
+</section>

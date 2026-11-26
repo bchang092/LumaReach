@@ -1,0 +1,23 @@
+{
+  "phase": 1,
+  "checked_date": "2026-10-24",
+  "test_command": "python3 -B scripts/test_tag_audit.py",
+  "test_methods_passed": 24,
+  "test_methods_failed": 0,
+  "generated_negation_variants": 2000,
+  "source_records_validated": 1362,
+  "evidence_assignments_validated": 4928,
+  "independent_evaluation_cases_prepared": 64,
+  "crisis_cases_prepared": 10,
+  "live_matching_cases_executed": 0,
+  "mcp_protocol_tests_executed": 0,
+  "migration_cli_executed": false,
+  "migration_filesystem_paths_executed": false,
+  "active_tag_sidecar_exists": false,
+  "source_sha256": "d36da671b9ec19ef8b94aa6512682bbcefb987b82567f07775cc084baa138d41",
+  "limitations": [
+    "Pure migration planning and rollback guards were tested, not migration filesystem writes.",
+    "Ranking precision, crisis routing performance, voice behavior and live MCP functionality are not yet evaluated.",
+    "All proposed tags remain unapproved."
+  ]
+}

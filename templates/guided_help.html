@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Guided Help · {{ site_name }}{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'intake.css' %}">
+{% include 'partials/site_header.html' %}
+<main class="help-start">
+  <a class="exit" href="https://www.weather.gov/" rel="noreferrer">Leave this page</a>
+  <h1 class="page-title">Guided Help</h1>
+  <p>How would you like to find help?</p>
+  <div class="help-paths">
+    <section class="help-path">
+      <h2>Default questionnaire</h2>
+      <p>Answer questions about your situation and get a help plan organized by priority. You can skip questions.</p>
+      <a href="{% url 'questionnaire' %}">Start the questionnaire <span aria-hidden="true">→</span></a>
+    </section>
+    <section class="help-path">
+      <h2>MCP resource search</h2>
+      <p>Choose a service or describe what you need. The MCP server finds up to ten matching resources.</p>
+      <a href="{% url 'mcp_search' %}">Search with MCP <span aria-hidden="true">→</span></a>
+    </section>
+  </div>
+</main>
+{% include 'partials/page_activity.html' with page_key='guided' %}
+{% endblock %}

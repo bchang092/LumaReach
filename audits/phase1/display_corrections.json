@@ -1,0 +1,11 @@
+{
+  "status": "display_only_proposal_not_applied",
+  "source_sha256": "d36da671b9ec19ef8b94aa6512682bbcefb987b82567f07775cc084baa138d41",
+  "policy": "Preserve the workbook and source evidence. Apply these only to a separate display layer after integration; never rewrite protected reliability metadata.",
+  "corrections": [
+    {"resource_id": 1039, "field": "Description", "old_text": "It operate s the", "new_text": "It operates the"},
+    {"resource_id": 1239, "field": "Description", "old_text": "Residential Services- Lebel 2", "new_text": "Residential Services- Level 2"},
+    {"resource_id": 1309, "field": "Description", "old_text": "andPrint and online tools", "new_text": "and print and online tools"}
+  ],
+  "display_header_alias": {"Cateogry of Help": "Category of Help"}
+}

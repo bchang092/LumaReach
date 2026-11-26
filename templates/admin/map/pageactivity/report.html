@@ -1,0 +1,13 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<nav aria-label="Reporting period">{% for period in periods %}
+  <a href="?days={{ period }}" {% if period == days %}aria-current="page"{% endif %}>{% if period == days %}<strong>{% endif %}{% if period == 1 %}Today{% else %}Last {{ period }} days{% endif %}{% if period == days %}</strong>{% endif %}</a>{% if not forloop.last %} · {% endif %}
+{% endfor %}</nav>
+<p>{{ start|date:"M j" }} – {{ end|date:"M j, Y" }} · Baltimore time</p>
+<div style="overflow-x:auto"><table>
+  <caption>Page loads, clicks and responses to “Was this page helpful?”</caption>
+  <thead><tr><th>Page</th><th>Views</th><th>Clicks</th><th>Yes</th><th>No</th></tr></thead>
+  <tbody>{% for row in rows %}<tr><th scope="row">{{ row.label }}</th><td>{{ row.views }}</td><td>{{ row.clicks }}</td><td>{{ row.helpful }}</td><td>{{ row.unhelpful }}</td></tr>{% endfor %}</tbody>
+  <tfoot><tr><th scope="row">Total</th><td>{{ totals.views }}</td><td>{{ totals.clicks }}</td><td>{{ totals.helpful }}</td><td>{{ totals.unhelpful }}</td></tr></tfoot>
+</table></div><p>Counts come from browsers with JavaScript enabled. Repeat visits count separately. Feedback votes are excluded from click totals.</p>
+{% endblock %}

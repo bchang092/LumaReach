@@ -1,0 +1,3 @@
+{% extends 'base.html' %}{% load static %}{% block title %}Immediate support · {{ site_name }}{% endblock %}{% block content %}
+<link rel="stylesheet" href="{% static 'intake.css' %}"><main><section class="crisis"><h1 class="page-title">Get immediate support</h1><p>If there is immediate danger or a medical emergency, contact emergency services now.</p>{% for resource in resources %}<article><h2>{{ resource.name }}</h2><p>{{ resource.description }}</p><a href="{% if resource.phone_link %}{{ resource.phone_link }}{% else %}tel:{{ resource.phone }}{% endif %}">Call {{ resource.phone }}</a></article>{% endfor %}</section><p><a href="{% url 'intake' %}">Return to guided help</a></p></main>{% include "partials/page_activity.html" with page_key="crisis" %}
+{% endblock %}

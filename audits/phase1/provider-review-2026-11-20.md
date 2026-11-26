@@ -1,0 +1,13 @@
+# Provider website tag review, November 20, 2026
+
+Five directory records were checked against service descriptions published by three providers. The decisions below concern service fit at the listed locations. The workbook's reliability scores, historical verification dates and eligibility facts were left intact.
+
+| ID and listing | Finding and directory decision | Provider evidence |
+|---|---|---|
+| 42 · Paul’s Place | Confirmed all five service tags at Ward Street: prepared meals, ID assistance, housing navigation, case management, and free clothing through the marketplace. | [Programs](https://paulsplaceoutreach.org/what-we-do/) and [Ward Street marketplace](https://paulsplaceoutreach.org/about/) |
+| 48 · Health Care for the Homeless, 421 Fallsway | Downtown services corroborate the medical care, substance use treatment, case management and benefits navigation tags. Added dental care and clinical mental health tags, both also named in the workbook description. The weekend program listed is the MAT clinic. The weekend tag remains site-level only. | [Downtown hours and services](https://www.hchmd.org/hours-and-locations) |
+| 678 · House of Ruth Maryland, 2201 Argonne Drive | The provider lists counseling, legal services and rapid rehousing at this office. Changed emergency shelter to location unconfirmed and childcare to residents only. | [Office services](https://hruth.org/services/) and [childcare program](https://hruth.org/service/childrens-services/) |
+| 1169 · House of Ruth Maryland, 2521 N Charles Street | The Community Engagement Center lists an abuse intervention program. Changed shelter, survivor support and legal aid to location unconfirmed and childcare to residents only. | [Office services](https://hruth.org/services/) and [childcare program](https://hruth.org/service/childrens-services/) |
+| 1171 · House of Ruth Maryland, 1400 E North Avenue | The Baltimore City District Court location provides legal assistance for survivors. Retained those direct-service tags. Changed shelter to location unconfirmed and childcare to residents only. | [Clinic locations](https://hruth.org/service/free-legal-services/), [office services](https://hruth.org/services/) and [childcare program](https://hruth.org/service/childrens-services/) |
+
+House of Ruth confirms shelter and licensed childcare at the organization level. Its childcare program serves families enrolled in emergency shelter or transitional housing. These narrower scopes remove the three office addresses from direct shelter and childcare searches. [Shelter program](https://hruth.org/service/shelter/)

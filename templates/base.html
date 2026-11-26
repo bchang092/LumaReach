@@ -1,8 +1,9 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>{% block title %}Baltimore Lifeline{% endblock %}</title>
+  <title>{% block title %}{{ site_name }}{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Favicon (tab icon) -->
@@ -10,6 +11,7 @@
   <!-- Optional fallbacks to cover all browsers -->
   <link rel="shortcut icon" href="/static/BaltimoreLifelineIcon.png?v=3">
   <link rel="apple-touch-icon" href="/static/BaltimoreLifelineIcon.png?v=3">
+<link rel="stylesheet" href="{% static 'page_titles.css' %}">
 </head>
 <body>
   {% block content %}{% endblock %}

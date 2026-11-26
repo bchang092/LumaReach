@@ -1,0 +1,5 @@
+<a class="section-button" href="{{ href }}"{% if external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ label }}
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    {% if external %}<path d="M14 3h7v7m0-7L10 14M10 6H4v14h14v-6"/>{% else %}<path d="M3 12h17m-7-7 7 7-7 7"/>{% endif %}
+  </svg>
+</a>

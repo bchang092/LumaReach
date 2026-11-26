@@ -1,0 +1,5571 @@
+{
+  "snapshot": "Original workbook, before triage integration",
+  "source_sha256": "d36da671b9ec19ef8b94aa6512682bbcefb987b82567f07775cc084baa138d41",
+  "total_resources": 1362,
+  "actual_tag_columns": [],
+  "tags_in_use": {},
+  "resources_with_zero_tags": [
+    {
+      "resource_id": 1.0,
+      "name": "The Community Resource Center"
+    },
+    {
+      "resource_id": 2,
+      "name": "Northern Community Action"
+    },
+    {
+      "resource_id": 3,
+      "name": "Behavioral Health System Baltimore"
+    },
+    {
+      "resource_id": 4,
+      "name": "Unlimited Bounds Human Services"
+    },
+    {
+      "resource_id": 5,
+      "name": "People Encouraging People"
+    },
+    {
+      "resource_id": 6,
+      "name": "Maryland Department of Human Services"
+    },
+    {
+      "resource_id": 7,
+      "name": "Project Plase"
+    },
+    {
+      "resource_id": 8,
+      "name": "Park West Health System"
+    },
+    {
+      "resource_id": 9,
+      "name": "Total Health Care - Saratoga Health Center"
+    },
+    {
+      "resource_id": 10,
+      "name": "Harbel Community Organization"
+    },
+    {
+      "resource_id": 11,
+      "name": "The Forge of The BIT Center"
+    },
+    {
+      "resource_id": 12,
+      "name": "LifeSpring Counseling"
+    },
+    {
+      "resource_id": 13,
+      "name": "CarePoint Response"
+    },
+    {
+      "resource_id": 14,
+      "name": "Beans & Bread"
+    },
+    {
+      "resource_id": 15,
+      "name": "Manna House Inc"
+    },
+    {
+      "resource_id": 16,
+      "name": "Sheppard Pratt - Towson Campus"
+    },
+    {
+      "resource_id": 17,
+      "name": "Enoch Pratt Free Library - Central Library"
+    },
+    {
+      "resource_id": 18,
+      "name": "Chana Helpline"
+    },
+    {
+      "resource_id": 19,
+      "name": "Turnaround Inc"
+    },
+    {
+      "resource_id": 20,
+      "name": "Catholic Charities Head Start of Baltimore City"
+    },
+    {
+      "resource_id": 21,
+      "name": "Strong City Baltimore"
+    },
+    {
+      "resource_id": 22,
+      "name": "Weinberg Housing and Resource Center"
+    },
+    {
+      "resource_id": 23,
+      "name": "Northwest Career Center (Background Friendly Job Center)"
+    },
+    {
+      "resource_id": 24,
+      "name": "Employment Connection Center"
+    },
+    {
+      "resource_id": 25,
+      "name": "Eastside Career Center"
+    },
+    {
+      "resource_id": 26,
+      "name": "Maryland New Directions Inc"
+    },
+    {
+      "resource_id": 27,
+      "name": "Job Opportunities Task Force"
+    },
+    {
+      "resource_id": 28,
+      "name": "Vehicles for Change Corporate Office"
+    },
+    {
+      "resource_id": 29,
+      "name": "St. Luke's Church on the Avenue"
+    },
+    {
+      "resource_id": 30,
+      "name": "Church of the Guardian Angel"
+    },
+    {
+      "resource_id": 31,
+      "name": "Dayspring Inc."
+    },
+    {
+      "resource_id": 32,
+      "name": "CASH Campaign of Maryland"
+    },
+    {
+      "resource_id": 33,
+      "name": "Maryland Food Bank"
+    },
+    {
+      "resource_id": 34,
+      "name": "Our Daily Bread Employment Center"
+    },
+    {
+      "resource_id": 35,
+      "name": "Moveable Feast"
+    },
+    {
+      "resource_id": 36,
+      "name": "Franciscan Center"
+    },
+    {
+      "resource_id": 37,
+      "name": "FLO - Friendly Loving Opportunities | ReBorn Store |NonProfit Organization in Baltimore"
+    },
+    {
+      "resource_id": 38,
+      "name": "Bea Gaddy Family Center Inc"
+    },
+    {
+      "resource_id": 39,
+      "name": "So What Else"
+    },
+    {
+      "resource_id": 40,
+      "name": "40 West Assistance & Referral Center"
+    },
+    {
+      "resource_id": 41,
+      "name": "Fishes & Loaves Pantry"
+    },
+    {
+      "resource_id": 42,
+      "name": "Paul's Place, Inc"
+    },
+    {
+      "resource_id": 43,
+      "name": "St. Francis Neighborhood Center"
+    },
+    {
+      "resource_id": 44,
+      "name": "Manna House Inc"
+    },
+    {
+      "resource_id": 45,
+      "name": "St. Peter the Apostle Roman Catholic Church"
+    },
+    {
+      "resource_id": 46,
+      "name": "Charm City Care Connection"
+    },
+    {
+      "resource_id": 47,
+      "name": "Chase Brexton Health Care - Mt. Vernon Center"
+    },
+    {
+      "resource_id": 48,
+      "name": "Health Care for the Homeless"
+    },
+    {
+      "resource_id": 49,
+      "name": "Baltimore Medical System – Belair-Edison"
+    },
+    {
+      "resource_id": 50,
+      "name": "Total Health Care"
+    },
+    {
+      "resource_id": 51,
+      "name": "Esperanza Center"
+    },
+    {
+      "resource_id": 52,
+      "name": "Ascension Saint Agnes Hospital"
+    },
+    {
+      "resource_id": 53,
+      "name": "The Johns Hopkins Hospital"
+    },
+    {
+      "resource_id": 54,
+      "name": "MedStar Harbor Hospital"
+    },
+    {
+      "resource_id": 55,
+      "name": "The Baltimore Station"
+    },
+    {
+      "resource_id": 56,
+      "name": "REACH Health Services"
+    },
+    {
+      "resource_id": 57,
+      "name": "Dee's Place Wellness & Recovery Center"
+    },
+    {
+      "resource_id": 58,
+      "name": "At Jacobs Well Inc"
+    },
+    {
+      "resource_id": 59,
+      "name": "Pleasant Housing Inc."
+    },
+    {
+      "resource_id": 60,
+      "name": "Women’s Housing Coalition"
+    },
+    {
+      "resource_id": 61,
+      "name": "VA Baltimore Regional Office"
+    },
+    {
+      "resource_id": 62,
+      "name": "Baltimore VA Medical Center - VA Maryland Health Care System"
+    },
+    {
+      "resource_id": 63,
+      "name": "Loch Raven VA Outpatient Clinic - VA Maryland Health Care System"
+    },
+    {
+      "resource_id": 64,
+      "name": "Beacon of Hope Recovery Community Center"
+    },
+    {
+      "resource_id": 65,
+      "name": "SPARC, A Center for Women"
+    },
+    {
+      "resource_id": 66,
+      "name": "Youth Empowered Society"
+    },
+    {
+      "resource_id": 67,
+      "name": "Baltimore City Public Schools District office"
+    },
+    {
+      "resource_id": 68,
+      "name": "J.O.Y. Baltimore"
+    },
+    {
+      "resource_id": 69,
+      "name": "NCIA Youth in Transition School"
+    },
+    {
+      "resource_id": 70,
+      "name": "Springboard Community Services"
+    },
+    {
+      "resource_id": 71,
+      "name": "Catherine’s Family & Youth Services Inc"
+    },
+    {
+      "resource_id": 72,
+      "name": "The Church Of The Redeemed of The Lord"
+    },
+    {
+      "resource_id": 73,
+      "name": "Outcast Food Network"
+    },
+    {
+      "resource_id": 74,
+      "name": "RCCG Mercy Court, Baltimore"
+    },
+    {
+      "resource_id": 75,
+      "name": "Word & Praise Ministry"
+    },
+    {
+      "resource_id": 76,
+      "name": "Langston Hughes Community, Business & Resource Center"
+    },
+    {
+      "resource_id": 77,
+      "name": "Stepping Stones"
+    },
+    {
+      "resource_id": 78,
+      "name": "United House of Prayer - Food Distribution Center"
+    },
+    {
+      "resource_id": 79,
+      "name": "Donald Bentley Food Pantry"
+    },
+    {
+      "resource_id": 80,
+      "name": "Spirit Of Faith Deliverance Church"
+    },
+    {
+      "resource_id": 81,
+      "name": "Assistance Center of Towson Churches (ACTC)"
+    },
+    {
+      "resource_id": 82,
+      "name": "Samaritan Community"
+    },
+    {
+      "resource_id": 83,
+      "name": "St.Gregory the Great Catholic Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 84,
+      "name": "Druid Hill YMCA"
+    },
+    {
+      "resource_id": 85,
+      "name": "St. Cecilia Catholic Church"
+    },
+    {
+      "resource_id": 86,
+      "name": "Mount Moriah Baptist Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 87,
+      "name": "Trinity Presbyterian Church"
+    },
+    {
+      "resource_id": 88,
+      "name": "Concord Baptist Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 89,
+      "name": "Whitestone Baptist Church"
+    },
+    {
+      "resource_id": 90,
+      "name": "St. James Episcopal Church"
+    },
+    {
+      "resource_id": 91,
+      "name": "Babcock Presbyterian Church"
+    },
+    {
+      "resource_id": 92,
+      "name": "Knox Presbyterian Church"
+    },
+    {
+      "resource_id": 93,
+      "name": "New Mt Zion Baptist Church"
+    },
+    {
+      "resource_id": 94,
+      "name": "Angels Helping Angels"
+    },
+    {
+      "resource_id": 95,
+      "name": "People's Church of Baltimore"
+    },
+    {
+      "resource_id": 96,
+      "name": "friendship outreach center"
+    },
+    {
+      "resource_id": 97,
+      "name": "The Central Baptist Church of Baltimore City"
+    },
+    {
+      "resource_id": 98,
+      "name": "St. Vincent de Paul Church"
+    },
+    {
+      "resource_id": 99,
+      "name": "Grace and Hope Mission - Food Distribution Center"
+    },
+    {
+      "resource_id": 100,
+      "name": "The Door Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 101,
+      "name": "Epiphany Lutheran"
+    },
+    {
+      "resource_id": 102,
+      "name": "Benedict's Pantry"
+    },
+    {
+      "resource_id": 103,
+      "name": "The Pillar Worship Center"
+    },
+    {
+      "resource_id": 104,
+      "name": "The Pillar Worship Center"
+    },
+    {
+      "resource_id": 105,
+      "name": "Macedonia Project - Food Distribution Center"
+    },
+    {
+      "resource_id": 106,
+      "name": "Breath of God Lutheran Church"
+    },
+    {
+      "resource_id": 107,
+      "name": "The Y in Parkville"
+    },
+    {
+      "resource_id": 108,
+      "name": "Mount Pleasant Development Corporation"
+    },
+    {
+      "resource_id": 109,
+      "name": "Baltimore Vet Center"
+    },
+    {
+      "resource_id": 110,
+      "name": "Loch Raven VA Medical Center - VA Maryland Health Care System"
+    },
+    {
+      "resource_id": 111,
+      "name": "NCIA Herbert J. Hoelter Professional Training Center"
+    },
+    {
+      "resource_id": 112,
+      "name": "Marian House"
+    },
+    {
+      "resource_id": 113,
+      "name": "Soul Harvest Church-Ministries"
+    },
+    {
+      "resource_id": 114,
+      "name": "Trinity New Birth International Christian"
+    },
+    {
+      "resource_id": 115,
+      "name": "Stillmeadow Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 116,
+      "name": "ICNA Relief Maryland"
+    },
+    {
+      "resource_id": 117,
+      "name": "Woodlawn Park Church of Christ"
+    },
+    {
+      "resource_id": 118,
+      "name": "St. Francis Episcopal Parish"
+    },
+    {
+      "resource_id": 119,
+      "name": "Deaf Shalom Zone"
+    },
+    {
+      "resource_id": 120,
+      "name": "Our Lady of Victory - Food Pantry"
+    },
+    {
+      "resource_id": 121,
+      "name": "The Good Shepherd Church of God in Christ"
+    },
+    {
+      "resource_id": 122,
+      "name": "Liberty Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 123,
+      "name": "Christ the King Episcopal Church"
+    },
+    {
+      "resource_id": 124,
+      "name": "Jesus House Baltimore - Food Distribution Center"
+    },
+    {
+      "resource_id": 125,
+      "name": "Loaves & Fishes at Mount Olive - Food Distribution Center"
+    },
+    {
+      "resource_id": 126,
+      "name": "Community Assistance Network"
+    },
+    {
+      "resource_id": 127,
+      "name": "Cherry Hill United Methodist Church Food Program - Food Distribution Center"
+    },
+    {
+      "resource_id": 128,
+      "name": "Catonsville Emergency Assistance"
+    },
+    {
+      "resource_id": 129,
+      "name": "Holy Nativity Lutheran Church"
+    },
+    {
+      "resource_id": 130,
+      "name": "Saint Clement Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 131,
+      "name": "Women's Missionary Outreach - Food Distribution Center"
+    },
+    {
+      "resource_id": 132,
+      "name": "Life Source International Church"
+    },
+    {
+      "resource_id": 133,
+      "name": "Gethsemane Sanctuary Baltimore"
+    },
+    {
+      "resource_id": 134,
+      "name": "City of Refuge Baltimore- Main Campus"
+    },
+    {
+      "resource_id": 135,
+      "name": "Rehoboth Church Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 136,
+      "name": "The Transformation Center"
+    },
+    {
+      "resource_id": 137,
+      "name": "Rosedale Baptist Church"
+    },
+    {
+      "resource_id": 138,
+      "name": "St John's Evangelical Lutheran Church"
+    },
+    {
+      "resource_id": 139,
+      "name": "Essex United Methodist Church Food Program - Food Distribution Center"
+    },
+    {
+      "resource_id": 140,
+      "name": "Victory Villa Baptist Church"
+    },
+    {
+      "resource_id": 141,
+      "name": "Love Thy Neighbor Food Pantry"
+    },
+    {
+      "resource_id": 142,
+      "name": "Bridgeway Community Church - Columbia Campus"
+    },
+    {
+      "resource_id": 143,
+      "name": "Pleasant Zion Youth Outreach Center - Food Distribution Center"
+    },
+    {
+      "resource_id": 144,
+      "name": "Community Crisis Center Inc"
+    },
+    {
+      "resource_id": 145,
+      "name": "Reisterstown United Methodist Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 146,
+      "name": "11832 Eastern Ave 410 335 7772"
+    },
+    {
+      "resource_id": 147,
+      "name": "Bridgeway Community Cupboard - Food Pantry"
+    },
+    {
+      "resource_id": 148,
+      "name": "Food and Care For All (FCFA)"
+    },
+    {
+      "resource_id": 149,
+      "name": "Edgemere Church of God"
+    },
+    {
+      "resource_id": 150,
+      "name": "Rock & Steward Ministry Outreach - Food Distribution Center"
+    },
+    {
+      "resource_id": 151,
+      "name": "Saint John Baptist Church - Food Pantry"
+    },
+    {
+      "resource_id": 152,
+      "name": "J & C Unity - Food Distribution Center"
+    },
+    {
+      "resource_id": 153,
+      "name": "Heritage Community Church"
+    },
+    {
+      "resource_id": 154,
+      "name": "Tabitha's House at Fallston"
+    },
+    {
+      "resource_id": 155,
+      "name": "Trinity Lutheran Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 156,
+      "name": "Howard County Food Bank"
+    },
+    {
+      "resource_id": 157,
+      "name": "Harford Community Action Agency-Energy Assistance & Food Bank"
+    },
+    {
+      "resource_id": 158,
+      "name": "The Y in Pasadena"
+    },
+    {
+      "resource_id": 159,
+      "name": "Wesley Freedom Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 160,
+      "name": "Celestial Manna"
+    },
+    {
+      "resource_id": 161,
+      "name": "The EPICENTER at Edgewood"
+    },
+    {
+      "resource_id": 162,
+      "name": "St Joseph Catholic Church"
+    },
+    {
+      "resource_id": 163,
+      "name": "River of Life Worship Center (formerly Full Gospel Emancipation Church)"
+    },
+    {
+      "resource_id": 164,
+      "name": "Crosspoint Community Church"
+    },
+    {
+      "resource_id": 165,
+      "name": "Manna House Soup Kitchen - Food Distribution Center"
+    },
+    {
+      "resource_id": 166,
+      "name": "Glenelg United Methodist Church"
+    },
+    {
+      "resource_id": 167,
+      "name": "Open Door Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 168,
+      "name": "Morgan Chapel United Methodist Church"
+    },
+    {
+      "resource_id": 169,
+      "name": "Rock of Help Food Pantry - Food Distribution Center"
+    },
+    {
+      "resource_id": 170,
+      "name": "Deeds of Faith Food Pantry"
+    },
+    {
+      "resource_id": 171,
+      "name": "Westminster Rescue Mission"
+    },
+    {
+      "resource_id": 172,
+      "name": "Carroll County Food Sunday"
+    },
+    {
+      "resource_id": 173,
+      "name": "Mason-Dixon Community Services"
+    },
+    {
+      "resource_id": 174,
+      "name": "The Light House, Inc."
+    },
+    {
+      "resource_id": 175,
+      "name": "The Children's Guild School of Baltimore"
+    },
+    {
+      "resource_id": 176,
+      "name": "Rock Hall Seventh-day Adventist Church"
+    },
+    {
+      "resource_id": 177,
+      "name": "Grace United Methodist Church"
+    },
+    {
+      "resource_id": 178,
+      "name": "The EPICENTER at Aberdeen"
+    },
+    {
+      "resource_id": 179,
+      "name": "Chosen CDC"
+    },
+    {
+      "resource_id": 180,
+      "name": "Riva Trace Baptist Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 181,
+      "name": "Salvation Army"
+    },
+    {
+      "resource_id": 182,
+      "name": "Community Food Pantry"
+    },
+    {
+      "resource_id": 183,
+      "name": "New Victory Community 100 - Food Distribution Center"
+    },
+    {
+      "resource_id": 184,
+      "name": "Ray of Hope Mission Center"
+    },
+    {
+      "resource_id": 185,
+      "name": "Brian Safe Haven"
+    },
+    {
+      "resource_id": 186,
+      "name": "Haven Ministries - Food Pantry"
+    },
+    {
+      "resource_id": 187,
+      "name": "Our Mother of Sorrows - Food Distribution Center"
+    },
+    {
+      "resource_id": 188,
+      "name": "Walkersville Food Bank"
+    },
+    {
+      "resource_id": 189,
+      "name": "Gale House"
+    },
+    {
+      "resource_id": 190,
+      "name": "Frederick Rescue Mission"
+    },
+    {
+      "resource_id": 191,
+      "name": "Millington-Crumpton Food Pantry - Asbury United Methodist Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 192,
+      "name": "Emmitsburg Food Bank - Food Distribution Center"
+    },
+    {
+      "resource_id": 193,
+      "name": "Chesapeake City Ecumenical Association"
+    },
+    {
+      "resource_id": 194,
+      "name": "Emmanuel Trinity Lutheran Church"
+    },
+    {
+      "resource_id": 195,
+      "name": "St Michaels Community Center"
+    },
+    {
+      "resource_id": 196,
+      "name": "Thurmont Food Bank"
+    },
+    {
+      "resource_id": 197,
+      "name": "Cecil County Help Center"
+    },
+    {
+      "resource_id": 198,
+      "name": "Martin's House & Barn"
+    },
+    {
+      "resource_id": 199,
+      "name": "Chesapeake Cares Food Pantry"
+    },
+    {
+      "resource_id": 200,
+      "name": "Harvest of Hope - Food Pantry Easton Church of God"
+    },
+    {
+      "resource_id": 201,
+      "name": "Hampden United Methodist Church"
+    },
+    {
+      "resource_id": 202,
+      "name": "First Saints Community Church"
+    },
+    {
+      "resource_id": 203,
+      "name": "Wesley Freedom United Methodist Church"
+    },
+    {
+      "resource_id": 204,
+      "name": "Shepherd's Table Inc."
+    },
+    {
+      "resource_id": 205,
+      "name": "Our Place Waldorf Soup Kitchen"
+    },
+    {
+      "resource_id": 206,
+      "name": "St. Mary's Caring Soup Kitchen"
+    },
+    {
+      "resource_id": 207,
+      "name": "New Metropolitan Baptist Church"
+    },
+    {
+      "resource_id": 208,
+      "name": "Horizon Goodwill Industries Resource Center"
+    },
+    {
+      "resource_id": 209,
+      "name": "First Baptist Church"
+    },
+    {
+      "resource_id": 210,
+      "name": "Viva House"
+    },
+    {
+      "resource_id": 211,
+      "name": "Amazing Grace Evangelical Lutheran Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 212,
+      "name": "The Hope Center at Hagerstown Rescue Mission"
+    },
+    {
+      "resource_id": 213,
+      "name": "Brooklyn Community United Methodist Church"
+    },
+    {
+      "resource_id": 214,
+      "name": "Salisbury Urban Ministries"
+    },
+    {
+      "resource_id": 215,
+      "name": "Ocean City Baptist Church"
+    },
+    {
+      "resource_id": 216,
+      "name": "House of Hope"
+    },
+    {
+      "resource_id": 217,
+      "name": "Perkins Square Baptist Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 218,
+      "name": "Salvation Army Carroll County"
+    },
+    {
+      "resource_id": 219,
+      "name": "My Brother’s Keeper"
+    },
+    {
+      "resource_id": 220,
+      "name": "Calvary Baptist Church"
+    },
+    {
+      "resource_id": 221,
+      "name": "#1 Adoring Adult Care"
+    },
+    {
+      "resource_id": 222,
+      "name": "A&W Assisted Living"
+    },
+    {
+      "resource_id": 223,
+      "name": "A Caring Place Senior Assisted"
+    },
+    {
+      "resource_id": 224,
+      "name": "A Gift From Virgo LLC"
+    },
+    {
+      "resource_id": 225,
+      "name": "ACS Home Care, Absolute Care Services LLC"
+    },
+    {
+      "resource_id": 226,
+      "name": "Abundant Life Towers II"
+    },
+    {
+      "resource_id": 227,
+      "name": "Abundant Life Towers I"
+    },
+    {
+      "resource_id": 228,
+      "name": "ACTION IN MATURITY"
+    },
+    {
+      "resource_id": 229,
+      "name": "Active Day of Baltimore"
+    },
+    {
+      "resource_id": 230,
+      "name": "Active Day of Parkville"
+    },
+    {
+      "resource_id": 231,
+      "name": "Active Day of Randallstown"
+    },
+    {
+      "resource_id": 232,
+      "name": "Active Life Adult Medical Day Center"
+    },
+    {
+      "resource_id": 233,
+      "name": "Activities Adult Medical Daycare"
+    },
+    {
+      "resource_id": 234,
+      "name": "Adult Medical Day Care"
+    },
+    {
+      "resource_id": 235,
+      "name": "Advanced Rehab"
+    },
+    {
+      "resource_id": 236,
+      "name": "Advantage Housing Assisted Living, llc"
+    },
+    {
+      "resource_id": 237,
+      "name": "Agape Assisted Living Home"
+    },
+    {
+      "resource_id": 238,
+      "name": "Ahepa Senior Apartments"
+    },
+    {
+      "resource_id": 239,
+      "name": "Aigburth Vale Senior Apartment"
+    },
+    {
+      "resource_id": 240,
+      "name": "AJ Manor Assisted Living, LLC"
+    },
+    {
+      "resource_id": 241,
+      "name": "Alcott Place Apartments"
+    },
+    {
+      "resource_id": 242,
+      "name": "Autumn Lake Healthcare at Alice Manor"
+    },
+    {
+      "resource_id": 243,
+      "name": "Alice Manor Adult Med Daycare"
+    },
+    {
+      "resource_id": 244,
+      "name": "All Together Network Inc"
+    },
+    {
+      "resource_id": 245,
+      "name": "Almost Home II Assisted Living, Inc."
+    },
+    {
+      "resource_id": 246,
+      "name": "Always Best Care Senior Services - Home Care Services in Parkville"
+    },
+    {
+      "resource_id": 247,
+      "name": "Ambrozean Care Center Inc"
+    },
+    {
+      "resource_id": 248,
+      "name": "Angel Core Home of Care LLC"
+    },
+    {
+      "resource_id": 249,
+      "name": "Angels Among Us Assisted Living"
+    },
+    {
+      "resource_id": 250,
+      "name": "APELLYO HOMECARE/ASSISTED LIVING, LLC"
+    },
+    {
+      "resource_id": 251,
+      "name": "Apostolic Towers"
+    },
+    {
+      "resource_id": 252,
+      "name": "Arbutus Senior Center"
+    },
+    {
+      "resource_id": 253,
+      "name": "Arden Courts (Pikesville)"
+    },
+    {
+      "resource_id": 254,
+      "name": "Arden Courts (Towson)"
+    },
+    {
+      "resource_id": 255,
+      "name": "Arising Care Assisted Living"
+    },
+    {
+      "resource_id": 256,
+      "name": "Arlington Estates Co-op Apartments"
+    },
+    {
+      "resource_id": 257,
+      "name": "Autumn Lake Healthcare at Arlington West"
+    },
+    {
+      "resource_id": 258,
+      "name": "The Arrow Center For Education - Tangram"
+    },
+    {
+      "resource_id": 259,
+      "name": "Assisted Living at Buckingham Manor"
+    },
+    {
+      "resource_id": 260,
+      "name": "Complete Care at Heritage"
+    },
+    {
+      "resource_id": 261,
+      "name": "Complete Care at Multi-Medical Center"
+    },
+    {
+      "resource_id": 262,
+      "name": "Ateaze Senior Center"
+    },
+    {
+      "resource_id": 263,
+      "name": "Atrium Village by Cogir"
+    },
+    {
+      "resource_id": 264,
+      "name": "North Oaks"
+    },
+    {
+      "resource_id": 265,
+      "name": "Aventura at the Heights"
+    },
+    {
+      "resource_id": 266,
+      "name": "Aventura at the Park"
+    },
+    {
+      "resource_id": 267,
+      "name": "Avila Home Care"
+    },
+    {
+      "resource_id": 268,
+      "name": "Baltimore Adult Medical Day Center, LLC"
+    },
+    {
+      "resource_id": 269,
+      "name": "Baltimore County Office of Housing"
+    },
+    {
+      "resource_id": 270,
+      "name": "Basilica Place, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 271,
+      "name": "Beechwood Assisted Living"
+    },
+    {
+      "resource_id": 272,
+      "name": "Bellevieu Manchester Apartments"
+    },
+    {
+      "resource_id": 273,
+      "name": "Belvedere Green Apartments"
+    },
+    {
+      "resource_id": 274,
+      "name": "BestCare Assisted Living - Reisterstown South"
+    },
+    {
+      "resource_id": 275,
+      "name": "Blakehurst"
+    },
+    {
+      "resource_id": 276,
+      "name": "Blue Point Healthcare Center"
+    },
+    {
+      "resource_id": 277,
+      "name": "Bolton House"
+    },
+    {
+      "resource_id": 278,
+      "name": "Bolton North"
+    },
+    {
+      "resource_id": 279,
+      "name": "Benet House"
+    },
+    {
+      "resource_id": 280,
+      "name": "Bon Secours Hollins Terrace Apartments"
+    },
+    {
+      "resource_id": 281,
+      "name": "Bon Secours Smallwood Summit"
+    },
+    {
+      "resource_id": 282,
+      "name": "Bowley's Garden Villa Co-op Apartments"
+    },
+    {
+      "resource_id": 283,
+      "name": "Autumn Lake Healthcare at BridgePark"
+    },
+    {
+      "resource_id": 284,
+      "name": "Brightview Catonsville - Senior Assisted Living & Memory Care"
+    },
+    {
+      "resource_id": 285,
+      "name": "Brightview Hunt Valley (Now Open) - Senior Independent Living, Assisted Living, Memory Care"
+    },
+    {
+      "resource_id": 286,
+      "name": "Brightview Mays Chapel Ridge - Timonium Independent Living, Assisted Living, Memory Care"
+    },
+    {
+      "resource_id": 287,
+      "name": "Brightview Perry Hall - Senior Independent Living, Assisted Living, Memory Care"
+    },
+    {
+      "resource_id": 288,
+      "name": "Brightview Rolling Hills - Senior Independent, Assisted Living, Memory Care"
+    },
+    {
+      "resource_id": 289,
+      "name": "Brightview Towson - Senior Assisted Living, Memory Care, Enhanced Care"
+    },
+    {
+      "resource_id": 290,
+      "name": "Brightview White Marsh - Senior Assisted Living and Memory Care"
+    },
+    {
+      "resource_id": 291,
+      "name": "Broadmead"
+    },
+    {
+      "resource_id": 292,
+      "name": "Enoch Pratt Free Library - Brooklyn Branch"
+    },
+    {
+      "resource_id": 293,
+      "name": "Building Communities Today"
+    },
+    {
+      "resource_id": 294,
+      "name": "Bykota Senior Center"
+    },
+    {
+      "resource_id": 295,
+      "name": "Enoch Pratt Free Library - Canton Branch"
+    },
+    {
+      "resource_id": 296,
+      "name": "FutureCare Canton Harbor"
+    },
+    {
+      "resource_id": 297,
+      "name": "Care Matters Assisted Living"
+    },
+    {
+      "resource_id": 298,
+      "name": "Care Matters Inc"
+    },
+    {
+      "resource_id": 299,
+      "name": "Cared With Love Assisted Living, LLC"
+    },
+    {
+      "resource_id": 300,
+      "name": "Caring Hands Adult Medical Day Care of Dundalk"
+    },
+    {
+      "resource_id": 301,
+      "name": "Caring Hands AMDC of Greater Baltimore"
+    },
+    {
+      "resource_id": 302,
+      "name": "Caring Hearts Senior Living"
+    },
+    {
+      "resource_id": 303,
+      "name": "Caring Home Assisted Living"
+    },
+    {
+      "resource_id": 304,
+      "name": "Caritas House Assisted Living"
+    },
+    {
+      "resource_id": 305,
+      "name": "Carroll Park Healthcare"
+    },
+    {
+      "resource_id": 306,
+      "name": "Catering With Love Assisted Living, LLC"
+    },
+    {
+      "resource_id": 307,
+      "name": "Catonsville Senior Center"
+    },
+    {
+      "resource_id": 308,
+      "name": "Liberty Senior Center"
+    },
+    {
+      "resource_id": 309,
+      "name": "Eastern Family Resource Center"
+    },
+    {
+      "resource_id": 310,
+      "name": "Eastpoint Workforce Development"
+    },
+    {
+      "resource_id": 311,
+      "name": "Hunt Valley Career Center"
+    },
+    {
+      "resource_id": 312,
+      "name": "American Job Center at the Liberty Center"
+    },
+    {
+      "resource_id": 313,
+      "name": "CENTER FOR SOCIAL CHANGE"
+    },
+    {
+      "resource_id": 314,
+      "name": "Center Place Senior Apartments"
+    },
+    {
+      "resource_id": 315,
+      "name": "Chapel Hill Nursing & Rehabilitation Center"
+    },
+    {
+      "resource_id": 316,
+      "name": "Chapel Springs Apartments"
+    },
+    {
+      "resource_id": 317,
+      "name": "Charis Home Assisted Living"
+    },
+    {
+      "resource_id": 318,
+      "name": "C.R. Uncles Plaza Apartments"
+    },
+    {
+      "resource_id": 319,
+      "name": "Charlestown Senior Living Community"
+    },
+    {
+      "resource_id": 320,
+      "name": "Charter Senior Living of Towson"
+    },
+    {
+      "resource_id": 321,
+      "name": "Charter Senior Living of Woodholme Crossing"
+    },
+    {
+      "resource_id": 322,
+      "name": "Chase Brexton"
+    },
+    {
+      "resource_id": 323,
+      "name": "Enoch Pratt Free Library - Cherry Hill Branch"
+    },
+    {
+      "resource_id": 324,
+      "name": "Cherry Hill Senior Manor"
+    },
+    {
+      "resource_id": 325,
+      "name": "FutureCare - Cherrywood"
+    },
+    {
+      "resource_id": 326,
+      "name": "Cheryl's Place Assisted Living"
+    },
+    {
+      "resource_id": 327,
+      "name": "Christ Church Harbor Apartments Inc"
+    },
+    {
+      "resource_id": 328,
+      "name": "Enoch Pratt Free Library - Clifton Branch"
+    },
+    {
+      "resource_id": 329,
+      "name": "Cockeysville Senior Center"
+    },
+    {
+      "resource_id": 330,
+      "name": "Coel-Grant-Higgs Senior Center"
+    },
+    {
+      "resource_id": 331,
+      "name": "FutureCare - Cold Spring"
+    },
+    {
+      "resource_id": 332,
+      "name": "College Manor Assisted Living"
+    },
+    {
+      "resource_id": 333,
+      "name": "The Comforts Of Home Assisted Living"
+    },
+    {
+      "resource_id": 334,
+      "name": "Viva Senior Living at Cockeysville"
+    },
+    {
+      "resource_id": 335,
+      "name": "Community Caregivers Assisted Living"
+    },
+    {
+      "resource_id": 336,
+      "name": "Coursey Station, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 337,
+      "name": "FutureCare - Courtland"
+    },
+    {
+      "resource_id": 338,
+      "name": "Day Village Townhomes"
+    },
+    {
+      "resource_id": 339,
+      "name": "DePaul House, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 340,
+      "name": "Divine Enlargement LLC"
+    },
+    {
+      "resource_id": 341,
+      "name": "Dulaney Valley Assisted Living"
+    },
+    {
+      "resource_id": 342,
+      "name": "Dulaney Valley Assisted Living"
+    },
+    {
+      "resource_id": 343,
+      "name": "Dulaney Valley Memorial Gardens"
+    },
+    {
+      "resource_id": 344,
+      "name": "Easterseals Adult Day Services - Baltimore"
+    },
+    {
+      "resource_id": 345,
+      "name": "Eastern Baltimore County VA Outpatient Clinic - VA Maryland Health Care System"
+    },
+    {
+      "resource_id": 346,
+      "name": "Baltimore Eastern Sexual Health Clinic"
+    },
+    {
+      "resource_id": 347,
+      "name": "PACE of West Baltimore"
+    },
+    {
+      "resource_id": 348,
+      "name": "Edenwald Senior Living"
+    },
+    {
+      "resource_id": 349,
+      "name": "Edgemere Senior Center"
+    },
+    {
+      "resource_id": 350,
+      "name": "Enoch Pratt Free Library - Edmondson Avenue Branch"
+    },
+    {
+      "resource_id": 351,
+      "name": "Ednor Apartments at Stadium Place"
+    },
+    {
+      "resource_id": 352,
+      "name": "Edward A Myerberg Center"
+    },
+    {
+      "resource_id": 353,
+      "name": "Emmanuel Adult Medical Day Care Center"
+    },
+    {
+      "resource_id": 354,
+      "name": "Empowering Lives"
+    },
+    {
+      "resource_id": 355,
+      "name": "Epiphany house Apts"
+    },
+    {
+      "resource_id": 356,
+      "name": "Essex Co-op Apartments"
+    },
+    {
+      "resource_id": 357,
+      "name": "Essex Senior Center"
+    },
+    {
+      "resource_id": 358,
+      "name": "Everall Gardens, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 359,
+      "name": "Evergreen Senior Apartments"
+    },
+    {
+      "resource_id": 360,
+      "name": "Evision Medical Adult Day Center"
+    },
+    {
+      "resource_id": 361,
+      "name": "Fairspring Apartments"
+    },
+    {
+      "resource_id": 362,
+      "name": "FHCB Health System"
+    },
+    {
+      "resource_id": 363,
+      "name": "Family Ties Assisted Living"
+    },
+    {
+      "resource_id": 364,
+      "name": "Fayette Health and Rehabilitation Center"
+    },
+    {
+      "resource_id": 365,
+      "name": "Fidelity Resources Inc"
+    },
+    {
+      "resource_id": 366,
+      "name": "First Choice Health"
+    },
+    {
+      "resource_id": 367,
+      "name": "Fleming Senior Center"
+    },
+    {
+      "resource_id": 368,
+      "name": "Forest Haven Nursing and Rehabilitation Center"
+    },
+    {
+      "resource_id": 369,
+      "name": "Enoch Pratt Free Library - Forest Park Branch"
+    },
+    {
+      "resource_id": 370,
+      "name": "Forest Park Senior Center"
+    },
+    {
+      "resource_id": 371,
+      "name": "Frank, Frank & Scherr, LLC"
+    },
+    {
+      "resource_id": 372,
+      "name": "Franklin Square School Apartments"
+    },
+    {
+      "resource_id": 373,
+      "name": "Franklin Woods Center"
+    },
+    {
+      "resource_id": 374,
+      "name": "Frederick Villa Healthcare"
+    },
+    {
+      "resource_id": 375,
+      "name": "Friends & Family Adult Day Services"
+    },
+    {
+      "resource_id": 376,
+      "name": "Friendship at Rosedale Adult Medical Day Center"
+    },
+    {
+      "resource_id": 377,
+      "name": "Friendship at Owings Mills Adult Medical Day Center (formerly A Better Day)"
+    },
+    {
+      "resource_id": 378,
+      "name": "Gallagher Mansion"
+    },
+    {
+      "resource_id": 379,
+      "name": "George Peabody Library"
+    },
+    {
+      "resource_id": 380,
+      "name": "Glen Meadows Retirement Community"
+    },
+    {
+      "resource_id": 381,
+      "name": "Glory House Manor"
+    },
+    {
+      "resource_id": 382,
+      "name": "Golden Days Baltimore East Medical Adult Day Care"
+    },
+    {
+      "resource_id": 383,
+      "name": "Golden Pond Adult Day Program"
+    },
+    {
+      "resource_id": 384,
+      "name": "Golden Ring Co-op Apartments"
+    },
+    {
+      "resource_id": 385,
+      "name": "FutureCare - Good Samaritian"
+    },
+    {
+      "resource_id": 386,
+      "name": "Enoch Pratt Free Library - Govans Branch"
+    },
+    {
+      "resource_id": 387,
+      "name": "Grace Medical Center"
+    },
+    {
+      "resource_id": 388,
+      "name": "Greater Baltimore Medical Center"
+    },
+    {
+      "resource_id": 389,
+      "name": "Greater New Hope Towers"
+    },
+    {
+      "resource_id": 390,
+      "name": "Greenmount Senior Center"
+    },
+    {
+      "resource_id": 391,
+      "name": "Halcyone's House, LLC"
+    },
+    {
+      "resource_id": 392,
+      "name": "Enoch Pratt Free Library - Hamilton Branch"
+    },
+    {
+      "resource_id": 393,
+      "name": "Enoch Pratt Free Library - Hampden Branch"
+    },
+    {
+      "resource_id": 394,
+      "name": "Hampton Meadows Assisted Living"
+    },
+    {
+      "resource_id": 395,
+      "name": "Hanover Square Apartments"
+    },
+    {
+      "resource_id": 396,
+      "name": "Happy Time Adult Medical Day Care"
+    },
+    {
+      "resource_id": 397,
+      "name": "Harford Belair Community Mental Health Center"
+    },
+    {
+      "resource_id": 398,
+      "name": "Harlem Gardens"
+    },
+    {
+      "resource_id": 399,
+      "name": "Harmony Care Assisted Living Facility"
+    },
+    {
+      "resource_id": 400,
+      "name": "Harpers House Assisted Living, LLC."
+    },
+    {
+      "resource_id": 401,
+      "name": "Harvey Johnson Towers"
+    },
+    {
+      "resource_id": 402,
+      "name": "Baltimore Hatton Senior Center"
+    },
+    {
+      "resource_id": 403,
+      "name": "Healthy Life Adult Medical Day Center, LLC"
+    },
+    {
+      "resource_id": 404,
+      "name": "Heartfelt Care Providers ASSISTED LIVING"
+    },
+    {
+      "resource_id": 405,
+      "name": "Assisted Living Manager"
+    },
+    {
+      "resource_id": 406,
+      "name": "Heritage Adult Medical Daycare"
+    },
+    {
+      "resource_id": 407,
+      "name": "Heritage Run at Stadium Place 55+"
+    },
+    {
+      "resource_id": 408,
+      "name": "Enoch Pratt Free Library - Herring Run Branch"
+    },
+    {
+      "resource_id": 409,
+      "name": "High Road School of Baltimore County"
+    },
+    {
+      "resource_id": 410,
+      "name": "Highlandtown Plaza Co-op Apartments"
+    },
+    {
+      "resource_id": 411,
+      "name": "Holly Hill Healthcare Center"
+    },
+    {
+      "resource_id": 412,
+      "name": "Holy Korean Martyrs, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 413,
+      "name": "Homestyle Assisted Living, LLC"
+    },
+    {
+      "resource_id": 414,
+      "name": "Autumn Lake Healthcare at Homewood Center"
+    },
+    {
+      "resource_id": 415,
+      "name": "FutureCare - Homewood"
+    },
+    {
+      "resource_id": 416,
+      "name": "Hong Lok Adult Medical Day Care"
+    },
+    {
+      "resource_id": 417,
+      "name": "Hope Health Systems Inc"
+    },
+    {
+      "resource_id": 418,
+      "name": "John Hopkins Elderplus"
+    },
+    {
+      "resource_id": 419,
+      "name": "Hopkins Village"
+    },
+    {
+      "resource_id": 420,
+      "name": "Howell Care Facility"
+    },
+    {
+      "resource_id": 421,
+      "name": "Indecco Senior Apartments"
+    },
+    {
+      "resource_id": 422,
+      "name": "Inspirations Bayside Assisted Living & Memory Care"
+    },
+    {
+      "resource_id": 423,
+      "name": "Inspirations Memory Care of Lutherville"
+    },
+    {
+      "resource_id": 424,
+      "name": "Esther's Place at Pinewood"
+    },
+    {
+      "resource_id": 425,
+      "name": "Irvington Place"
+    },
+    {
+      "resource_id": 426,
+      "name": "J L Care Enterprises Inc"
+    },
+    {
+      "resource_id": 427,
+      "name": "Jacksonville Senior Center"
+    },
+    {
+      "resource_id": 428,
+      "name": "Jai Medical Center"
+    },
+    {
+      "resource_id": 429,
+      "name": "Jemicy School"
+    },
+    {
+      "resource_id": 430,
+      "name": "Johns Hopkins Bayview Medical Center"
+    },
+    {
+      "resource_id": 431,
+      "name": "Meyer Building"
+    },
+    {
+      "resource_id": 432,
+      "name": "Peabody Institute of The Johns Hopkins University"
+    },
+    {
+      "resource_id": 433,
+      "name": "Johnson Foundation Assisted Living"
+    },
+    {
+      "resource_id": 434,
+      "name": "Johnston Square Apartments"
+    },
+    {
+      "resource_id": 435,
+      "name": "Joyful Adult Medical Day Care Center"
+    },
+    {
+      "resource_id": 436,
+      "name": "Joyous Living"
+    },
+    {
+      "resource_id": 437,
+      "name": "Julie's Manor"
+    },
+    {
+      "resource_id": 438,
+      "name": "K and R's Assisted Living 2 LLC"
+    },
+    {
+      "resource_id": 439,
+      "name": "Kessler Park"
+    },
+    {
+      "resource_id": 440,
+      "name": "Keswick Multi-Care Center"
+    },
+    {
+      "resource_id": 441,
+      "name": "Key Point Health Services"
+    },
+    {
+      "resource_id": 442,
+      "name": "King David Nursing and Rehabilitation Center"
+    },
+    {
+      "resource_id": 443,
+      "name": "Kingdom Elements AMDC"
+    },
+    {
+      "resource_id": 444,
+      "name": "Kirkwood house apartments"
+    },
+    {
+      "resource_id": 445,
+      "name": "Lakewood Apartments"
+    },
+    {
+      "resource_id": 446,
+      "name": "Lemko House"
+    },
+    {
+      "resource_id": 447,
+      "name": "Levindale Hebrew and Geriatric Center"
+    },
+    {
+      "resource_id": 448,
+      "name": "Bon Secours Liberty Village"
+    },
+    {
+      "resource_id": 449,
+      "name": "Enoch Pratt Free Library - Southeast Anchor Branch"
+    },
+    {
+      "resource_id": 450,
+      "name": "LifeSpring Assisted Living"
+    },
+    {
+      "resource_id": 451,
+      "name": "Lifeway Adult Medical Day Center"
+    },
+    {
+      "resource_id": 452,
+      "name": "Enoch Pratt Free Library - Light Street Branch"
+    },
+    {
+      "resource_id": 453,
+      "name": "Lighthouse Senior Living at Hopkins Creek"
+    },
+    {
+      "resource_id": 454,
+      "name": "Linden Park Apartments in Bolton Hill (Seniors 62+)"
+    },
+    {
+      "resource_id": 455,
+      "name": "Little Sisters of the Poor, St. Martin's Home"
+    },
+    {
+      "resource_id": 456,
+      "name": "Lorien Mays Chapel"
+    },
+    {
+      "resource_id": 457,
+      "name": "Luxe Home Care LLC"
+    },
+    {
+      "resource_id": 458,
+      "name": "L'Chaim Day Program"
+    },
+    {
+      "resource_id": 459,
+      "name": "Mabel's House Assisted Living"
+    },
+    {
+      "resource_id": 460,
+      "name": "Main Street Mobile Treatment and Main Street Community Mental Health Center"
+    },
+    {
+      "resource_id": 461,
+      "name": "Maine Manor Assisted Living"
+    },
+    {
+      "resource_id": 462,
+      "name": "Marlborough Apartments"
+    },
+    {
+      "resource_id": 463,
+      "name": "Maryland Masonic Homes"
+    },
+    {
+      "resource_id": 464,
+      "name": "Maryland Medical Day Services"
+    },
+    {
+      "resource_id": 465,
+      "name": "The Maryland School for the Blind"
+    },
+    {
+      "resource_id": 466,
+      "name": "Meadow Park Rehabilitation & Healthcare"
+    },
+    {
+      "resource_id": 467,
+      "name": "MedStar Franklin Square Medical Center"
+    },
+    {
+      "resource_id": 468,
+      "name": "MedStar Good Samaritan Hospital"
+    },
+    {
+      "resource_id": 469,
+      "name": "MedStar Union Memorial Hospital"
+    },
+    {
+      "resource_id": 470,
+      "name": "Mercy Medical Center Emergency Department"
+    },
+    {
+      "resource_id": 471,
+      "name": "Mercy Ridge"
+    },
+    {
+      "resource_id": 472,
+      "name": "Mid Atlantic Medical Supply"
+    },
+    {
+      "resource_id": 473,
+      "name": "Milton S Eisenhower Library"
+    },
+    {
+      "resource_id": 474,
+      "name": "Montane Manor Assisted Living"
+    },
+    {
+      "resource_id": 475,
+      "name": "MonteVerde Apartments"
+    },
+    {
+      "resource_id": 476,
+      "name": "More Than Just Friends - Adult Medical Day Center"
+    },
+    {
+      "resource_id": 477,
+      "name": "Morningside House of Satyr Hill"
+    },
+    {
+      "resource_id": 478,
+      "name": "Morningside Senior Apartments"
+    },
+    {
+      "resource_id": 479,
+      "name": "Morrell Park Apartments"
+    },
+    {
+      "resource_id": 480,
+      "name": "Msc Family Care"
+    },
+    {
+      "resource_id": 481,
+      "name": "Mount Clare Overlook Apartments"
+    },
+    {
+      "resource_id": 482,
+      "name": "My Caring Hands LLC"
+    },
+    {
+      "resource_id": 483,
+      "name": "N M Carroll Manor"
+    },
+    {
+      "resource_id": 484,
+      "name": "Natural Cultural Living"
+    },
+    {
+      "resource_id": 485,
+      "name": "New Heights Residences"
+    },
+    {
+      "resource_id": 486,
+      "name": "New Hope Assisted Living LLC"
+    },
+    {
+      "resource_id": 487,
+      "name": "New Life HL Adult Medical Daycare"
+    },
+    {
+      "resource_id": 488,
+      "name": "New Shiloh Village Senior Living"
+    },
+    {
+      "resource_id": 489,
+      "name": "New Castle Manor Assisted Living"
+    },
+    {
+      "resource_id": 490,
+      "name": "Newton Manor Assisted Living"
+    },
+    {
+      "resource_id": 491,
+      "name": "North Oaks"
+    },
+    {
+      "resource_id": 492,
+      "name": "Baltimore County Public Library - North Point Branch"
+    },
+    {
+      "resource_id": 493,
+      "name": "FutureCare NorthPoint"
+    },
+    {
+      "resource_id": 494,
+      "name": "Northwest Healthcare Center"
+    },
+    {
+      "resource_id": 495,
+      "name": "Northwest Hospital"
+    },
+    {
+      "resource_id": 496,
+      "name": "Enoch Pratt Free Library - Northwood Branch"
+    },
+    {
+      "resource_id": 497,
+      "name": "Oaks at Liberty Senior Apartments"
+    },
+    {
+      "resource_id": 498,
+      "name": "OK Family Care Assisted Living"
+    },
+    {
+      "resource_id": 499,
+      "name": "FutureCare - Old Court"
+    },
+    {
+      "resource_id": 500,
+      "name": "Old Court Estates Co-op Apartments"
+    },
+    {
+      "resource_id": 501,
+      "name": "Olive Living Assisted Living LLC"
+    },
+    {
+      "resource_id": 502,
+      "name": "Oliver Plaza LP"
+    },
+    {
+      "resource_id": 503,
+      "name": "Oliver Senior Center-Home"
+    },
+    {
+      "resource_id": 504,
+      "name": "Orchard Hill Rehabilitation & Healthcare Center"
+    },
+    {
+      "resource_id": 505,
+      "name": "Our Helping Hands llc"
+    },
+    {
+      "resource_id": 506,
+      "name": "Our Lady of Fatima II"
+    },
+    {
+      "resource_id": 507,
+      "name": "Overlea-Fullerton Senior Center"
+    },
+    {
+      "resource_id": 508,
+      "name": "Owings Mills New Town, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 509,
+      "name": "Palmer Home Care Facility"
+    },
+    {
+      "resource_id": 510,
+      "name": "Paradise Adult Medical Daycare"
+    },
+    {
+      "resource_id": 511,
+      "name": "Paradise Assisted Living & Memory Care"
+    },
+    {
+      "resource_id": 512,
+      "name": "Paradise Place at Sudbrook"
+    },
+    {
+      "resource_id": 513,
+      "name": "Park Heights Place"
+    },
+    {
+      "resource_id": 514,
+      "name": "Park View At Ashland Terrace"
+    },
+    {
+      "resource_id": 515,
+      "name": "Park View at Catonsville"
+    },
+    {
+      "resource_id": 516,
+      "name": "Park View at Coldspring"
+    },
+    {
+      "resource_id": 517,
+      "name": "Park View At Dundalk"
+    },
+    {
+      "resource_id": 518,
+      "name": "Park View At Fullerton"
+    },
+    {
+      "resource_id": 519,
+      "name": "Park View at Miramar Landing"
+    },
+    {
+      "resource_id": 520,
+      "name": "Park View At Randallstown"
+    },
+    {
+      "resource_id": 521,
+      "name": "Park View At Rosedale"
+    },
+    {
+      "resource_id": 522,
+      "name": "Park View At Taylor"
+    },
+    {
+      "resource_id": 523,
+      "name": "Park View at Towson"
+    },
+    {
+      "resource_id": 524,
+      "name": "Park View At Woodlawn"
+    },
+    {
+      "resource_id": 525,
+      "name": "Parkville Senior Center"
+    },
+    {
+      "resource_id": 526,
+      "name": "Patapsco Healthcare"
+    },
+    {
+      "resource_id": 527,
+      "name": "Enoch Pratt Free Library - Patterson Park Branch"
+    },
+    {
+      "resource_id": 528,
+      "name": "Dr. Jani GBMC Physician's Pavilion North"
+    },
+    {
+      "resource_id": 529,
+      "name": "Ridgeway Village Assisted Living"
+    },
+    {
+      "resource_id": 530,
+      "name": "Penn North Plaza"
+    },
+    {
+      "resource_id": 531,
+      "name": "Enoch Pratt Free Library - Pennsylvania Avenue Branch"
+    },
+    {
+      "resource_id": 532,
+      "name": "Perry Point VA Medical Center - VA Maryland Health Care System"
+    },
+    {
+      "resource_id": 533,
+      "name": "Pickersgill Retirement Community"
+    },
+    {
+      "resource_id": 534,
+      "name": "Pikesville Senior Center"
+    },
+    {
+      "resource_id": 535,
+      "name": "Pleasant Gardens"
+    },
+    {
+      "resource_id": 536,
+      "name": "Pleasant Gardens"
+    },
+    {
+      "resource_id": 537,
+      "name": "Autumn Lake Healthcare Post Acute Care Center"
+    },
+    {
+      "resource_id": 538,
+      "name": "ProCare Home Health & Assisted Living"
+    },
+    {
+      "resource_id": 539,
+      "name": "Progress Unlimited Inc"
+    },
+    {
+      "resource_id": 540,
+      "name": "Prologue Inc"
+    },
+    {
+      "resource_id": 541,
+      "name": "Assisted Living at Buckingham Manor"
+    },
+    {
+      "resource_id": 542,
+      "name": "Queen Esther Apartments"
+    },
+    {
+      "resource_id": 543,
+      "name": "R and H Assisted Living"
+    },
+    {
+      "resource_id": 544,
+      "name": "Rainbow Adult Day Health"
+    },
+    {
+      "resource_id": 545,
+      "name": "Enoch Pratt Free Library - Reisterstown Road Branch"
+    },
+    {
+      "resource_id": 546,
+      "name": "Reisterstown Senior Center"
+    },
+    {
+      "resource_id": 547,
+      "name": "Reister's View, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 548,
+      "name": "Renaissance Adult Day Health Center"
+    },
+    {
+      "resource_id": 549,
+      "name": "Resorts of Augsburg"
+    },
+    {
+      "resource_id": 550,
+      "name": "River Point Apartments"
+    },
+    {
+      "resource_id": 551,
+      "name": "Autumn Lake Healthcare at Riverview"
+    },
+    {
+      "resource_id": 552,
+      "name": "RLB Library"
+    },
+    {
+      "resource_id": 553,
+      "name": "Enoch Pratt Free Library - Roland Park Branch"
+    },
+    {
+      "resource_id": 554,
+      "name": "Roland Park Place"
+    },
+    {
+      "resource_id": 555,
+      "name": "Roland Park Rehabilitation and Healthcare Center"
+    },
+    {
+      "resource_id": 556,
+      "name": "St Mary's Roland View Towers Inc. - Owned and Managed"
+    },
+    {
+      "resource_id": 557,
+      "name": "Rolling Meadows Assisted Living"
+    },
+    {
+      "resource_id": 558,
+      "name": "Ronnie's Place LLC"
+    },
+    {
+      "resource_id": 559,
+      "name": "Rossville Rehabilitation and Healthcare Center"
+    },
+    {
+      "resource_id": 560,
+      "name": "Royal Heart Assisted Living"
+    },
+    {
+      "resource_id": 561,
+      "name": "Ruscombe Gardens"
+    },
+    {
+      "resource_id": 562,
+      "name": "Salony House Senior Apartments"
+    },
+    {
+      "resource_id": 563,
+      "name": "Sandtown Winchester Senior Center"
+    },
+    {
+      "resource_id": 564,
+      "name": "Sarez Assisted Living"
+    },
+    {
+      "resource_id": 565,
+      "name": "Seaton Towson"
+    },
+    {
+      "resource_id": 566,
+      "name": "Sefton Home Care Inc"
+    },
+    {
+      "resource_id": 567,
+      "name": "Senior Craft Gallery"
+    },
+    {
+      "resource_id": 568,
+      "name": "Senior Network-North Baltimore"
+    },
+    {
+      "resource_id": 569,
+      "name": "Seniority Living"
+    },
+    {
+      "resource_id": 570,
+      "name": "Serenity Garden Manor"
+    },
+    {
+      "resource_id": 571,
+      "name": "Serenity Grace Assisted Living Llc"
+    },
+    {
+      "resource_id": 572,
+      "name": "Serenity Manor"
+    },
+    {
+      "resource_id": 573,
+      "name": "Seven Oaks Senior Center"
+    },
+    {
+      "resource_id": 574,
+      "name": "Shades Place Assisted Living"
+    },
+    {
+      "resource_id": 575,
+      "name": "Sharp Leadenhall Apartments"
+    },
+    {
+      "resource_id": 576,
+      "name": "Sheppard Pratt School at Glyndon"
+    },
+    {
+      "resource_id": 577,
+      "name": "Sheppard Pratt School in Hunt Valley"
+    },
+    {
+      "resource_id": 578,
+      "name": "Sheppard Pratt Health Systems"
+    },
+    {
+      "resource_id": 579,
+      "name": "Sheppard Pratt - Baltimore/Washington Campus"
+    },
+    {
+      "resource_id": 580,
+      "name": "Shining Moon's Elder Care Housing"
+    },
+    {
+      "resource_id": 581,
+      "name": "Shirleys Caring Heart Adult Medical Daycare"
+    },
+    {
+      "resource_id": 582,
+      "name": "Sinai Hospital"
+    },
+    {
+      "resource_id": 583,
+      "name": "323 Sollers Point Rd"
+    },
+    {
+      "resource_id": 584,
+      "name": "Southern High Apartments"
+    },
+    {
+      "resource_id": 585,
+      "name": "Sullivan - Spring Grove Hospital Center"
+    },
+    {
+      "resource_id": 586,
+      "name": "Springwell Senior Living Community"
+    },
+    {
+      "resource_id": 587,
+      "name": "St. Ann Adult Day Services"
+    },
+    {
+      "resource_id": 588,
+      "name": "St. Charles House, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 589,
+      "name": "St. Elizabeth Hall"
+    },
+    {
+      "resource_id": 590,
+      "name": "St Elizabeth Rehabilitation and Nursing Center"
+    },
+    {
+      "resource_id": 591,
+      "name": "St James Terrace Apartments|Corvus Property Intelligence"
+    },
+    {
+      "resource_id": 592,
+      "name": "St. Joachim House, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 593,
+      "name": "St John the Baptist Adult Med"
+    },
+    {
+      "resource_id": 594,
+      "name": "St. Joseph's Nursing Home, Inc."
+    },
+    {
+      "resource_id": 595,
+      "name": "St. Luke's Place, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 596,
+      "name": "St. Mark's Apts., a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 597,
+      "name": "Saint Paul’s Assisted Living Facility"
+    },
+    {
+      "resource_id": 598,
+      "name": "Stephs Safe Haven"
+    },
+    {
+      "resource_id": 599,
+      "name": "Sterling Care Assisted Living"
+    },
+    {
+      "resource_id": 600,
+      "name": "Stewart Manor"
+    },
+    {
+      "resource_id": 601,
+      "name": "Autumn Lake Healthcare at Summit Park"
+    },
+    {
+      "resource_id": 602,
+      "name": "SUMMIT VIEW ASSISTED LIVING"
+    },
+    {
+      "resource_id": 603,
+      "name": "Sunrise of Pikesville"
+    },
+    {
+      "resource_id": 604,
+      "name": "Superior Assisted Living"
+    },
+    {
+      "resource_id": 605,
+      "name": "Symphony Manor"
+    },
+    {
+      "resource_id": 606,
+      "name": "Tabco Towers"
+    },
+    {
+      "resource_id": 607,
+      "name": "Taylor Gardens Senior Living"
+    },
+    {
+      "resource_id": 608,
+      "name": "Terrace Garden Co-op Apartments"
+    },
+    {
+      "resource_id": 609,
+      "name": "The Angel Network of Baltimore Assisted Living facility"
+    },
+    {
+      "resource_id": 610,
+      "name": "School of the Chimes"
+    },
+    {
+      "resource_id": 611,
+      "name": "Cottages of Perry Hall"
+    },
+    {
+      "resource_id": 612,
+      "name": "The Eden Place, LLC"
+    },
+    {
+      "resource_id": 613,
+      "name": "The Greens at English Consul"
+    },
+    {
+      "resource_id": 614,
+      "name": "The Greens at Liberty Road"
+    },
+    {
+      "resource_id": 615,
+      "name": "The Greens at Logan Field - 62+"
+    },
+    {
+      "resource_id": 616,
+      "name": "The Greens At Rolling Road"
+    },
+    {
+      "resource_id": 617,
+      "name": "Harbour School Innovative"
+    },
+    {
+      "resource_id": 618,
+      "name": "The JF Care, LLC"
+    },
+    {
+      "resource_id": 619,
+      "name": "The League for People with Disabilities"
+    },
+    {
+      "resource_id": 620,
+      "name": "The Meadows of Reisterstown I & II (Seniors 62+)"
+    },
+    {
+      "resource_id": 621,
+      "name": "Millennium Care"
+    },
+    {
+      "resource_id": 622,
+      "name": "The Nursing and Rehab Center at Stadium Place"
+    },
+    {
+      "resource_id": 623,
+      "name": "The Odyssey School"
+    },
+    {
+      "resource_id": 624,
+      "name": "The Shafer Center"
+    },
+    {
+      "resource_id": 625,
+      "name": "Waterfalls of Catonsville, Memory Care Home"
+    },
+    {
+      "resource_id": 626,
+      "name": "Today's Care & Family Inc"
+    },
+    {
+      "resource_id": 627,
+      "name": "Town Square Perry Hall - Adult Day Care"
+    },
+    {
+      "resource_id": 628,
+      "name": "Towson Rehabilitation and Healthcare Center"
+    },
+    {
+      "resource_id": 629,
+      "name": "Transitional Care"
+    },
+    {
+      "resource_id": 630,
+      "name": "The Trellis School"
+    },
+    {
+      "resource_id": 631,
+      "name": "Trinity Home Care & Assisted Living LLC"
+    },
+    {
+      "resource_id": 632,
+      "name": "Trinity House, a Catholic Charities Senior Community"
+    },
+    {
+      "resource_id": 633,
+      "name": "Unconditional Care Assisted Living"
+    },
+    {
+      "resource_id": 634,
+      "name": "United Family Assisted Living Inc"
+    },
+    {
+      "resource_id": 635,
+      "name": "University of Maryland St. Joseph Medical Center"
+    },
+    {
+      "resource_id": 636,
+      "name": "University of Maryland Medical Center"
+    },
+    {
+      "resource_id": 637,
+      "name": "UMMC Midtown Campus"
+    },
+    {
+      "resource_id": 638,
+      "name": "University of Maryland Rehabilitation & Orthopaedic Institute"
+    },
+    {
+      "resource_id": 639,
+      "name": "Venable Apartments II (Seniors 62+)"
+    },
+    {
+      "resource_id": 640,
+      "name": "Assisted Living-Victoria Inn"
+    },
+    {
+      "resource_id": 641,
+      "name": "Victory Assisted Living"
+    },
+    {
+      "resource_id": 642,
+      "name": "Villa Maria School"
+    },
+    {
+      "resource_id": 643,
+      "name": "Village Crossroads I and II, Catholic Charities Senior Communities"
+    },
+    {
+      "resource_id": 644,
+      "name": "Village Oaks Senior Apartments"
+    },
+    {
+      "resource_id": 645,
+      "name": "VivCaresllc"
+    },
+    {
+      "resource_id": 646,
+      "name": "W&W Manor Assisting Living Facility"
+    },
+    {
+      "resource_id": 647,
+      "name": "Wabash Estates Co-op Apartments"
+    },
+    {
+      "resource_id": 648,
+      "name": "Enoch Pratt Free Library - Walbrook Branch"
+    },
+    {
+      "resource_id": 649,
+      "name": "Walker Co-op Apartments"
+    },
+    {
+      "resource_id": 650,
+      "name": "Walker Mews Apartments"
+    },
+    {
+      "resource_id": 651,
+      "name": "Warren Place Apartments"
+    },
+    {
+      "resource_id": 652,
+      "name": "Enoch Pratt Free Library - Washington Village Branch"
+    },
+    {
+      "resource_id": 653,
+      "name": "Enoch Pratt Free Library - Waverly Branch"
+    },
+    {
+      "resource_id": 654,
+      "name": "Waxter Center"
+    },
+    {
+      "resource_id": 655,
+      "name": "Bon Secours Wayland Village Senior Apartments"
+    },
+    {
+      "resource_id": 656,
+      "name": "We Care First, LLC"
+    },
+    {
+      "resource_id": 657,
+      "name": "Harry and Jeanette Weinberg Court Apartments (Seniors 62+)"
+    },
+    {
+      "resource_id": 658,
+      "name": "Weinberg Gardens"
+    },
+    {
+      "resource_id": 659,
+      "name": "Weinberg House"
+    },
+    {
+      "resource_id": 660,
+      "name": "Manhattan Park"
+    },
+    {
+      "resource_id": 661,
+      "name": "Weinberg Manor East"
+    },
+    {
+      "resource_id": 662,
+      "name": "Weinberg Manor South"
+    },
+    {
+      "resource_id": 663,
+      "name": "Weinberg Place"
+    },
+    {
+      "resource_id": 664,
+      "name": "Weinberg Terrace"
+    },
+    {
+      "resource_id": 665,
+      "name": "Weinberg Village I"
+    },
+    {
+      "resource_id": 666,
+      "name": "Weinberg Woods"
+    },
+    {
+      "resource_id": 667,
+      "name": "Welcome Friends Adult Medical Day Center"
+    },
+    {
+      "resource_id": 668,
+      "name": "Westfield Assisted Living, LLC"
+    },
+    {
+      "resource_id": 669,
+      "name": "Westgate Hills Rehabilitation & Healthcare Center"
+    },
+    {
+      "resource_id": 670,
+      "name": "Westminster House Senior Apartments"
+    },
+    {
+      "resource_id": 671,
+      "name": "1811 Woodlawn Dr"
+    },
+    {
+      "resource_id": 672,
+      "name": "Woodlawn Senior Center"
+    },
+    {
+      "resource_id": 673,
+      "name": "Zeta Center"
+    },
+    {
+      "resource_id": 674,
+      "name": "Zion Towers"
+    },
+    {
+      "resource_id": 675,
+      "name": "Loving Arms Inc"
+    },
+    {
+      "resource_id": 676,
+      "name": "TIME Organization Inc"
+    },
+    {
+      "resource_id": 677,
+      "name": "Rock City Church"
+    },
+    {
+      "resource_id": 678,
+      "name": "House of Ruth Maryland"
+    },
+    {
+      "resource_id": 679,
+      "name": "Associated Catholic Charities"
+    },
+    {
+      "resource_id": 680,
+      "name": "Maryland Center for Veterans Education and Training (MCVET)"
+    },
+    {
+      "resource_id": 681,
+      "name": "Helping Up Mission"
+    },
+    {
+      "resource_id": 682,
+      "name": "Baltimore Rescue Mission"
+    },
+    {
+      "resource_id": 683,
+      "name": "City of Refuge Baltimore- Youth Center"
+    },
+    {
+      "resource_id": 684,
+      "name": "Family Crisis Center"
+    },
+    {
+      "resource_id": 685,
+      "name": "Transitions Healthcare Oakland Manor"
+    },
+    {
+      "resource_id": 686,
+      "name": "St. Vincent de Paul of Baltimore"
+    },
+    {
+      "resource_id": 687,
+      "name": "Bello Machre"
+    },
+    {
+      "resource_id": 688,
+      "name": "New Life For Girls"
+    },
+    {
+      "resource_id": 689,
+      "name": "Richcroft, Inc."
+    },
+    {
+      "resource_id": 690,
+      "name": "Chimes"
+    },
+    {
+      "resource_id": 691,
+      "name": "Sheppard Pratt - Psychiatric Rehabilitation Day Program - Timonium"
+    },
+    {
+      "resource_id": 692,
+      "name": "Allover Healthcare Group LLC"
+    },
+    {
+      "resource_id": 693,
+      "name": "Tabula Rasa Domestic Violence"
+    },
+    {
+      "resource_id": 694,
+      "name": "St John's Towers"
+    },
+    {
+      "resource_id": 695,
+      "name": "Largo Landing Fellowship House"
+    },
+    {
+      "resource_id": 696,
+      "name": "Brickwood Assisted Living"
+    },
+    {
+      "resource_id": 697,
+      "name": "Fahrney-Keedy Senior Living Community"
+    },
+    {
+      "resource_id": 698,
+      "name": "Charlotte's Home Inc"
+    },
+    {
+      "resource_id": 699,
+      "name": "Samaritan Ministry"
+    },
+    {
+      "resource_id": 700,
+      "name": "Fine Living Care"
+    },
+    {
+      "resource_id": 701,
+      "name": "Samaritan Ministry"
+    },
+    {
+      "resource_id": 702,
+      "name": "Samaritan Ministry"
+    },
+    {
+      "resource_id": 703,
+      "name": "Access Housing Inc DC Southeast Veterans Services Center"
+    },
+    {
+      "resource_id": 704,
+      "name": "Final Salute Inc"
+    },
+    {
+      "resource_id": 705,
+      "name": "Caribbean Breeze Assisted Living of Hall Creek"
+    },
+    {
+      "resource_id": 706,
+      "name": "Fenwick Landing Senior Care Community"
+    },
+    {
+      "resource_id": 707,
+      "name": "Victory Lakeside (Seniors 55+)"
+    },
+    {
+      "resource_id": 708,
+      "name": "Victory Brookside (Seniors 55+)"
+    },
+    {
+      "resource_id": 709,
+      "name": "Caroline Apartments"
+    },
+    {
+      "resource_id": 710,
+      "name": "Charlotte Hall Veterans Home"
+    },
+    {
+      "resource_id": 711,
+      "name": "The Hermitage At Solomons"
+    },
+    {
+      "resource_id": 712,
+      "name": "Victory Woods (Seniors 62+)"
+    },
+    {
+      "resource_id": 713,
+      "name": "Homes at Gateway Village (Seniors 62+)"
+    },
+    {
+      "resource_id": 714,
+      "name": "Hudson Behavioral Health"
+    },
+    {
+      "resource_id": 715,
+      "name": "Chamberlain Graceful Living"
+    },
+    {
+      "resource_id": 716,
+      "name": "Frostburg Heights"
+    },
+    {
+      "resource_id": 717,
+      "name": "Newtowne Apartments"
+    },
+    {
+      "resource_id": 718,
+      "name": "Cambridge Housing Authority"
+    },
+    {
+      "resource_id": 719,
+      "name": "White Oak Villages"
+    },
+    {
+      "resource_id": 720,
+      "name": "Lighthouse Senior Living - Ellicott City"
+    },
+    {
+      "resource_id": 721,
+      "name": "Chrysalis House Healthy Start"
+    },
+    {
+      "resource_id": 722,
+      "name": "Sheppard Pratt - Towson Campus"
+    },
+    {
+      "resource_id": 723,
+      "name": "Baltimore County Department of Aging"
+    },
+    {
+      "resource_id": 724,
+      "name": "Linwood Center"
+    },
+    {
+      "resource_id": 725,
+      "name": "New Vision House of Hope"
+    },
+    {
+      "resource_id": 726,
+      "name": "Baltimore County Department of Social Services"
+    },
+    {
+      "resource_id": 727,
+      "name": "Pro Bono Resource Center-Maryland"
+    },
+    {
+      "resource_id": 728,
+      "name": "Beechwood Assisted Living"
+    },
+    {
+      "resource_id": 729,
+      "name": "Pressley Ridge Central Maryland"
+    },
+    {
+      "resource_id": 730,
+      "name": "Deborah’s Place Inc."
+    },
+    {
+      "resource_id": 731,
+      "name": "High Hopes"
+    },
+    {
+      "resource_id": 732,
+      "name": "FACE - Freedom Advocates Celebrating Ex-Offenders"
+    },
+    {
+      "resource_id": 733,
+      "name": "Sheppard Pratt - Outpatient Mental Health Center - Columbia"
+    },
+    {
+      "resource_id": 734,
+      "name": "Sheppard Pratt - Outpatient Mental Health Center - Baltimore"
+    },
+    {
+      "resource_id": 735,
+      "name": "Emerge Inc"
+    },
+    {
+      "resource_id": 736,
+      "name": "St Ambrose Housing Aid Center"
+    },
+    {
+      "resource_id": 737,
+      "name": "US Housing & Urban Dev Department"
+    },
+    {
+      "resource_id": 738,
+      "name": "Habitat for Humanity of the Chesapeake"
+    },
+    {
+      "resource_id": 739,
+      "name": "The Philemon Ministry"
+    },
+    {
+      "resource_id": 740,
+      "name": "Penn Mar Human Services (Central)"
+    },
+    {
+      "resource_id": 741,
+      "name": "Cherry Hill Senior Manor"
+    },
+    {
+      "resource_id": 742,
+      "name": "Center for Social Change"
+    },
+    {
+      "resource_id": 743,
+      "name": "The Arc Maryland"
+    },
+    {
+      "resource_id": 744,
+      "name": "Creative Options Inc"
+    },
+    {
+      "resource_id": 745,
+      "name": "Victory Haven Senior Apartments (Ages 62+)"
+    },
+    {
+      "resource_id": 746,
+      "name": "AlfredHouse V"
+    },
+    {
+      "resource_id": 747,
+      "name": "Harford Senior Housing Inc"
+    },
+    {
+      "resource_id": 748,
+      "name": "Victory Housing"
+    },
+    {
+      "resource_id": 749,
+      "name": "Village at Lakeview"
+    },
+    {
+      "resource_id": 750,
+      "name": "Asbury Methodist Village"
+    },
+    {
+      "resource_id": 751,
+      "name": "Victory Crossing Senior Apartments (Seniors 62+)"
+    },
+    {
+      "resource_id": 752,
+      "name": "Victory Court Senior Apartments (Seniors 62+)"
+    },
+    {
+      "resource_id": 753,
+      "name": "Victory Oaks (Seniors 62+)"
+    },
+    {
+      "resource_id": 754,
+      "name": "Victory Forest (Seniors 62+)"
+    },
+    {
+      "resource_id": 755,
+      "name": "Sheppard Pratt - Psychiatric Rehabilitation Day Program - Lanham"
+    },
+    {
+      "resource_id": 756,
+      "name": "Clara's Place"
+    },
+    {
+      "resource_id": 757,
+      "name": "Gabriel Network"
+    },
+    {
+      "resource_id": 758,
+      "name": "Victory Tower (Seniors 62+)"
+    },
+    {
+      "resource_id": 759,
+      "name": "Victory Crest"
+    },
+    {
+      "resource_id": 760,
+      "name": "Byron House"
+    },
+    {
+      "resource_id": 761,
+      "name": "ADF (Army Distaff Foundation)"
+    },
+    {
+      "resource_id": 762,
+      "name": "Progressive Life Center"
+    },
+    {
+      "resource_id": 763,
+      "name": "Emerson House"
+    },
+    {
+      "resource_id": 764,
+      "name": "Victory Terrace (Seniors 62+)"
+    },
+    {
+      "resource_id": 765,
+      "name": "Sheppard Pratt - Outpatient Mental Health Center - Westminster"
+    },
+    {
+      "resource_id": 766,
+      "name": "Liv-N-Well Asst Living"
+    },
+    {
+      "resource_id": 767,
+      "name": "Victory Housing"
+    },
+    {
+      "resource_id": 768,
+      "name": "Habitat America"
+    },
+    {
+      "resource_id": 769,
+      "name": "Victory House of Palmer Park (Seniors 62+)"
+    },
+    {
+      "resource_id": 770,
+      "name": "National Black Caucus"
+    },
+    {
+      "resource_id": 771,
+      "name": "Diversified Housing Development"
+    },
+    {
+      "resource_id": 772,
+      "name": "Fuel Fund of Maryland"
+    },
+    {
+      "resource_id": 773,
+      "name": "Park West Health System"
+    },
+    {
+      "resource_id": 774,
+      "name": "Salvation Army Thrift Store"
+    },
+    {
+      "resource_id": 775,
+      "name": "The Arc Baltimore"
+    },
+    {
+      "resource_id": 776,
+      "name": "Baltimore Gas and Electric Company"
+    },
+    {
+      "resource_id": 777,
+      "name": "Neighborhood Housing Services of Baltimore"
+    },
+    {
+      "resource_id": 778,
+      "name": "People's Counsel"
+    },
+    {
+      "resource_id": 779,
+      "name": "Belair-Edison Neighborhoods, Inc."
+    },
+    {
+      "resource_id": 780,
+      "name": "Maryland Department of Assessments & Taxation"
+    },
+    {
+      "resource_id": 781,
+      "name": "Money Management International"
+    },
+    {
+      "resource_id": 782,
+      "name": "Home Partnership Inc."
+    },
+    {
+      "resource_id": 783,
+      "name": "Operation Second Chance"
+    },
+    {
+      "resource_id": 784,
+      "name": "Maryland Department of Housing and Community Development"
+    },
+    {
+      "resource_id": 785,
+      "name": "HomeFree-USA"
+    },
+    {
+      "resource_id": 786,
+      "name": "Central American Resource Center (CARECEN)"
+    },
+    {
+      "resource_id": 787,
+      "name": "Community Outreach & Development CDC"
+    },
+    {
+      "resource_id": 788,
+      "name": "Army Emergency Relief"
+    },
+    {
+      "resource_id": 789,
+      "name": "The Joseph House"
+    },
+    {
+      "resource_id": 790,
+      "name": "BlueHub Capital"
+    },
+    {
+      "resource_id": 791,
+      "name": "Consumer Education Services Inc. (CESI)"
+    },
+    {
+      "resource_id": 792,
+      "name": "Butler Medical Transport"
+    },
+    {
+      "resource_id": 793,
+      "name": "Center for Community Inclusion, Inc."
+    },
+    {
+      "resource_id": 794,
+      "name": "LifeKey Health"
+    },
+    {
+      "resource_id": 795,
+      "name": "The Red Devils"
+    },
+    {
+      "resource_id": 796,
+      "name": "Baltimore County Department of Health"
+    },
+    {
+      "resource_id": 797,
+      "name": "Full Circle by Vehicles for Change"
+    },
+    {
+      "resource_id": 798,
+      "name": "Greater Baltimore Homecare LLC"
+    },
+    {
+      "resource_id": 799,
+      "name": "Radiocw Healthcare"
+    },
+    {
+      "resource_id": 800,
+      "name": "Affectionate Touch Home Care LLC"
+    },
+    {
+      "resource_id": 801,
+      "name": "The ALS Association DC/MD/VA Chapter"
+    },
+    {
+      "resource_id": 802,
+      "name": "Aplastic Anemia & MDS International"
+    },
+    {
+      "resource_id": 803,
+      "name": "The Treasured haven Inc"
+    },
+    {
+      "resource_id": 804,
+      "name": "American Kidney Fund"
+    },
+    {
+      "resource_id": 805,
+      "name": "Travelers Aid International"
+    },
+    {
+      "resource_id": 806,
+      "name": "Air Force Aid Society"
+    },
+    {
+      "resource_id": 807,
+      "name": "Royal Options,Inc"
+    },
+    {
+      "resource_id": 808,
+      "name": "American Safety Options Maryland"
+    },
+    {
+      "resource_id": 809,
+      "name": "Mercy Medical Angels"
+    },
+    {
+      "resource_id": 810,
+      "name": "American Cancer Society"
+    },
+    {
+      "resource_id": 811,
+      "name": "National Runaway Safeline"
+    },
+    {
+      "resource_id": 812,
+      "name": "Corporate Angel Network"
+    },
+    {
+      "resource_id": 813,
+      "name": "Cedar Ridge Counseling Centers, LLC"
+    },
+    {
+      "resource_id": 814,
+      "name": "Life Matters Wellness"
+    },
+    {
+      "resource_id": 815,
+      "name": "Productive Lives PRP"
+    },
+    {
+      "resource_id": 816,
+      "name": "Institute for HEALing"
+    },
+    {
+      "resource_id": 817,
+      "name": "Congruent Counseling Services"
+    },
+    {
+      "resource_id": 818,
+      "name": "Evergreen Recovery"
+    },
+    {
+      "resource_id": 819,
+      "name": "Gifts LLC"
+    },
+    {
+      "resource_id": 820,
+      "name": "MATClinics"
+    },
+    {
+      "resource_id": 821,
+      "name": "On Our Own Of Carroll County"
+    },
+    {
+      "resource_id": 822,
+      "name": "Well Life"
+    },
+    {
+      "resource_id": 823,
+      "name": "C&C Advocacy, Inc."
+    },
+    {
+      "resource_id": 824,
+      "name": "Metro Reach Behavioral Health LLC."
+    },
+    {
+      "resource_id": 825,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 826,
+      "name": "The Johns Hopkins Hospital"
+    },
+    {
+      "resource_id": 827,
+      "name": "LifeStance Therapists & Psychiatrists Columbia"
+    },
+    {
+      "resource_id": 828,
+      "name": "Transform A Nation"
+    },
+    {
+      "resource_id": 829,
+      "name": "Center for Adoption Support and Education (C.A.S.E.)"
+    },
+    {
+      "resource_id": 830,
+      "name": "Leading By Example LLC"
+    },
+    {
+      "resource_id": 831,
+      "name": "Villa Maria Behavioral Health Clinic"
+    },
+    {
+      "resource_id": 832,
+      "name": "Breathe Freely Behavioral Health Systems"
+    },
+    {
+      "resource_id": 833,
+      "name": "Balance Point Wellness, LLC"
+    },
+    {
+      "resource_id": 834,
+      "name": "MPB Group Inc."
+    },
+    {
+      "resource_id": 835,
+      "name": "On Our Own of Howard County"
+    },
+    {
+      "resource_id": 836,
+      "name": "Building Blocks Healthcare Network - BBHCN"
+    },
+    {
+      "resource_id": 837,
+      "name": "Royal Minds Rehabilitation Services"
+    },
+    {
+      "resource_id": 838,
+      "name": "Community Wellness Center"
+    },
+    {
+      "resource_id": 839,
+      "name": "It’s Not Over, LLC"
+    },
+    {
+      "resource_id": 840,
+      "name": "MedStar Harbor Hospital"
+    },
+    {
+      "resource_id": 841,
+      "name": "Dynamic Healthcares"
+    },
+    {
+      "resource_id": 842,
+      "name": "Anew Psychiatry and Wellness"
+    },
+    {
+      "resource_id": 843,
+      "name": "MSA The Child & Adolescent Center"
+    },
+    {
+      "resource_id": 844,
+      "name": "Compass Health Services LLC"
+    },
+    {
+      "resource_id": 845,
+      "name": "Strengthening Families Building Communities"
+    },
+    {
+      "resource_id": 846,
+      "name": "Bridging Gaps Through Positive Solutions"
+    },
+    {
+      "resource_id": 847,
+      "name": "Therapeutic Empowerment & Wellness"
+    },
+    {
+      "resource_id": 848,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 849,
+      "name": "Mindful Healing Works Wellness Center"
+    },
+    {
+      "resource_id": 850,
+      "name": "Healthy Minds LLC"
+    },
+    {
+      "resource_id": 851,
+      "name": "Aspire Wellness Center"
+    },
+    {
+      "resource_id": 852,
+      "name": "Advantage Psychiatric Services, LLC"
+    },
+    {
+      "resource_id": 853,
+      "name": "Leading By Example"
+    },
+    {
+      "resource_id": 854,
+      "name": "Project Chesapeake Essex"
+    },
+    {
+      "resource_id": 855,
+      "name": "Thrive Behavioral Health"
+    },
+    {
+      "resource_id": 856,
+      "name": "Brighter Stronger Foundation"
+    },
+    {
+      "resource_id": 857,
+      "name": "National Pike Health Center"
+    },
+    {
+      "resource_id": 858,
+      "name": "Outreach"
+    },
+    {
+      "resource_id": 859,
+      "name": "KP Counseling Services"
+    },
+    {
+      "resource_id": 860,
+      "name": "MedStar Montgomery Medical Center"
+    },
+    {
+      "resource_id": 861,
+      "name": "M&M Behavioral Health Solutions"
+    },
+    {
+      "resource_id": 862,
+      "name": "Clinical Solutions Inc"
+    },
+    {
+      "resource_id": 863,
+      "name": "Safe Harbor Christian Counseling of Bel Air"
+    },
+    {
+      "resource_id": 864,
+      "name": "Veni Vidi Vici Treatment Services"
+    },
+    {
+      "resource_id": 865,
+      "name": "Child and Adult Psychiatry"
+    },
+    {
+      "resource_id": 866,
+      "name": "Innovative Therapeutic Services"
+    },
+    {
+      "resource_id": 867,
+      "name": "King Health Systems Inc"
+    },
+    {
+      "resource_id": 868,
+      "name": "Whitesell and Associates, Inc"
+    },
+    {
+      "resource_id": 869,
+      "name": "Empowering Minds Resource Center"
+    },
+    {
+      "resource_id": 870,
+      "name": "LifeStance Therapists & Psychiatrists Millersville"
+    },
+    {
+      "resource_id": 871,
+      "name": "Everstand Outpatient Mental Health Clinic (Formerly Board of Child Care)"
+    },
+    {
+      "resource_id": 872,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 873,
+      "name": "Empowering Minds Resource Center"
+    },
+    {
+      "resource_id": 874,
+      "name": "The Orenda Center of Wellness - Outpatient Services for Mental Health and Substance Use Disorder"
+    },
+    {
+      "resource_id": 875,
+      "name": "Leading By Example"
+    },
+    {
+      "resource_id": 876,
+      "name": "Emmorton Psychology"
+    },
+    {
+      "resource_id": 877,
+      "name": "Sheppard Pratt - Vocational Services - Gaithersburg"
+    },
+    {
+      "resource_id": 878,
+      "name": "Evolve Life Centers"
+    },
+    {
+      "resource_id": 879,
+      "name": "Lutheran Social Services of the National Capital Area"
+    },
+    {
+      "resource_id": 880,
+      "name": "On Our Own of Frederick County"
+    },
+    {
+      "resource_id": 881,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 882,
+      "name": "Sheppard Pratt - Outpatient Mental Health Center - Frederick"
+    },
+    {
+      "resource_id": 883,
+      "name": "Orchard Mental Health Group"
+    },
+    {
+      "resource_id": 884,
+      "name": "Gemini Health - Frederick, Maryland"
+    },
+    {
+      "resource_id": 885,
+      "name": "Metro Counseling Services"
+    },
+    {
+      "resource_id": 886,
+      "name": "Second Chance Care"
+    },
+    {
+      "resource_id": 887,
+      "name": "Divine Wellness and Psychiatric Services"
+    },
+    {
+      "resource_id": 888,
+      "name": "Brook Lane Frederick Outpatient"
+    },
+    {
+      "resource_id": 889,
+      "name": "A&E Healthcare Services, Inc."
+    },
+    {
+      "resource_id": 890,
+      "name": "McGuire Therapeutic Services"
+    },
+    {
+      "resource_id": 891,
+      "name": "Choice Clinical Services"
+    },
+    {
+      "resource_id": 892,
+      "name": "Allen-Ayuk Behavioral Health"
+    },
+    {
+      "resource_id": 893,
+      "name": "BK Behavioral Health Center, Inc."
+    },
+    {
+      "resource_id": 894,
+      "name": "LifeStance Therapists & Psychiatrists Crofton"
+    },
+    {
+      "resource_id": 895,
+      "name": "Maryland Health Alliance Inc."
+    },
+    {
+      "resource_id": 896,
+      "name": "CarolKay HealthCare Services"
+    },
+    {
+      "resource_id": 897,
+      "name": "Innovative Clinical Associates"
+    },
+    {
+      "resource_id": 898,
+      "name": "Behavioral & Educational Solutions, P.C."
+    },
+    {
+      "resource_id": 899,
+      "name": "Easterseals DC MD VA Headquarters"
+    },
+    {
+      "resource_id": 900,
+      "name": "Family Behavioral Services, LLC"
+    },
+    {
+      "resource_id": 901,
+      "name": "The Imago Center of Washington DC"
+    },
+    {
+      "resource_id": 902,
+      "name": "Essential Therapeutic Perspectives, Inc."
+    },
+    {
+      "resource_id": 903,
+      "name": "Interdynamics, Inc."
+    },
+    {
+      "resource_id": 904,
+      "name": "Fara Medical Services"
+    },
+    {
+      "resource_id": 905,
+      "name": "Cancer Support Community"
+    },
+    {
+      "resource_id": 906,
+      "name": "LifeStance Therapists & Psychiatrists Annapolis"
+    },
+    {
+      "resource_id": 907,
+      "name": "LifeStance Therapists & Psychiatrists Chevy Chase"
+    },
+    {
+      "resource_id": 908,
+      "name": "Life Spring Counseling & Consulting LLC"
+    },
+    {
+      "resource_id": 909,
+      "name": "Williamson's Mental Health Services"
+    },
+    {
+      "resource_id": 910,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 911,
+      "name": "MedStar Washington Hospital Center"
+    },
+    {
+      "resource_id": 912,
+      "name": "Together Everyone Achieves More"
+    },
+    {
+      "resource_id": 913,
+      "name": "Metropolitan Behavioral Health Services"
+    },
+    {
+      "resource_id": 914,
+      "name": "Center For Therapeutic Concepts"
+    },
+    {
+      "resource_id": 915,
+      "name": "Maryland Wellness"
+    },
+    {
+      "resource_id": 916,
+      "name": "Healing Mind Wellness"
+    },
+    {
+      "resource_id": 917,
+      "name": "My Covenant Place"
+    },
+    {
+      "resource_id": 918,
+      "name": "Prestige Healthcare Resources Inc."
+    },
+    {
+      "resource_id": 919,
+      "name": "Naval Support Activity Annapolis ID Card Office"
+    },
+    {
+      "resource_id": 920,
+      "name": "Next Step Treatment"
+    },
+    {
+      "resource_id": 921,
+      "name": "MedStar Georgetown University Hospital"
+    },
+    {
+      "resource_id": 922,
+      "name": "Maryland Crime Victims' Resource Center, Inc."
+    },
+    {
+      "resource_id": 923,
+      "name": "San Mar Family and Community Services"
+    },
+    {
+      "resource_id": 924,
+      "name": "DXT Therapeutic Services Wellness Suite"
+    },
+    {
+      "resource_id": 925,
+      "name": "Discovering Serenity Counseling Services"
+    },
+    {
+      "resource_id": 926,
+      "name": "Changing Lives Adult And Youth Services"
+    },
+    {
+      "resource_id": 927,
+      "name": "Melwood"
+    },
+    {
+      "resource_id": 928,
+      "name": "Compassionate Wellness center"
+    },
+    {
+      "resource_id": 929,
+      "name": "Kirstin Care"
+    },
+    {
+      "resource_id": 930,
+      "name": "Empowering Minds Resource Center"
+    },
+    {
+      "resource_id": 931,
+      "name": "All That's Therapeutic Inc"
+    },
+    {
+      "resource_id": 932,
+      "name": "Sheppard Pratt - Outpatient Mental Health Center - Hagerstown"
+    },
+    {
+      "resource_id": 933,
+      "name": "KTS Mental Health Group, Inc"
+    },
+    {
+      "resource_id": 934,
+      "name": "DEPARTMENT OF VETERANS AFFAIRS"
+    },
+    {
+      "resource_id": 935,
+      "name": "MedStar Southern Maryland Hospital Center"
+    },
+    {
+      "resource_id": 936,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 937,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 938,
+      "name": "InnerSourced Solutions, Inc"
+    },
+    {
+      "resource_id": 939,
+      "name": "Citywide Behavioral Health"
+    },
+    {
+      "resource_id": 940,
+      "name": "KEYS Development TA LLC"
+    },
+    {
+      "resource_id": 941,
+      "name": "LifeStance Therapists & Psychiatrists Baltimore"
+    },
+    {
+      "resource_id": 942,
+      "name": "Maryland Senior Counseling"
+    },
+    {
+      "resource_id": 943,
+      "name": "Her Mind Her Body"
+    },
+    {
+      "resource_id": 944,
+      "name": "Health Care Living For Families"
+    },
+    {
+      "resource_id": 945,
+      "name": "Trulife Health Services"
+    },
+    {
+      "resource_id": 946,
+      "name": "Oasis Health Ventures Office 2"
+    },
+    {
+      "resource_id": 947,
+      "name": "Bon Ridge Wellness"
+    },
+    {
+      "resource_id": 948,
+      "name": "Life Renewal Services"
+    },
+    {
+      "resource_id": 949,
+      "name": "Redeeming Light Wellness Center"
+    },
+    {
+      "resource_id": 950,
+      "name": "Amazing Care Health Services LLC"
+    },
+    {
+      "resource_id": 951,
+      "name": "Bridges Healthcare Services"
+    },
+    {
+      "resource_id": 952,
+      "name": "H.O.P.E. Behavioral Health"
+    },
+    {
+      "resource_id": 953,
+      "name": "Regeneration Counseling Services"
+    },
+    {
+      "resource_id": 954,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 955,
+      "name": "Synchrony Behavioral Health Services LLC"
+    },
+    {
+      "resource_id": 956,
+      "name": "Power Counseling PLLC"
+    },
+    {
+      "resource_id": 957,
+      "name": "On Our Own of Calvert"
+    },
+    {
+      "resource_id": 958,
+      "name": "Channel Marker Inc"
+    },
+    {
+      "resource_id": 959,
+      "name": "LifeStance Therapists & Psychiatrists Easton"
+    },
+    {
+      "resource_id": 960,
+      "name": "Serenity Place, LLC"
+    },
+    {
+      "resource_id": 961,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 962,
+      "name": "Dover Behavioral Health System"
+    },
+    {
+      "resource_id": 963,
+      "name": "Project Chesapeake"
+    },
+    {
+      "resource_id": 964,
+      "name": "MedStar St. Mary's Hospital"
+    },
+    {
+      "resource_id": 965,
+      "name": "Life Crisis Center"
+    },
+    {
+      "resource_id": 966,
+      "name": "LifeMark Inc"
+    },
+    {
+      "resource_id": 967,
+      "name": "Worcester Youth & Family Counseling"
+    },
+    {
+      "resource_id": 968,
+      "name": "CancerCare"
+    },
+    {
+      "resource_id": 969,
+      "name": "AIM Behavioral Health Services"
+    },
+    {
+      "resource_id": 970,
+      "name": "CentrePointe Counseling, Inc"
+    },
+    {
+      "resource_id": 971,
+      "name": "Cancer Hope Network"
+    },
+    {
+      "resource_id": 972,
+      "name": "Kindred Treatment Center"
+    },
+    {
+      "resource_id": 973,
+      "name": "Islamic Leadership Institute of America"
+    },
+    {
+      "resource_id": 974,
+      "name": "Blossom Care and Behavioral Services, Inc"
+    },
+    {
+      "resource_id": 975,
+      "name": "Family’s First"
+    },
+    {
+      "resource_id": 976,
+      "name": "Changing Lives at Home Inc."
+    },
+    {
+      "resource_id": 977,
+      "name": "Release & Renew Mental Wellness, LLC"
+    },
+    {
+      "resource_id": 978,
+      "name": "LifeStance Therapists & Psychiatrists Timonium"
+    },
+    {
+      "resource_id": 979,
+      "name": "You Turn Behavioral Health Services"
+    },
+    {
+      "resource_id": 980,
+      "name": "Anxiety and Stress Disorders Institute"
+    },
+    {
+      "resource_id": 981,
+      "name": "ABA Health Services, Inc."
+    },
+    {
+      "resource_id": 982,
+      "name": "Conduit Behavioral Health"
+    },
+    {
+      "resource_id": 983,
+      "name": "Altruistic Healthcare Services"
+    },
+    {
+      "resource_id": 984,
+      "name": "Inspirit Counseling Services"
+    },
+    {
+      "resource_id": 985,
+      "name": "Optimum Health System"
+    },
+    {
+      "resource_id": 986,
+      "name": "Vision HealthCare"
+    },
+    {
+      "resource_id": 987,
+      "name": "Glass House Recovery"
+    },
+    {
+      "resource_id": 988,
+      "name": "Victorious Mental Healthcare LLC"
+    },
+    {
+      "resource_id": 989,
+      "name": "Centre for Creative Values"
+    },
+    {
+      "resource_id": 990,
+      "name": "Created for Greater Health Systems"
+    },
+    {
+      "resource_id": 991,
+      "name": "Pro Bono Counseling"
+    },
+    {
+      "resource_id": 992,
+      "name": "JAJ Home Healthcare Services Inc"
+    },
+    {
+      "resource_id": 993,
+      "name": "My Covenant Place"
+    },
+    {
+      "resource_id": 994,
+      "name": "Mercy Behavioral Health Center"
+    },
+    {
+      "resource_id": 995,
+      "name": "Lighthouse Inc"
+    },
+    {
+      "resource_id": 996,
+      "name": "On Our Own Inc"
+    },
+    {
+      "resource_id": 997,
+      "name": "Treasure Health Systems, Inc"
+    },
+    {
+      "resource_id": 998,
+      "name": "Jay Care Mental Health Center"
+    },
+    {
+      "resource_id": 999,
+      "name": "Harvest Of Hope Wellness"
+    },
+    {
+      "resource_id": 1000,
+      "name": "Tru-Integrity Wellness and Counseling Center, LLC"
+    },
+    {
+      "resource_id": 1001,
+      "name": "NAMI Metropolitan Baltimore"
+    },
+    {
+      "resource_id": 1002,
+      "name": "Beacon of Hope"
+    },
+    {
+      "resource_id": 1003,
+      "name": "Innovative Psychiatry, LLC - Columbia"
+    },
+    {
+      "resource_id": 1004,
+      "name": "Empowering Minds Resource Center"
+    },
+    {
+      "resource_id": 1005,
+      "name": "All Walks of Life LLC"
+    },
+    {
+      "resource_id": 1006,
+      "name": "Agile Healthcare LLC"
+    },
+    {
+      "resource_id": 1007,
+      "name": "Greater Baltimore Behavioral Health Services"
+    },
+    {
+      "resource_id": 1008,
+      "name": "Empowering Minds Resource Center"
+    },
+    {
+      "resource_id": 1009,
+      "name": "Remac Behavioral Health Solutions LLC"
+    },
+    {
+      "resource_id": 1010,
+      "name": "Redeem Health Care Medical Systems"
+    },
+    {
+      "resource_id": 1011,
+      "name": "Greater Baltimore Leadership Association"
+    },
+    {
+      "resource_id": 1012,
+      "name": "CareHire llc"
+    },
+    {
+      "resource_id": 1013,
+      "name": "Complete Wellness"
+    },
+    {
+      "resource_id": 1014,
+      "name": "Command Health and Wellness"
+    },
+    {
+      "resource_id": 1015,
+      "name": "Sanare Counseling Group"
+    },
+    {
+      "resource_id": 1016,
+      "name": "Harford Belair Community Mental"
+    },
+    {
+      "resource_id": 1017,
+      "name": "Helping Others Manage Emotions Therapeutic Services"
+    },
+    {
+      "resource_id": 1018,
+      "name": "New Vision Behavioral Health"
+    },
+    {
+      "resource_id": 1019,
+      "name": "Bowlem Healthcare Services"
+    },
+    {
+      "resource_id": 1020,
+      "name": "Native American LifeLines, Inc"
+    },
+    {
+      "resource_id": 1021,
+      "name": "American Psychiatric Group"
+    },
+    {
+      "resource_id": 1022,
+      "name": "Aspen Day Treatment"
+    },
+    {
+      "resource_id": 1023,
+      "name": "Mighty Behavioral Health Services"
+    },
+    {
+      "resource_id": 1024,
+      "name": "The Regeneration Project"
+    },
+    {
+      "resource_id": 1025,
+      "name": "Choices Integrated Healthcare INC"
+    },
+    {
+      "resource_id": 1026,
+      "name": "UMBC Psychology Training Clinic"
+    },
+    {
+      "resource_id": 1027,
+      "name": "Next Step Treatment"
+    },
+    {
+      "resource_id": 1028,
+      "name": "Family Support Center of Maryland"
+    },
+    {
+      "resource_id": 1029,
+      "name": "Kennedy Krieger Institute Ashland Outpatient Center"
+    },
+    {
+      "resource_id": 1030,
+      "name": "Insightful Life Therapeutic Services LLC"
+    },
+    {
+      "resource_id": 1031,
+      "name": "Bright Horizons Behavioral Health"
+    },
+    {
+      "resource_id": 1032,
+      "name": "Christian Counseling Group LLC"
+    },
+    {
+      "resource_id": 1033,
+      "name": "Brigance Brigade Foundation"
+    },
+    {
+      "resource_id": 1034,
+      "name": "Jai Medical Center"
+    },
+    {
+      "resource_id": 1035,
+      "name": "Believe In Tomorrow Children's Foundation"
+    },
+    {
+      "resource_id": 1036,
+      "name": "Maryland Department of Health"
+    },
+    {
+      "resource_id": 1037,
+      "name": "Maryland Department of Aging"
+    },
+    {
+      "resource_id": 1038,
+      "name": "Johns Hopkins Howard County Medical Center"
+    },
+    {
+      "resource_id": 1039,
+      "name": "American Breast Cancer Foundation"
+    },
+    {
+      "resource_id": 1040,
+      "name": "Jai Medical Center"
+    },
+    {
+      "resource_id": 1041,
+      "name": "Ronald McDonald House Maryland"
+    },
+    {
+      "resource_id": 1042,
+      "name": "Maryland Health Benefit Exchange (MHBE)"
+    },
+    {
+      "resource_id": 1043,
+      "name": "Casey Cares Foundation"
+    },
+    {
+      "resource_id": 1044,
+      "name": "MedStar Franklin Square Medical Center"
+    },
+    {
+      "resource_id": 1045,
+      "name": "LynnMichel Insurance, LLC"
+    },
+    {
+      "resource_id": 1046,
+      "name": "HealthWell Foundation"
+    },
+    {
+      "resource_id": 1047,
+      "name": "Frederick Health Hospital Emergency Department"
+    },
+    {
+      "resource_id": 1048,
+      "name": "Community Engagement & Consultation Group Inc"
+    },
+    {
+      "resource_id": 1049,
+      "name": "Tigerlily Foundation"
+    },
+    {
+      "resource_id": 1050,
+      "name": "Avery Hall Insurance Group"
+    },
+    {
+      "resource_id": 1051,
+      "name": "Social Security Administration"
+    },
+    {
+      "resource_id": 1052,
+      "name": "Patient Advocate Foundation Co-Pay Relief"
+    },
+    {
+      "resource_id": 1053,
+      "name": "Prescription Hope"
+    },
+    {
+      "resource_id": 1054,
+      "name": "Rx Outreach"
+    },
+    {
+      "resource_id": 1055,
+      "name": "Novo Nordisk Inc.,"
+    },
+    {
+      "resource_id": 1056,
+      "name": "SPINA BIFIDA ASSOCIATION OF MARYLAND"
+    },
+    {
+      "resource_id": 1057,
+      "name": "Good Pill Pharmacy"
+    },
+    {
+      "resource_id": 1058,
+      "name": "Harvest Church of God"
+    },
+    {
+      "resource_id": 1059,
+      "name": "Colonial Baptist Church"
+    },
+    {
+      "resource_id": 1060,
+      "name": "Union Bethel AME Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 1061,
+      "name": "University of Maryland Extension, Baltimore County"
+    },
+    {
+      "resource_id": 1062,
+      "name": "The Tab"
+    },
+    {
+      "resource_id": 1063,
+      "name": "Epworth United Methodist Chapel"
+    },
+    {
+      "resource_id": 1064,
+      "name": "The Agape Christian Church, Miracle Center"
+    },
+    {
+      "resource_id": 1065,
+      "name": "Immanuel Evangelical Lutheran Church"
+    },
+    {
+      "resource_id": 1066,
+      "name": "Concord Baptist Church Inc"
+    },
+    {
+      "resource_id": 1067,
+      "name": "Manna Bible Baptist Church"
+    },
+    {
+      "resource_id": 1068,
+      "name": "Morning Star Baptist Church"
+    },
+    {
+      "resource_id": 1069,
+      "name": "St. Francis Episcopal Parish"
+    },
+    {
+      "resource_id": 1070,
+      "name": "Towson United Methodist Church"
+    },
+    {
+      "resource_id": 1071,
+      "name": "Mt. Calvary A.M.E. Church"
+    },
+    {
+      "resource_id": 1072,
+      "name": "The Forge of The BIT Center"
+    },
+    {
+      "resource_id": 1073,
+      "name": "Loch Raven United Methodist Church"
+    },
+    {
+      "resource_id": 1074,
+      "name": "Saints Philip & James Catholic Church"
+    },
+    {
+      "resource_id": 1075,
+      "name": "Southwest Emergency Services (SWES)"
+    },
+    {
+      "resource_id": 1076,
+      "name": "The 6th Branch"
+    },
+    {
+      "resource_id": 1077,
+      "name": "St. Matthias & Church of the Messiah"
+    },
+    {
+      "resource_id": 1078,
+      "name": "New Life Evangelical Baptist Church"
+    },
+    {
+      "resource_id": 1079,
+      "name": "Faith Tabernacle Church - Food Distribution Center"
+    },
+    {
+      "resource_id": 1080,
+      "name": "Journey Church"
+    },
+    {
+      "resource_id": 1081,
+      "name": "Epiphany Lutheran"
+    },
+    {
+      "resource_id": 1082,
+      "name": "Mount Pleasant Church and Ministries"
+    },
+    {
+      "resource_id": 1083,
+      "name": "Meals on Wheels of Central Maryland, Inc."
+    },
+    {
+      "resource_id": 1084,
+      "name": "Perry Hall United Methodist Church"
+    },
+    {
+      "resource_id": 1085,
+      "name": "Charm City Church of God"
+    },
+    {
+      "resource_id": 1086,
+      "name": "Compassion Place Ministries \\ Lutheran Mission Society HQ"
+    },
+    {
+      "resource_id": 1087,
+      "name": "Synergy Community Church"
+    },
+    {
+      "resource_id": 1088,
+      "name": "Freedom Church - Middle River Campus"
+    },
+    {
+      "resource_id": 1089,
+      "name": "LMS Compassion Place in Essex"
+    },
+    {
+      "resource_id": 1090,
+      "name": "Our Lady of Hope Church"
+    },
+    {
+      "resource_id": 1091,
+      "name": "Middle River Baptist Church (MRBC)"
+    },
+    {
+      "resource_id": 1092,
+      "name": "Salem United Methodist Church"
+    },
+    {
+      "resource_id": 1093,
+      "name": "St. Stephens A.M.E. Church"
+    },
+    {
+      "resource_id": 1094,
+      "name": "Watersedge Baptist Church"
+    },
+    {
+      "resource_id": 1095,
+      "name": "Nourish Now"
+    },
+    {
+      "resource_id": 1096,
+      "name": "Edgemere Bible Church"
+    },
+    {
+      "resource_id": 1097,
+      "name": "J & C Unity Christian Church"
+    },
+    {
+      "resource_id": 1098,
+      "name": "Lutheran Mission Society Hickory Compassion Center"
+    },
+    {
+      "resource_id": 1099,
+      "name": "Lutheran Mission Society Hyattsville Compassion Center"
+    },
+    {
+      "resource_id": 1100,
+      "name": "Grace United Methodist Church"
+    },
+    {
+      "resource_id": 1101,
+      "name": "LMS Compassion Place in Annapolis"
+    },
+    {
+      "resource_id": 1102,
+      "name": "The DC LGBTQ+ Community Center"
+    },
+    {
+      "resource_id": 1103,
+      "name": "Lutheran Mission Society Havre de Grace Compassion Center"
+    },
+    {
+      "resource_id": 1104,
+      "name": "Liberty Seventh-day Adventist Church"
+    },
+    {
+      "resource_id": 1105,
+      "name": "Chestertown Seventh-day Adventist Church"
+    },
+    {
+      "resource_id": 1106,
+      "name": "Tri-County Council for Southern Maryland"
+    },
+    {
+      "resource_id": 1107,
+      "name": "Abundant Life Christian Outreach Center"
+    },
+    {
+      "resource_id": 1108,
+      "name": "Bruce Outreach Center"
+    },
+    {
+      "resource_id": 1109,
+      "name": "Mom's Meals"
+    },
+    {
+      "resource_id": 1110,
+      "name": "Homestyle Direct"
+    },
+    {
+      "resource_id": 1111,
+      "name": "Happy Helpers For The Homeless"
+    },
+    {
+      "resource_id": 1112,
+      "name": "Baltimore County State's Attorney's Office"
+    },
+    {
+      "resource_id": 1113,
+      "name": "Maryland Legal Aid - Howard County Office"
+    },
+    {
+      "resource_id": 1114,
+      "name": "Paralyzed Veterans of America"
+    },
+    {
+      "resource_id": 1115,
+      "name": "Disabled American Veterans"
+    },
+    {
+      "resource_id": 1116,
+      "name": "Maryland Department of Labor"
+    },
+    {
+      "resource_id": 1117,
+      "name": "Veterans of Foreign Wars"
+    },
+    {
+      "resource_id": 1118,
+      "name": "National Federation-The Blind"
+    },
+    {
+      "resource_id": 1119,
+      "name": "Vietnam Veterans of America"
+    },
+    {
+      "resource_id": 1120,
+      "name": "The Veterans Consortium Pro Bono Program"
+    },
+    {
+      "resource_id": 1121,
+      "name": "Craft Emergency Relief Fund"
+    },
+    {
+      "resource_id": 1122,
+      "name": "Public Defender's Office"
+    },
+    {
+      "resource_id": 1123,
+      "name": "Women's Law Center of Maryland"
+    },
+    {
+      "resource_id": 1124,
+      "name": "NAACP"
+    },
+    {
+      "resource_id": 1125,
+      "name": "Wabash Public Defenders Office"
+    },
+    {
+      "resource_id": 1126,
+      "name": "Baltimore County Bar Association Inc"
+    },
+    {
+      "resource_id": 1127,
+      "name": "Baltimore County District Public Defender office"
+    },
+    {
+      "resource_id": 1128,
+      "name": "Disability Rights Maryland"
+    },
+    {
+      "resource_id": 1129,
+      "name": "ACLU of Maryland"
+    },
+    {
+      "resource_id": 1130,
+      "name": "Baltimore Action Legal Team"
+    },
+    {
+      "resource_id": 1131,
+      "name": "Community Law Center"
+    },
+    {
+      "resource_id": 1132,
+      "name": "Immigration Outreach Service Center"
+    },
+    {
+      "resource_id": 1133,
+      "name": "FreeState Justice"
+    },
+    {
+      "resource_id": 1134,
+      "name": "International Rescue Committee"
+    },
+    {
+      "resource_id": 1135,
+      "name": "University of Baltimore School of Law"
+    },
+    {
+      "resource_id": 1136,
+      "name": "University of Maryland Francis King Carey School of Law"
+    },
+    {
+      "resource_id": 1137,
+      "name": "Baltimore City Office of the Public Defender"
+    },
+    {
+      "resource_id": 1138,
+      "name": "Maryland Volunteer Lawyers Service"
+    },
+    {
+      "resource_id": 1139,
+      "name": "Maryland Crime Victims' Resource Center, Inc"
+    },
+    {
+      "resource_id": 1140,
+      "name": "BAR ASSOCIATION BALTIMORE CITY"
+    },
+    {
+      "resource_id": 1141,
+      "name": "Civil Justice"
+    },
+    {
+      "resource_id": 1142,
+      "name": "Juvenile Office of Public Defender"
+    },
+    {
+      "resource_id": 1143,
+      "name": "Asylee Women Enterprises"
+    },
+    {
+      "resource_id": 1144,
+      "name": "Maryland Office of the Public Defender"
+    },
+    {
+      "resource_id": 1145,
+      "name": "Spanish Speaking Community"
+    },
+    {
+      "resource_id": 1146,
+      "name": "Ayuda"
+    },
+    {
+      "resource_id": 1147,
+      "name": "Klein Morris"
+    },
+    {
+      "resource_id": 1148,
+      "name": "Public Defenders Office"
+    },
+    {
+      "resource_id": 1149,
+      "name": "Equal Rights Center"
+    },
+    {
+      "resource_id": 1150,
+      "name": "Lawyers' Committee For Civil Rights Under Law"
+    },
+    {
+      "resource_id": 1151,
+      "name": "Asian Pacific American Legal"
+    },
+    {
+      "resource_id": 1152,
+      "name": "National Fair Housing Alliance"
+    },
+    {
+      "resource_id": 1153,
+      "name": "Civil Division"
+    },
+    {
+      "resource_id": 1154,
+      "name": "Prince George’s County Bar Association"
+    },
+    {
+      "resource_id": 1155,
+      "name": "The Office of the Public Defender"
+    },
+    {
+      "resource_id": 1156,
+      "name": "Cecil County Office of the Public Defender"
+    },
+    {
+      "resource_id": 1157,
+      "name": "Talbot County Office of the Public Defender"
+    },
+    {
+      "resource_id": 1158,
+      "name": "Maryland Office of the Public Defender, Caroline County Office"
+    },
+    {
+      "resource_id": 1159,
+      "name": "Public Defender"
+    },
+    {
+      "resource_id": 1160,
+      "name": "Public Defender"
+    },
+    {
+      "resource_id": 1161,
+      "name": "Public Defender"
+    },
+    {
+      "resource_id": 1162,
+      "name": "Maryland Office of the Public Defender"
+    },
+    {
+      "resource_id": 1163,
+      "name": "Public Defender"
+    },
+    {
+      "resource_id": 1164,
+      "name": "Office of the Public Defender"
+    },
+    {
+      "resource_id": 1165,
+      "name": "Public Defender"
+    },
+    {
+      "resource_id": 1166,
+      "name": "Disability Rights Education & Defense Fund"
+    },
+    {
+      "resource_id": 1167,
+      "name": "Conflict Resolution Center of Baltimore County"
+    },
+    {
+      "resource_id": 1168,
+      "name": "Center for Hope"
+    },
+    {
+      "resource_id": 1169,
+      "name": "House Of Ruth, Maryland"
+    },
+    {
+      "resource_id": 1170,
+      "name": "Grassroots Crisis Intervention"
+    },
+    {
+      "resource_id": 1171,
+      "name": "House of Ruth"
+    },
+    {
+      "resource_id": 1172,
+      "name": "Ashiyanaa"
+    },
+    {
+      "resource_id": 1173,
+      "name": "Rape Abuse Incest National Network"
+    },
+    {
+      "resource_id": 1174,
+      "name": "Family Crisis Center"
+    },
+    {
+      "resource_id": 1175,
+      "name": "Darkness To Light"
+    },
+    {
+      "resource_id": 1176,
+      "name": "Baltimore County Health Department"
+    },
+    {
+      "resource_id": 1177,
+      "name": "Goodtime Family Care"
+    },
+    {
+      "resource_id": 1178,
+      "name": "Cystic Fibrosis Foundation"
+    },
+    {
+      "resource_id": 1179,
+      "name": "Johns Hopkins Community Physicians"
+    },
+    {
+      "resource_id": 1180,
+      "name": "University of Maryland Family & Community Medicine at Paca Street"
+    },
+    {
+      "resource_id": 1181,
+      "name": "Maryland State Dental Association"
+    },
+    {
+      "resource_id": 1182,
+      "name": "Johns Hopkins Community Physicians - Canton Crossing"
+    },
+    {
+      "resource_id": 1183,
+      "name": "Johns Hopkins Community Physicians - Fulton"
+    },
+    {
+      "resource_id": 1184,
+      "name": "Johns Hopkins Community Physicians — Rockville Pediatrics"
+    },
+    {
+      "resource_id": 1185,
+      "name": "Johns Hopkins Community Physicians - Montgomery County, Breast Health & Surgery and General Surgery"
+    },
+    {
+      "resource_id": 1186,
+      "name": "Lakewood Family Clinic"
+    },
+    {
+      "resource_id": 1187,
+      "name": "A+ Counseling Center"
+    },
+    {
+      "resource_id": 1188,
+      "name": "ChristianaCare Union Hospital"
+    },
+    {
+      "resource_id": 1189,
+      "name": "Tri-State Community Health Center"
+    },
+    {
+      "resource_id": 1190,
+      "name": "Tri-State Women's Health Center"
+    },
+    {
+      "resource_id": 1191,
+      "name": "Tri State Community Health Center"
+    },
+    {
+      "resource_id": 1192,
+      "name": "Mental Health Association of Maryland"
+    },
+    {
+      "resource_id": 1193,
+      "name": "Humanim"
+    },
+    {
+      "resource_id": 1194,
+      "name": "The Loading Dock, Inc."
+    },
+    {
+      "resource_id": 1195,
+      "name": "Labor Intense"
+    },
+    {
+      "resource_id": 1196,
+      "name": "Tuerk House"
+    },
+    {
+      "resource_id": 1197,
+      "name": "The IMAGE Center of Maryland"
+    },
+    {
+      "resource_id": 1198,
+      "name": "Abilities Network"
+    },
+    {
+      "resource_id": 1199,
+      "name": "Mountain Manor Treatment Center"
+    },
+    {
+      "resource_id": 1200,
+      "name": "Druid Heights Community Development Corporation"
+    },
+    {
+      "resource_id": 1201,
+      "name": "TIME Organization Inc"
+    },
+    {
+      "resource_id": 1202,
+      "name": "Developmental Disabilities Adm"
+    },
+    {
+      "resource_id": 1203,
+      "name": "Global Refuge"
+    },
+    {
+      "resource_id": 1204,
+      "name": "Reclaim Integrated Care"
+    },
+    {
+      "resource_id": 1205,
+      "name": "John Hopkins Care at Home"
+    },
+    {
+      "resource_id": 1206,
+      "name": "Sabinas House"
+    },
+    {
+      "resource_id": 1207,
+      "name": "The Coordinating Center"
+    },
+    {
+      "resource_id": 1208,
+      "name": "PLAN of Maryland- D.C.,Inc."
+    },
+    {
+      "resource_id": 1209,
+      "name": "Columbia Lighthouse for the Blind"
+    },
+    {
+      "resource_id": 1210,
+      "name": "ARS of Aberdeen"
+    },
+    {
+      "resource_id": 1211,
+      "name": "Developmtl Disabilities Administration"
+    },
+    {
+      "resource_id": 1212,
+      "name": "Benedictine"
+    },
+    {
+      "resource_id": 1213,
+      "name": "White Flint Recovery Eastern Shore, Inc."
+    },
+    {
+      "resource_id": 1214,
+      "name": "Maryland Developmental Disabilities Administration"
+    },
+    {
+      "resource_id": 1215,
+      "name": "Telamon Corporation"
+    },
+    {
+      "resource_id": 1216,
+      "name": "First Choice Counseling Center"
+    },
+    {
+      "resource_id": 1217,
+      "name": "Autism Society"
+    },
+    {
+      "resource_id": 1218,
+      "name": "Wellness House of Annapolis"
+    },
+    {
+      "resource_id": 1219,
+      "name": "Dementia Friendly America"
+    },
+    {
+      "resource_id": 1220,
+      "name": "National Multiple Sclerosis Society"
+    },
+    {
+      "resource_id": 1221,
+      "name": "Adac (Alternative Drug & Alcohol Counseling)"
+    },
+    {
+      "resource_id": 1222,
+      "name": "Autism Society of Maryland"
+    },
+    {
+      "resource_id": 1223,
+      "name": "Trusted Hearts Homecare Solutions"
+    },
+    {
+      "resource_id": 1224,
+      "name": "The Neurology Center Leisure World Plaza"
+    },
+    {
+      "resource_id": 1225,
+      "name": "VNA of Maryland"
+    },
+    {
+      "resource_id": 1226,
+      "name": "LifeBridge Health Physical Therapy - Westminster"
+    },
+    {
+      "resource_id": 1227,
+      "name": "FutureCare - Courtland"
+    },
+    {
+      "resource_id": 1228,
+      "name": "Precious Hearts"
+    },
+    {
+      "resource_id": 1229,
+      "name": "Reliable Medical & Healthcare Services"
+    },
+    {
+      "resource_id": 1230,
+      "name": "Forward Visions, Inc."
+    },
+    {
+      "resource_id": 1231,
+      "name": "Onena Home Healthcare- Maryland"
+    },
+    {
+      "resource_id": 1232,
+      "name": "Ellicott City Healthcare Center"
+    },
+    {
+      "resource_id": 1233,
+      "name": "Sinai Hospital"
+    },
+    {
+      "resource_id": 1234,
+      "name": "SYNERGY HomeCare"
+    },
+    {
+      "resource_id": 1235,
+      "name": "Universal Key Solutions"
+    },
+    {
+      "resource_id": 1236,
+      "name": "Caring With Love And Compassion Homecare Agency LLC"
+    },
+    {
+      "resource_id": 1237,
+      "name": "Gifted Hands Senior Care LLC"
+    },
+    {
+      "resource_id": 1238,
+      "name": "FutureCare - Homewood"
+    },
+    {
+      "resource_id": 1239,
+      "name": "Altimax Home Care"
+    },
+    {
+      "resource_id": 1240,
+      "name": "Ameri Home Care Services LLC"
+    },
+    {
+      "resource_id": 1241,
+      "name": "Ascension Saint Agnes Hospital"
+    },
+    {
+      "resource_id": 1242,
+      "name": "Above The Rest Home Care LLC"
+    },
+    {
+      "resource_id": 1243,
+      "name": "Adams Loving Heart Healthcare Inc"
+    },
+    {
+      "resource_id": 1244,
+      "name": "Kennedy Krieger Institute"
+    },
+    {
+      "resource_id": 1245,
+      "name": "A Treasured Living Home Care"
+    },
+    {
+      "resource_id": 1246,
+      "name": "Bay View Homecare, Inc."
+    },
+    {
+      "resource_id": 1247,
+      "name": "MedStar Health Home Care - Central Maryland"
+    },
+    {
+      "resource_id": 1248,
+      "name": "Certified Home Nursing Solutions LLC"
+    },
+    {
+      "resource_id": 1249,
+      "name": "Adluxe Healthcare Services"
+    },
+    {
+      "resource_id": 1250,
+      "name": "Cymatex Consults, LLC"
+    },
+    {
+      "resource_id": 1251,
+      "name": "GAVA Healthcare Services"
+    },
+    {
+      "resource_id": 1252,
+      "name": "My Home Cares, LLC"
+    },
+    {
+      "resource_id": 1253,
+      "name": "Conquest Health LLC"
+    },
+    {
+      "resource_id": 1254,
+      "name": "Roberts Home Medical LLC"
+    },
+    {
+      "resource_id": 1255,
+      "name": "One Nation HealthCare Solutions , Inc"
+    },
+    {
+      "resource_id": 1256,
+      "name": "Excellence Homecare Services"
+    },
+    {
+      "resource_id": 1257,
+      "name": "FutureCare - Cold Spring"
+    },
+    {
+      "resource_id": 1258,
+      "name": "The Lourie Center for Children's Social & Emotional Wellness"
+    },
+    {
+      "resource_id": 1259,
+      "name": "Solid Rock Health Care Services LLC"
+    },
+    {
+      "resource_id": 1260,
+      "name": "MedStar Health Home Care - Suburban Maryland Agency"
+    },
+    {
+      "resource_id": 1261,
+      "name": "FutureCare Chesapeake"
+    },
+    {
+      "resource_id": 1262,
+      "name": "ABC of Life Health Services"
+    },
+    {
+      "resource_id": 1263,
+      "name": "FutureCare - Sandtown"
+    },
+    {
+      "resource_id": 1264,
+      "name": "MedStar Health Home Care - District of Columbia Agency"
+    },
+    {
+      "resource_id": 1265,
+      "name": "FutureCare Capital Region"
+    },
+    {
+      "resource_id": 1266,
+      "name": "FutureCare - Pineview"
+    },
+    {
+      "resource_id": 1267,
+      "name": "Green Acres Nursing and Rehab"
+    },
+    {
+      "resource_id": 1268,
+      "name": "St. Mary's Nursing Center"
+    },
+    {
+      "resource_id": 1269,
+      "name": "BEULAH NURSING SERVICES LLC"
+    },
+    {
+      "resource_id": 1270,
+      "name": "Allwell Healthcare Solutions Inc"
+    },
+    {
+      "resource_id": 1271,
+      "name": "Delight Healthcare Services"
+    },
+    {
+      "resource_id": 1272,
+      "name": "The Arc Baltimore - Seton Day and Employment Services"
+    },
+    {
+      "resource_id": 1273,
+      "name": "Enoch Pratt Free Library - Reisterstown Road Branch"
+    },
+    {
+      "resource_id": 1274,
+      "name": "Baltimore County Public Library - Hereford Branch"
+    },
+    {
+      "resource_id": 1275,
+      "name": "Baltimore County Public Library - Woodlawn Branch"
+    },
+    {
+      "resource_id": 1276,
+      "name": "Baltimore County Public Library - Towson Branch"
+    },
+    {
+      "resource_id": 1277,
+      "name": "Baltimore County Public Library - Catonsville Branch"
+    },
+    {
+      "resource_id": 1278,
+      "name": "Raven's Medical Adult Daycare"
+    },
+    {
+      "resource_id": 1279,
+      "name": "The League for People with Disabilities"
+    },
+    {
+      "resource_id": 1280,
+      "name": "Athelas Institute"
+    },
+    {
+      "resource_id": 1281,
+      "name": "ST PETER ADULT LEARNING CENTER"
+    },
+    {
+      "resource_id": 1282,
+      "name": "Baltimore County Public Library - Arbutus Branch"
+    },
+    {
+      "resource_id": 1283,
+      "name": "Baltimore County Public Library - Lansdowne Branch"
+    },
+    {
+      "resource_id": 1284,
+      "name": "Foundations Medical Adult Day Care"
+    },
+    {
+      "resource_id": 1285,
+      "name": "The Arc Baltimore - Dundalk Day Services"
+    },
+    {
+      "resource_id": 1286,
+      "name": "Access Community Support"
+    },
+    {
+      "resource_id": 1287,
+      "name": "National Children's Center"
+    },
+    {
+      "resource_id": 1288,
+      "name": "Star Community Inc"
+    },
+    {
+      "resource_id": 1289,
+      "name": "Meritus Health"
+    },
+    {
+      "resource_id": 1290,
+      "name": "Adventure Dental and Orthodontics"
+    },
+    {
+      "resource_id": 1291,
+      "name": "University of Maryland School of Dentistry"
+    },
+    {
+      "resource_id": 1292,
+      "name": "Eternal Smiles Foundation"
+    },
+    {
+      "resource_id": 1293,
+      "name": "The Y Of Central Maryland"
+    },
+    {
+      "resource_id": 1294,
+      "name": "Pathfinders For Autism"
+    },
+    {
+      "resource_id": 1295,
+      "name": "Hopewell Cancer Support"
+    },
+    {
+      "resource_id": 1296,
+      "name": "Unified Community Connections Agency"
+    },
+    {
+      "resource_id": 1297,
+      "name": "Girl Scouts of Central Maryland Council Offices"
+    },
+    {
+      "resource_id": 1298,
+      "name": "Western Family Branch YMCA of Central Maryland"
+    },
+    {
+      "resource_id": 1299,
+      "name": "Camp Fire Patuxent Area"
+    },
+    {
+      "resource_id": 1300,
+      "name": "Worcester County Parks & Recreation"
+    },
+    {
+      "resource_id": 1301,
+      "name": "Maryland Department of Emergency Management"
+    },
+    {
+      "resource_id": 1302,
+      "name": "CHAI, Comprehensive Housing Assistance, Inc."
+    },
+    {
+      "resource_id": 1303,
+      "name": "The Family Tree"
+    },
+    {
+      "resource_id": 1304,
+      "name": "Maryland Family Network"
+    },
+    {
+      "resource_id": 1305,
+      "name": "Maryland Department of the Environment"
+    },
+    {
+      "resource_id": 1306,
+      "name": "Lifeway Mobility"
+    },
+    {
+      "resource_id": 1307,
+      "name": "U.S. Food and Drug Administration"
+    },
+    {
+      "resource_id": 1308,
+      "name": "Maryland Department of Natural Resources"
+    },
+    {
+      "resource_id": 1309,
+      "name": "National Center for Missing & Exploited Children"
+    },
+    {
+      "resource_id": 1310,
+      "name": "Living at Home Consultations"
+    },
+    {
+      "resource_id": 1311,
+      "name": "The Johns Hopkins Hospital :David M. Rubenstein Child Health Building"
+    },
+    {
+      "resource_id": 1312,
+      "name": "UM Baltimore Washington Medical Center"
+    },
+    {
+      "resource_id": 1313,
+      "name": "Adventist HealthCare White Oak Medical Center"
+    },
+    {
+      "resource_id": 1314,
+      "name": "Adventist HealthCare Shady Grove Medical Center"
+    },
+    {
+      "resource_id": 1315,
+      "name": "Suburban Hospital"
+    },
+    {
+      "resource_id": 1316,
+      "name": "Adventist HealthCare Fort Washington Medical Center"
+    },
+    {
+      "resource_id": 1317,
+      "name": "TidalHealth Nanticoke"
+    },
+    {
+      "resource_id": 1318,
+      "name": "TidalHealth Peninsula Regional"
+    },
+    {
+      "resource_id": 1319,
+      "name": "TidalHealth Atlantic"
+    },
+    {
+      "resource_id": 1320,
+      "name": "Universal Pro Care Inc"
+    },
+    {
+      "resource_id": 1321,
+      "name": "Honeywell Healthcare Services LLC"
+    },
+    {
+      "resource_id": 1322,
+      "name": "Senior Care at Home"
+    },
+    {
+      "resource_id": 1323,
+      "name": "A+ Personal Home Care"
+    },
+    {
+      "resource_id": 1324,
+      "name": "The Pacific Group Healthcare Services of MD,LLC"
+    },
+    {
+      "resource_id": 1325,
+      "name": "Stella Maris"
+    },
+    {
+      "resource_id": 1326,
+      "name": "Atosk Healthcare Services Inc."
+    },
+    {
+      "resource_id": 1327,
+      "name": "Victoire Health Services"
+    },
+    {
+      "resource_id": 1328,
+      "name": "Amedisys Home Health Care"
+    },
+    {
+      "resource_id": 1329,
+      "name": "Beall Care Services Inc"
+    },
+    {
+      "resource_id": 1330,
+      "name": "D&D Home Health Services"
+    },
+    {
+      "resource_id": 1331,
+      "name": "Amedisys Home Health Care"
+    },
+    {
+      "resource_id": 1332,
+      "name": "Amedisys Home Health Care"
+    },
+    {
+      "resource_id": 1333,
+      "name": "Amedisys Home Health Care"
+    },
+    {
+      "resource_id": 1334,
+      "name": "JollyCare Residential Services"
+    },
+    {
+      "resource_id": 1335,
+      "name": "Personic Health"
+    },
+    {
+      "resource_id": 1336,
+      "name": "Whole Heart Center"
+    },
+    {
+      "resource_id": 1337,
+      "name": "Tragedy Assistance Program for Survivors"
+    },
+    {
+      "resource_id": 1338,
+      "name": "Emma's Footprints"
+    },
+    {
+      "resource_id": 1339,
+      "name": "University Of Maryland School Of Medicine"
+    },
+    {
+      "resource_id": 1340,
+      "name": "Port Recovery"
+    },
+    {
+      "resource_id": 1341,
+      "name": "Gilchrist Center Towson"
+    },
+    {
+      "resource_id": 1342,
+      "name": "The Honey Bee Society"
+    },
+    {
+      "resource_id": 1343,
+      "name": "Defenders of Animal Rights Inc"
+    },
+    {
+      "resource_id": 1344,
+      "name": "Maryland SPCA"
+    },
+    {
+      "resource_id": 1345,
+      "name": "Baltimore County Animal Services"
+    },
+    {
+      "resource_id": 1346,
+      "name": "The Therapeutic & Recreational Riding Center, Inc."
+    },
+    {
+      "resource_id": 1347,
+      "name": "Great Strides"
+    },
+    {
+      "resource_id": 1348,
+      "name": "Maryland Therapeutic Riding"
+    },
+    {
+      "resource_id": 1349,
+      "name": "Vesta Inc."
+    },
+    {
+      "resource_id": 1350,
+      "name": "Pets on Wheels Inc"
+    },
+    {
+      "resource_id": 1351,
+      "name": "Gaudenzia Owings Mills-Richards Building"
+    },
+    {
+      "resource_id": 1352,
+      "name": "Right Turn of Maryland - Addictions Treatment Center (& DUI Programs)"
+    },
+    {
+      "resource_id": 1353,
+      "name": "The Crossroads Center of Frederick LLC DBA The Westminster Recovery Center"
+    },
+    {
+      "resource_id": 1354,
+      "name": "Eva Life Giver Inc./ DITTO"
+    },
+    {
+      "resource_id": 1355,
+      "name": "Maryland Addiction Recovery Center"
+    },
+    {
+      "resource_id": 1356,
+      "name": "Hope's Horizon"
+    },
+    {
+      "resource_id": 1357,
+      "name": "BornFree Wellness Centers of America"
+    },
+    {
+      "resource_id": 1358,
+      "name": "Serenity Health LLC"
+    },
+    {
+      "resource_id": 1359,
+      "name": "Hillcrest Children and Family Center"
+    },
+    {
+      "resource_id": 1360,
+      "name": "BHG Maryland Treatment Center"
+    },
+    {
+      "resource_id": 1361,
+      "name": "Gateway Maryland"
+    },
+    {
+      "resource_id": 1362,
+      "name": "Equipment Connections for Children"
+    }
+  ],
+  "resources_with_one_tag": [],
+  "category_counts": {
+    "Other / Uncategorized": 164,
+    "Youth, Family, & General Support Services": 138,
+    "Behavioral Health, Substance Use, & Crisis": 234,
+    "Food & Essential Needs": 147,
+    "Housing & Shelter": 311,
+    "Physical & General Health Care": 294,
+    "Safety & Anti-Violence": 18,
+    "Employment, Training, & Education": 45,
+    "Veteran Services": 11
+  },
+  "redundant_tags": [],
+  "inconsistencies": [
+    "No actual tags were present. Existing categories combine different services and are too broad for precise triage.",
+    "Workbook header Cateogry of Help is misspelled; preserved verbatim."
+  ],
+  "five_full_records": [
+    {
+      "ID": 1.0,
+      "Address": "1731 E Chase St, Baltimore, MD 21213",
+      "Latitude": 39.3031757,
+      "Longitude": -76.5929788,
+      "Phone Number": "(410) 545-0136",
+      "Name of Service": "The Community Resource Center",
+      "Restrictions of Service": "Residents in catchment area",
+      "Days of Service": "Monday: 8:30 AM to 4:30 PM; Tuesday: 8:30 AM to 4:30 PM; Wednesday: 8:30 AM to 4:30 PM; Thursday: 8:30 AM to 4:30 PM; Friday: 8:30 AM to 4:30 PM; Saturday: Closed; Sunday: Closed",
+      "Cateogry of Help": "Other / Uncategorized",
+      "Description": "A physical community resource center located at the supplied Baltimore address. Publicly available sources do not provide clear, attributable details about specific programs, eligibility rules, or services offered at this location.",
+      "link to site": null,
+      "Reliability Description": "Public review text is sparse: most Google reviewers left star ratings without comments, so substantive feedback is limited. The few written comments report crowding and at least one complaint about perceived staff impatience; several recent anonymous low-star ratings exist but provide no explanatory detail. Because review content is thin and the organization’s website could not be verified, qualitative impressions are provisional.",
+      "Reliability Score": 67.47247121,
+      "Confidence": 47.57694451,
+      "Confidence Details": "accepted google identity: 14.2/15; review volume: 22.1/30; review consistency: 2.3/7; review freshness: 7.3/8; verified website: 0.0/15; confirmed irs record: 0.0/20; source corroboration: 1.7/5; Synthesis metadata: insufficient_evidence (not part of numeric confidence)",
+      "Date Verified": 8312026.0,
+      "Classification": "Mixed Reviews"
+    },
+    {
+      "ID": 2,
+      "Address": "5225 York Rd #4, Baltimore, MD 21212",
+      "Latitude": 39.3538797,
+      "Longitude": -76.6096773,
+      "Phone Number": "(410) 396-6084",
+      "Name of Service": "Northern Community Action",
+      "Restrictions of Service": "Residents in catchment area",
+      "Days of Service": "Monday: 8:30 AM to 3:30 PM; Tuesday: 8:30 AM to 3:30 PM; Wednesday: 8:30 AM to 3:30 PM; Thursday: 8:30 AM to 3:30 PM; Friday: 8:30 AM to 3:30 PM; Saturday: Closed; Sunday: Closed",
+      "Cateogry of Help": "Youth, Family, & General Support Services",
+      "Description": "A neighborhood community center / social services office that provides in-person assistance and referrals to other agencies for residents seeking help with social supports and benefit programs.",
+      "link to site": null,
+      "Reliability Description": "Review text shows a mix of experiences: many reviewers describe staff as helpful and able to provide resources or get things done, while a recurring negative theme is long wait times and occasional reports of rude or unprofessional staff. The most recent reviews continue to show this mixed pattern, with some recent 5-star praise alongside isolated low-star reports about service and wait time. Attempts to corroborate program details on an official website were unsuccessful, which limits confirmation of specific services beyond what reviewers report and the Google listing.",
+      "Reliability Score": 67.05563236,
+      "Confidence": 54.10556213,
+      "Confidence Details": "accepted google identity: 14.2/15; review volume: 30.0/30; review consistency: 1.0/7; review freshness: 7.2/8; verified website: 0.0/15; confirmed irs record: 0.0/20; source corroboration: 1.7/5; Synthesis metadata: medium (not part of numeric confidence)",
+      "Date Verified": 8312026.0,
+      "Classification": "Mixed Reviews"
+    },
+    {
+      "ID": 3,
+      "Address": "Tower II, 100 S Charles St 8th floor, Baltimore, MD 21201",
+      "Latitude": 39.2869711,
+      "Longitude": -76.6157314,
+      "Phone Number": "(410) 637-1900",
+      "Name of Service": "Behavioral Health System Baltimore",
+      "Restrictions of Service": "988 crisis support is available by call or text and is described as free and confidential for residents in Baltimore City, Baltimore County, Howard County, and Carroll County. Bmore POWER provides citywide harm-reduction outreach and posts an outreach schedule; materials and services referenced include naloxone and drug-testing resources. No additional intake documents, referral-only restrictions, or eligibility requirements were stated in the available sources.",
+      "Days of Service": "Monday: 8 AM to 5 PM; Tuesday: 8 AM to 5 PM; Wednesday: 8 AM to 5 PM; Thursday: 8 AM to 5 PM; Friday: 8 AM to 5 PM; Saturday: Closed; Sunday: Closed",
+      "Cateogry of Help": "Behavioral Health, Substance Use, & Crisis",
+      "Description": "A city-level behavioral health coordinating organization that operates a 988 crisis helpline for the region, runs a harm-reduction outreach team (Bmore POWER) offering on-the-ground outreach and overdose-harm-reduction services, and manages complaints and system navigation for behavioral-health providers in Baltimore City.",
+      "link to site": "http://www.bhsbaltimore.org/",
+      "Reliability Description": "Public review feedback is very limited; the available recent review expresses that the reviewer felt their concerns were ignored and reports distrust of health-care professionals, and the listing owner did not post a response. The organization’s official website and archival snapshots corroborate described programs (988 helpline, Bmore POWER outreach, complaint management), supporting the identity and stated activities. Because review text is sparse and skewed negative, user-experience claims should be treated cautiously and are not broadly generalizable.",
+      "Reliability Score": 46.87317256,
+      "Confidence": 71.54973243,
+      "Confidence Details": "accepted google identity: 14.2/15; review volume: 8.9/30; review consistency: 7.0/7; review freshness: 2.2/8; verified website: 14.2/15; confirmed irs record: 20.0/20; source corroboration: 5.0/5; Synthesis metadata: high (not part of numeric confidence)",
+      "Date Verified": 8312026.0,
+      "Classification": "Low Reliability"
+    },
+    {
+      "ID": 4,
+      "Address": "4200 Pennington Ave, Baltimore, MD 21226",
+      "Latitude": 39.2273954,
+      "Longitude": -76.5888796,
+      "Phone Number": "(443) 300-1177",
+      "Name of Service": "Unlimited Bounds Human Services",
+      "Restrictions of Service": "Contact an admissions coordinator to begin services (phone and contact form available); the website states an admissions coordinator will respond within two business days. Prospective clients are asked to contact admissions to confirm insurance acceptance and intake details; the site describes an intake team that facilitates initiation of services.",
+      "Days of Service": "Monday: 9 AM to 5 PM; Tuesday: 9 AM to 5 PM; Wednesday: 9 AM to 5 PM; Thursday: 9 AM to 5 PM; Friday: 9 AM to 5 PM; Saturday: 9 AM to 5 PM; Sunday: 9 AM to 5 PM",
+      "Cateogry of Help": "Behavioral Health, Substance Use, & Crisis",
+      "Description": "A Baltimore-based behavioral health provider offering multi-level addiction treatment and associated mental health care, including structured day programs, outpatient treatment, individual and group therapy, medication management, residential/housing support, and telehealth options.",
+      "link to site": "https://unlimitedbounds.com/",
+      "Reliability Description": "Google Maps reviews show a substantial set of first-hand client feedback: many reviewers praise caring, committed staff and describe effective PHP/IOP programming, on-site housing, and meals; recurring criticisms include staff turnover, small food portions, and delays or problems getting psychiatric medications. The organization’s verified website and Google Maps listing consistently describe a multi-level addiction-treatment continuum (PHP, IOP, outpatient), residential/housing services, medication management/psychiatry, and telehealth, which aligns with reviewer accounts. Newer reviews continue to show a mix of strong endorsements and sharp operational complaints, so public feedback is mixed but consistent with the services advertised.",
+      "Reliability Score": 71.93524405,
+      "Confidence": 69.45683011,
+      "Confidence Details": "accepted google identity: 13.5/15; review volume: 30.0/30; review consistency: 1.4/7; review freshness: 7.7/8; verified website: 13.5/15; confirmed irs record: 0.0/20; source corroboration: 3.3/5; Synthesis metadata: high (not part of numeric confidence)",
+      "Date Verified": 8312026.0,
+      "Classification": "Reliable"
+    },
+    {
+      "ID": 5,
+      "Address": "4201 Primrose Ave, Baltimore, MD 21215",
+      "Latitude": 39.3494024,
+      "Longitude": -76.6958588,
+      "Phone Number": "(410) 764-8560",
+      "Name of Service": "People Encouraging People",
+      "Restrictions of Service": "Enrollment in PEP services is implied for ongoing support; the website instructs enrolled clients to call their usual PEP office and notes an after-hours on-call number will connect when needed. (Evidence: official website and Google Maps listing.)",
+      "Days of Service": "Monday: 8:30 AM to 5 PM; Tuesday: 8:30 AM to 5 PM; Wednesday: 8:30 AM to 5 PM; Thursday: 8:30 AM to 5 PM; Friday: 8:30 AM to 5 PM; Saturday: Closed; Sunday: Closed",
+      "Cateogry of Help": "Behavioral Health, Substance Use, & Crisis",
+      "Description": "PEP (People Encouraging People) operates a physical recovery/behavioral health program that provides community-based rehabilitation and individualized support services for people with psychiatric or other disabling conditions; the organization’s website also states it is accredited by The Joint Commission.",
+      "link to site": "http://www.peponline.org/",
+      "Reliability Description": "Recent reviewer comments are mixed: many people report helpful, caring, communicative staff who supported intake, housing assistance, or other services, while other reviewers describe serious safety and housing-related problems at some PEP sites, including allegations of unaddressed violence and pest issues. The most recent reviews include both brief positive reports and one detailed, severe complaint about a past site, so public feedback is currently mixed rather than uniformly positive or uniformly negative.",
+      "Reliability Score": 69.19049321,
+      "Confidence": 70.64552897,
+      "Confidence Details": "accepted google identity: 14.2/15; review volume: 30.0/30; review consistency: 3.0/7; review freshness: 5.8/8; verified website: 14.2/15; confirmed irs record: 0.0/20; source corroboration: 3.3/5; Synthesis metadata: medium (not part of numeric confidence)",
+      "Date Verified": 8312026.0,
+      "Classification": "Mixed Reviews"
+    }
+  ]
+}

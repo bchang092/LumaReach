@@ -1,0 +1,35 @@
+{
+  "authored_inputs": 104,
+  "authored_crisis_cases": 40,
+  "authored_crisis_passes": 40,
+  "authored_exact_categories": 103,
+  "authored_exact_routes": 86,
+  "authored_routes": {
+    "matches": 31,
+    "follow_up": 12,
+    "no_match": 21,
+    "crisis": 40
+  },
+  "synthetic_variants": 4160,
+  "variant_crisis_cases": 1600,
+  "variant_crisis_passes": 1600,
+  "grounding_passes": 4160,
+  "manual_development_service_review": {
+    "supported": 53,
+    "reviewed": 53,
+    "not_independent_caseworker_validation": true
+  },
+  "live_llm_validated": false,
+  "live_blocker": "HTTP 429 credit_balance_exhausted",
+  "tests": {
+    "django": 51,
+    "audit": 24,
+    "audit_rule_variants": 2000,
+    "dom": 10,
+    "mcp_protocol": "passed",
+    "migration_io": "passed",
+    "real_http_smoke": "passed"
+  },
+  "real_browser_visual_microphone_verification": false,
+  "production_deployed": false
+}

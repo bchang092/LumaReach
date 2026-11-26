@@ -3,6 +3,7 @@
 import logging
 from smtplib import SMTPException
 
+from lifeline_core.brand import DISPLAY_NAME
 from django.conf import settings
 from django.core.mail import send_mail
 from django.urls import reverse
@@ -28,7 +29,7 @@ def notify_feedback_received(feedback):
     )
     # Keep user-supplied text out of email headers and send it as plain text.
     body = (
-        "New community feedback has been published on Baltimore Lifeline.\n\n"
+        f"New community feedback has been published on {DISPLAY_NAME}.\n\n"
         f"Manage or hide this post in Django admin (sign-in required):\n{review_url}\n\n"
         f"Type: {feedback.get_category_display()}\n"
         f"Name or alias: {feedback.name or 'Anonymous'}\n"
@@ -37,7 +38,7 @@ def notify_feedback_received(feedback):
     )
     try:
         sent = send_mail(
-            subject=f"[Baltimore Lifeline] New feedback #{feedback.pk}",
+            subject=f"[{DISPLAY_NAME}] New feedback #{feedback.pk}",
             message=body,
             from_email=settings.DEFAULT_FROM_EMAIL,
             recipient_list=[settings.FEEDBACK_NOTIFICATION_EMAIL],

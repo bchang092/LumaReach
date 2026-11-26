@@ -1,0 +1,3166 @@
+{
+  "source_sha256": "d36da671b9ec19ef8b94aa6512682bbcefb987b82567f07775cc084baa138d41",
+  "review_type": "Implementation source-description review, not independent caseworker or provider verification",
+  "changes": [
+    {
+      "resource_id": 333,
+      "reason": "Arranging medical care is not directly providing it.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 90,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 84
+          },
+          "age.older_adults_served": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 90,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "older adults",
+            "start": 78
+          },
+          "need:care.assisted_living": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 15,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Assisted living",
+            "start": 0
+          },
+          "need:care.memory": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 168,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Alzheimer's/dementia care",
+            "start": 143
+          },
+          "need:medical.general": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 352,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 340
+          }
+        },
+        "record_sha256": "7da501da1de676f36e5396720926eac2576e4ef1352756f766df35af8947b104",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "age.adults_served",
+          "age.older_adults_served",
+          "need:care.assisted_living",
+          "need:care.memory",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 90,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 84
+          },
+          "age.older_adults_served": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 90,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "older adults",
+            "start": 78
+          },
+          "need:care.assisted_living": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 15,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Assisted living",
+            "start": 0
+          },
+          "need:care.memory": {
+            "context": "Assisted living facility that provides around-the-clock professional care for older adults, with services described by the provider to include Alzheimer's/dementia care, assistance with activities of daily living (personal hygiene and continence management), meals and snacks, housekeeping and laundry, individualized care plans, arranging medical care and transportation, and daily social/recreational activities.",
+            "end": 168,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Alzheimer's/dementia care",
+            "start": 143
+          }
+        },
+        "record_sha256": "7da501da1de676f36e5396720926eac2576e4ef1352756f766df35af8947b104",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "age.adults_served",
+          "age.older_adults_served",
+          "need:care.assisted_living",
+          "need:care.memory"
+        ]
+      }
+    },
+    {
+      "resource_id": 400,
+      "reason": "Coordination of medical care is not a general medical service.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.assisted_living": {
+            "context": "A small, residential assisted living home that provides 24/7, on-site care in a home-like setting, offering help with daily living activities, medication oversight, meals, housekeeping, social and recreational activities, and coordination of medical care and transportation.",
+            "end": 36,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "assisted living",
+            "start": 21
+          },
+          "need:community.social_recreation": {
+            "context": "A small, residential assisted living home that provides 24/7, on-site care in a home-like setting, offering help with daily living activities, medication oversight, meals, housekeeping, social and recreational activities, and coordination of medical care and transportation.",
+            "end": 220,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "social and recreational activities",
+            "start": 186
+          },
+          "need:medical.general": {
+            "context": "A small, residential assisted living home that provides 24/7, on-site care in a home-like setting, offering help with daily living activities, medication oversight, meals, housekeeping, social and recreational activities, and coordination of medical care and transportation.",
+            "end": 254,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 242
+          }
+        },
+        "record_sha256": "e9fd96301dce3d8da7f0b6ff472bcb0fc415ada7aa23995df4e023e910fb65be",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.assisted_living",
+          "need:community.social_recreation",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.assisted_living": {
+            "context": "A small, residential assisted living home that provides 24/7, on-site care in a home-like setting, offering help with daily living activities, medication oversight, meals, housekeeping, social and recreational activities, and coordination of medical care and transportation.",
+            "end": 36,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "assisted living",
+            "start": 21
+          },
+          "need:community.social_recreation": {
+            "context": "A small, residential assisted living home that provides 24/7, on-site care in a home-like setting, offering help with daily living activities, medication oversight, meals, housekeeping, social and recreational activities, and coordination of medical care and transportation.",
+            "end": 220,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "social and recreational activities",
+            "start": 186
+          }
+        },
+        "record_sha256": "e9fd96301dce3d8da7f0b6ff472bcb0fc415ada7aa23995df4e023e910fb65be",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.assisted_living",
+          "need:community.social_recreation"
+        ]
+      }
+    },
+    {
+      "resource_id": 642,
+      "reason": "Educational and clinical therapies do not establish general medical care.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.children_served": {
+            "context": "Villa Maria School provides educational and clinical services for children with emotional, behavioral, and learning challenges, including full-day special education and related therapies, in a Maryland Department of Education\u2013approved setting.",
+            "end": 74,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "children",
+            "start": 66
+          },
+          "need:education.learning": {
+            "context": "Villa Maria School provides educational and clinical services for children with emotional, behavioral, and learning challenges, including full-day special education and related therapies, in a Maryland Department of Education\u2013approved setting.",
+            "end": 164,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "special education",
+            "start": 147
+          },
+          "need:medical.general": {
+            "context": "Villa Maria School provides educational and clinical services for children with emotional, behavioral, and learning challenges, including full-day special education and related therapies, in a Maryland Department of Education\u2013approved setting.",
+            "end": 61,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "clinical services",
+            "start": 44
+          }
+        },
+        "record_sha256": "ebb217420e40300cacd65a06b02fd82cf434bc74c79b2f7c7a374bb38ba6da17",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "age.children_served",
+          "need:education.learning",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.children_served": {
+            "context": "Villa Maria School provides educational and clinical services for children with emotional, behavioral, and learning challenges, including full-day special education and related therapies, in a Maryland Department of Education\u2013approved setting.",
+            "end": 74,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "children",
+            "start": 66
+          },
+          "need:education.learning": {
+            "context": "Villa Maria School provides educational and clinical services for children with emotional, behavioral, and learning challenges, including full-day special education and related therapies, in a Maryland Department of Education\u2013approved setting.",
+            "end": 164,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "special education",
+            "start": 147
+          }
+        },
+        "record_sha256": "ebb217420e40300cacd65a06b02fd82cf434bc74c79b2f7c7a374bb38ba6da17",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "age.children_served",
+          "need:education.learning"
+        ]
+      }
+    },
+    {
+      "resource_id": 799,
+      "reason": "Description explicitly specifies non-medical home care.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 9 AM to 12 PM",
+            "end": 139,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 9 AM to 12 PM",
+            "start": 116
+          },
+          "need:care.home": {
+            "context": "Radiocw Healthcare provides in-home, non-medical care and staffing solutions, including in-home care, companionship, and personal care, as well as administrative staffing and transportation for healthcare needs;",
+            "end": 100,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home care",
+            "start": 88
+          },
+          "need:medical.general": {
+            "context": "Radiocw Healthcare provides in-home, non-medical care and staffing solutions, including in-home care, companionship, and personal care, as well as administrative staffing and transportation for healthcare needs;",
+            "end": 53,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 41
+          },
+          "need:transportation.assistance": {
+            "context": "Radiocw Healthcare provides in-home, non-medical care and staffing solutions, including in-home care, companionship, and personal care, as well as administrative staffing and transportation for healthcare needs;",
+            "end": 193,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "transportation for",
+            "start": 175
+          }
+        },
+        "record_sha256": "41287945f71938f9b9bac19c261e5502bb977ba6c16f8e0efb7ec4e28e52c60d",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:medical.general",
+          "need:transportation.assistance"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 9 AM to 12 PM",
+            "end": 139,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 9 AM to 12 PM",
+            "start": 116
+          },
+          "need:care.home": {
+            "context": "Radiocw Healthcare provides in-home, non-medical care and staffing solutions, including in-home care, companionship, and personal care, as well as administrative staffing and transportation for healthcare needs;",
+            "end": 100,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home care",
+            "start": 88
+          },
+          "need:transportation.assistance": {
+            "context": "Radiocw Healthcare provides in-home, non-medical care and staffing solutions, including in-home care, companionship, and personal care, as well as administrative staffing and transportation for healthcare needs;",
+            "end": 193,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "transportation for",
+            "start": 175
+          }
+        },
+        "record_sha256": "41287945f71938f9b9bac19c261e5502bb977ba6c16f8e0efb7ec4e28e52c60d",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:transportation.assistance"
+        ]
+      }
+    },
+    {
+      "resource_id": 800,
+      "reason": "Description explicitly specifies non-medical home care.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "insurance.medicaid_reported": {
+            "context": "In-home, non-medical care services provided by Affectionate Touch Home Care LLC in Gaithersburg, MD, including Medicaid-based care options and family caregiver programs as described on their site.",
+            "end": 130,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Medicaid-based care",
+            "start": 111
+          },
+          "need:care.home": {
+            "context": "In-home, non-medical care services provided by Affectionate Touch Home Care LLC in Gaithersburg, MD, including Medicaid-based care options and family caregiver programs as described on their site.",
+            "end": 75,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Home Care",
+            "start": 66
+          },
+          "need:medical.general": {
+            "context": "In-home, non-medical care services provided by Affectionate Touch Home Care LLC in Gaithersburg, MD, including Medicaid-based care options and family caregiver programs as described on their site.",
+            "end": 25,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 13
+          }
+        },
+        "record_sha256": "3581a8f900dbac09d69cf02d368c2658b318109c4fdf2be4c738637b817edd22",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "insurance.medicaid_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "insurance.medicaid_reported": {
+            "context": "In-home, non-medical care services provided by Affectionate Touch Home Care LLC in Gaithersburg, MD, including Medicaid-based care options and family caregiver programs as described on their site.",
+            "end": 130,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Medicaid-based care",
+            "start": 111
+          },
+          "need:care.home": {
+            "context": "In-home, non-medical care services provided by Affectionate Touch Home Care LLC in Gaithersburg, MD, including Medicaid-based care options and family caregiver programs as described on their site.",
+            "end": 75,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Home Care",
+            "start": 66
+          }
+        },
+        "record_sha256": "3581a8f900dbac09d69cf02d368c2658b318109c4fdf2be4c738637b817edd22",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "insurance.medicaid_reported",
+          "need:care.home"
+        ]
+      }
+    },
+    {
+      "resource_id": 951,
+      "reason": "Mental health evaluation is not general medical care.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Bridges Healthcare Services provides mental health evaluation and ongoing care for children, adults, and families at their Waldorf, Maryland clinic.",
+            "end": 99,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 93
+          },
+          "age.children_served": {
+            "context": "Bridges Healthcare Services provides mental health evaluation and ongoing care for children, adults, and families at their Waldorf, Maryland clinic.",
+            "end": 91,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "children",
+            "start": 83
+          },
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: Closed; Tuesday: 9 AM to 3:30 PM; Wednesday: Closed; Thursday: 9 AM to 3:30 PM; Friday: 1 to 7 PM; Saturday: 10 AM to 2 PM; Sunday: 10 AM to 2 PM",
+            "end": 105,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 7 PM",
+            "start": 98
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 10 AM to 2 PM",
+            "end": 130,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 10 AM to 2 PM",
+            "start": 107
+          },
+          "need:medical.general": {
+            "context": "Bridges Healthcare Services provides mental health evaluation and ongoing care for children, adults, and families at their Waldorf, Maryland clinic.",
+            "end": 27,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Healthcare Services",
+            "start": 8
+          }
+        },
+        "record_sha256": "62084fd041da3149737f4dd55811b6c820889c3672265081c692475acda5bd4e",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "age.adults_served",
+          "age.children_served",
+          "hours.evening_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Bridges Healthcare Services provides mental health evaluation and ongoing care for children, adults, and families at their Waldorf, Maryland clinic.",
+            "end": 99,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 93
+          },
+          "age.children_served": {
+            "context": "Bridges Healthcare Services provides mental health evaluation and ongoing care for children, adults, and families at their Waldorf, Maryland clinic.",
+            "end": 91,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "children",
+            "start": 83
+          },
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: Closed; Tuesday: 9 AM to 3:30 PM; Wednesday: Closed; Thursday: 9 AM to 3:30 PM; Friday: 1 to 7 PM; Saturday: 10 AM to 2 PM; Sunday: 10 AM to 2 PM",
+            "end": 105,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 7 PM",
+            "start": 98
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 10 AM to 2 PM",
+            "end": 130,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 10 AM to 2 PM",
+            "start": 107
+          }
+        },
+        "record_sha256": "62084fd041da3149737f4dd55811b6c820889c3672265081c692475acda5bd4e",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "age.adults_served",
+          "age.children_served",
+          "hours.evening_site_hours_reported",
+          "hours.weekend_site_hours_reported"
+        ]
+      }
+    },
+    {
+      "resource_id": 1041,
+      "reason": "Lodging for families of patients does not establish direct medical care.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance and parking.",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: 9 AM to 9 PM; Tuesday: 9 AM to 9 PM; Wednesday: 9 AM to 9 PM; Thursday: 9 AM to 9 PM; Friday: 9 AM to 9 PM; Saturday: 9 AM to 7 PM; Sunday: 9 AM to 6 PM",
+            "end": 20,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 9 PM",
+            "start": 13
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 9 AM to 7 PM",
+            "end": 138,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 9 AM to 7 PM",
+            "start": 116
+          },
+          "need:housing.medical_lodging": {
+            "context": "Ronald McDonald House Maryland provides a home-like lodging near a hospital for families with a child receiving medical care, offering private family rooms, shared kitchens, meals, and supportive programs to help families stay close during treatment.",
+            "end": 75,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "lodging near a hospital",
+            "start": 52
+          },
+          "need:medical.general": {
+            "context": "Ronald McDonald House Maryland provides a home-like lodging near a hospital for families with a child receiving medical care, offering private family rooms, shared kitchens, meals, and supportive programs to help families stay close during treatment.",
+            "end": 124,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "medical care",
+            "start": 112
+          }
+        },
+        "record_sha256": "1d4a558cb323dfc70b75320dc03bc0b8d8896f841ba49c47708c2ba5cb885f93",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "hours.evening_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:housing.medical_lodging",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance and parking.",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: 9 AM to 9 PM; Tuesday: 9 AM to 9 PM; Wednesday: 9 AM to 9 PM; Thursday: 9 AM to 9 PM; Friday: 9 AM to 9 PM; Saturday: 9 AM to 7 PM; Sunday: 9 AM to 6 PM",
+            "end": 20,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 9 PM",
+            "start": 13
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 9 AM to 7 PM",
+            "end": 138,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 9 AM to 7 PM",
+            "start": 116
+          },
+          "need:housing.medical_lodging": {
+            "context": "Ronald McDonald House Maryland provides a home-like lodging near a hospital for families with a child receiving medical care, offering private family rooms, shared kitchens, meals, and supportive programs to help families stay close during treatment.",
+            "end": 75,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "lodging near a hospital",
+            "start": 52
+          }
+        },
+        "record_sha256": "1d4a558cb323dfc70b75320dc03bc0b8d8896f841ba49c47708c2ba5cb885f93",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "hours.evening_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:housing.medical_lodging"
+        ]
+      }
+    },
+    {
+      "resource_id": 470,
+      "reason": "Emergency department care belongs to medical.emergency; routine care is not documented.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 99,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 93
+          },
+          "age.children_served": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 112,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "children",
+            "start": 104
+          },
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.emergency": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 41,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Emergency Department",
+            "start": 21
+          },
+          "need:medical.general": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 88,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "medical care",
+            "start": 76
+          }
+        },
+        "record_sha256": "8ee040722237b3daf20dee701e70abef5742ab5cadd61ba4b1edf2fe8d9e79d6",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "age.adults_served",
+          "age.children_served",
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.emergency",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 99,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 93
+          },
+          "age.children_served": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 112,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "children",
+            "start": 104
+          },
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.emergency": {
+            "context": "Mercy Medical Center Emergency Department offers around-the-clock emergency medical care for adults and children, including triage, rapid assessment, and on-site diagnostics, with additional programs such as the Forensic Nurse Examiner program for certain cases.",
+            "end": 41,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Emergency Department",
+            "start": 21
+          }
+        },
+        "record_sha256": "8ee040722237b3daf20dee701e70abef5742ab5cadd61ba4b1edf2fe8d9e79d6",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "age.adults_served",
+          "age.children_served",
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.emergency"
+        ]
+      }
+    },
+    {
+      "resource_id": 1047,
+      "reason": "Emergency department care belongs to medical.emergency; routine care is not documented.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.children_served": {
+            "context": "Frederick Health Hospital Emergency Department provides 24/7 emergency medical care at Frederick Health Hospital, including a dedicated pediatric emergency center and specialized stroke and cardiac services.",
+            "end": 145,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "pediatric",
+            "start": 136
+          },
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.emergency": {
+            "context": "Frederick Health Hospital Emergency Department provides 24/7 emergency medical care at Frederick Health Hospital, including a dedicated pediatric emergency center and specialized stroke and cardiac services.",
+            "end": 46,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Emergency Department",
+            "start": 26
+          },
+          "need:medical.general": {
+            "context": "Frederick Health Hospital Emergency Department provides 24/7 emergency medical care at Frederick Health Hospital, including a dedicated pediatric emergency center and specialized stroke and cardiac services.",
+            "end": 83,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "medical care",
+            "start": 71
+          }
+        },
+        "record_sha256": "29bed220c67e60bb8606d659e584c079b293a9196046beb8b1465bd5fdb7997c",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "age.children_served",
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.emergency",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.children_served": {
+            "context": "Frederick Health Hospital Emergency Department provides 24/7 emergency medical care at Frederick Health Hospital, including a dedicated pediatric emergency center and specialized stroke and cardiac services.",
+            "end": 145,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "pediatric",
+            "start": 136
+          },
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.emergency": {
+            "context": "Frederick Health Hospital Emergency Department provides 24/7 emergency medical care at Frederick Health Hospital, including a dedicated pediatric emergency center and specialized stroke and cardiac services.",
+            "end": 46,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Emergency Department",
+            "start": 26
+          }
+        },
+        "record_sha256": "29bed220c67e60bb8606d659e584c079b293a9196046beb8b1465bd5fdb7997c",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "age.children_served",
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.emergency"
+        ]
+      }
+    },
+    {
+      "resource_id": 1001,
+      "reason": "Peer-led support, education and advocacy do not establish clinical treatment.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "cost.free_program_reported": {
+            "context": "NAMI Metropolitan Baltimore provides free mental health support, peer-led groups, education programs, and advocacy to help people living with mental illness and their families build healthier, more connected lives.",
+            "end": 55,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "free mental health",
+            "start": 37
+          },
+          "need:education.learning": {
+            "context": "NAMI Metropolitan Baltimore provides free mental health support, peer-led groups, education programs, and advocacy to help people living with mental illness and their families build healthier, more connected lives.",
+            "end": 100,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "education programs",
+            "start": 82
+          },
+          "need:mental_health.clinical": {
+            "context": "NAMI Metropolitan Baltimore provides free mental health support, peer-led groups, education programs, and advocacy to help people living with mental illness and their families build healthier, more connected lives.",
+            "end": 63,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "mental health support",
+            "start": 42
+          }
+        },
+        "record_sha256": "9cec207e6363cd3d28bbb2c6841bb4cbfd5a378c10d893b61af5f9014682490d",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "cost.free_program_reported",
+          "need:education.learning",
+          "need:mental_health.clinical"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "cost.free_program_reported": {
+            "context": "NAMI Metropolitan Baltimore provides free mental health support, peer-led groups, education programs, and advocacy to help people living with mental illness and their families build healthier, more connected lives.",
+            "end": 55,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "free mental health",
+            "start": 37
+          },
+          "need:education.learning": {
+            "context": "NAMI Metropolitan Baltimore provides free mental health support, peer-led groups, education programs, and advocacy to help people living with mental illness and their families build healthier, more connected lives.",
+            "end": 100,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "education programs",
+            "start": 82
+          }
+        },
+        "record_sha256": "9cec207e6363cd3d28bbb2c6841bb4cbfd5a378c10d893b61af5f9014682490d",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description correction (not independent provider verification)",
+        "tags": [
+          "cost.free_program_reported",
+          "need:education.learning"
+        ]
+      }
+    },
+    {
+      "resource_id": 261,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "A physical skilled nursing and post-acute care facility that provides around-the-clock nursing, rehabilitation and long-term care services, including advanced clinical programs for respiratory support and other specialty post-hospital care.",
+            "end": 26,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 11
+          },
+          "need:medical.general": {
+            "context": "A physical skilled nursing and post-acute care facility that provides around-the-clock nursing, rehabilitation and long-term care services, including advanced clinical programs for respiratory support and other specialty post-hospital care.",
+            "end": 239,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "hospital care",
+            "start": 226
+          }
+        },
+        "record_sha256": "78833dc40b3e8e748d155e6687379a2bd7e1b64845eb63e84ff5333ae8390228",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "A physical skilled nursing and post-acute care facility that provides around-the-clock nursing, rehabilitation and long-term care services, including advanced clinical programs for respiratory support and other specialty post-hospital care.",
+            "end": 26,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 11
+          },
+          "need:medical.general": {
+            "context": "A physical skilled nursing and post-acute care facility that provides around-the-clock nursing, rehabilitation and long-term care services, including advanced clinical programs for respiratory support and other specialty post-hospital care.",
+            "end": 239,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "hospital care",
+            "start": 226
+          }
+        },
+        "record_sha256": "78833dc40b3e8e748d155e6687379a2bd7e1b64845eb63e84ff5333ae8390228",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 337,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "Skilled nursing and rehabilitation center providing around-the-clock nursing and inpatient clinical care.",
+            "end": 15,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Skilled nursing",
+            "start": 0
+          },
+          "need:medical.general": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 310,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "clinical services",
+            "start": 293
+          },
+          "need:medical.prescriptions": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 327,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "pharmacy",
+            "start": 319
+          },
+          "need:medical.rehabilitation": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 150,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "rehabilitation programs",
+            "start": 127
+          },
+          "need:navigation.case_management": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 378,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "case management",
+            "start": 363
+          }
+        },
+        "record_sha256": "27e30c75f7d82b2dd3b7d5b6384750b448537d15024a69f819bd19c319c7a060",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.prescriptions",
+          "need:medical.rehabilitation",
+          "need:navigation.case_management"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "Skilled nursing and rehabilitation center providing around-the-clock nursing and inpatient clinical care.",
+            "end": 15,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Skilled nursing",
+            "start": 0
+          },
+          "need:medical.general": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 310,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "clinical services",
+            "start": 293
+          },
+          "need:medical.prescriptions": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 327,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "pharmacy",
+            "start": 319
+          },
+          "need:medical.rehabilitation": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 150,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "rehabilitation programs",
+            "start": 127
+          },
+          "need:navigation.case_management": {
+            "context": "Offers comprehensive rehabilitation programs (physical, occupational, and speech therapy), cardiac and orthopedic rehab tracks, on-site dialysis services, IV/PICC therapy, and supporting clinical services such as pharmacy, laboratory, radiology, nutrition, case management, and therapeutic activities.",
+            "end": 378,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "case management",
+            "start": 363
+          }
+        },
+        "record_sha256": "27e30c75f7d82b2dd3b7d5b6384750b448537d15024a69f819bd19c319c7a060",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.prescriptions",
+          "need:medical.rehabilitation",
+          "need:navigation.case_management"
+        ]
+      }
+    },
+    {
+      "resource_id": 581,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Shirley\u2019s Caring Heart Adult Medical Daycare provides daytime social and medical care for adults, with on-site medical services, medications management, daily activities, and therapeutic supports in a wheelchair-accessible facility.",
+            "end": 96,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 90
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 8 AM to 2 PM",
+            "end": 138,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 8 AM to 2 PM",
+            "start": 116
+          },
+          "need:care.adult_day": {
+            "context": "Shirley\u2019s Caring Heart Adult Medical Daycare provides daytime social and medical care for adults, with on-site medical services, medications management, daily activities, and therapeutic supports in a wheelchair-accessible facility.",
+            "end": 44,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Adult Medical Daycare",
+            "start": 23
+          },
+          "need:medical.general": {
+            "context": "Shirley\u2019s Caring Heart Adult Medical Daycare provides daytime social and medical care for adults, with on-site medical services, medications management, daily activities, and therapeutic supports in a wheelchair-accessible facility.",
+            "end": 85,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "medical care",
+            "start": 73
+          }
+        },
+        "record_sha256": "84d3c489d821fe5019a7920316ddb555cb427f3575c8b2dab950d9b10a031b18",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: adult-daycare disambiguation from original description",
+        "tags": [
+          "age.adults_served",
+          "hours.weekend_site_hours_reported",
+          "need:care.adult_day",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.adults_served": {
+            "context": "Shirley\u2019s Caring Heart Adult Medical Daycare provides daytime social and medical care for adults, with on-site medical services, medications management, daily activities, and therapeutic supports in a wheelchair-accessible facility.",
+            "end": 96,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "adults",
+            "start": 90
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 8 AM to 2 PM",
+            "end": 138,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 8 AM to 2 PM",
+            "start": 116
+          },
+          "need:care.adult_day": {
+            "context": "Shirley\u2019s Caring Heart Adult Medical Daycare provides daytime social and medical care for adults, with on-site medical services, medications management, daily activities, and therapeutic supports in a wheelchair-accessible facility.",
+            "end": 44,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Adult Medical Daycare",
+            "start": 23
+          },
+          "need:medical.general": {
+            "context": "Shirley\u2019s Caring Heart Adult Medical Daycare provides daytime social and medical care for adults, with on-site medical services, medications management, daily activities, and therapeutic supports in a wheelchair-accessible facility.",
+            "end": 85,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 73
+          }
+        },
+        "record_sha256": "84d3c489d821fe5019a7920316ddb555cb427f3575c8b2dab950d9b10a031b18",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "age.adults_served",
+          "hours.weekend_site_hours_reported",
+          "need:care.adult_day",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 601,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "Autumn Lake Healthcare at Summit Park is a skilled nursing and rehabilitation center offering round\u2011the\u2011clock medical care, long\u2011term care, and on\u2011site rehabilitation therapies aimed at recovery and ongoing wellness.",
+            "end": 58,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 43
+          },
+          "need:medical.general": {
+            "context": "Autumn Lake Healthcare at Summit Park is a skilled nursing and rehabilitation center offering round\u2011the\u2011clock medical care, long\u2011term care, and on\u2011site rehabilitation therapies aimed at recovery and ongoing wellness.",
+            "end": 122,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 110
+          },
+          "need:medical.rehabilitation": {
+            "context": "Autumn Lake Healthcare at Summit Park is a skilled nursing and rehabilitation center offering round\u2011the\u2011clock medical care, long\u2011term care, and on\u2011site rehabilitation therapies aimed at recovery and ongoing wellness.",
+            "end": 176,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "rehabilitation therapies",
+            "start": 152
+          }
+        },
+        "record_sha256": "81d3879c3d388168c7f389c6fc58bae9cb39d585f3c029d55223e89e2847b0d2",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.rehabilitation"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "Autumn Lake Healthcare at Summit Park is a skilled nursing and rehabilitation center offering round\u2011the\u2011clock medical care, long\u2011term care, and on\u2011site rehabilitation therapies aimed at recovery and ongoing wellness.",
+            "end": 58,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 43
+          },
+          "need:medical.general": {
+            "context": "Autumn Lake Healthcare at Summit Park is a skilled nursing and rehabilitation center offering round\u2011the\u2011clock medical care, long\u2011term care, and on\u2011site rehabilitation therapies aimed at recovery and ongoing wellness.",
+            "end": 122,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 110
+          },
+          "need:medical.rehabilitation": {
+            "context": "Autumn Lake Healthcare at Summit Park is a skilled nursing and rehabilitation center offering round\u2011the\u2011clock medical care, long\u2011term care, and on\u2011site rehabilitation therapies aimed at recovery and ongoing wellness.",
+            "end": 176,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "rehabilitation therapies",
+            "start": 152
+          }
+        },
+        "record_sha256": "81d3879c3d388168c7f389c6fc58bae9cb39d585f3c029d55223e89e2847b0d2",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.rehabilitation"
+        ]
+      }
+    },
+    {
+      "resource_id": 629,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.general": {
+            "context": "Mercy Medical Center\u2019s Transitional Care Unit in Baltimore provides hospital-based transitional care for patients as they move from acute care to ongoing recovery.",
+            "end": 100,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "hospital-based transitional care",
+            "start": 68
+          }
+        },
+        "record_sha256": "6b29695832fa93c5581f5446386a93bed3f8b9c7972ee5279de4a3096ee18fb0",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.general": {
+            "context": "Mercy Medical Center\u2019s Transitional Care Unit in Baltimore provides hospital-based transitional care for patients as they move from acute care to ongoing recovery.",
+            "end": 100,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "hospital-based transitional care",
+            "start": 68
+          }
+        },
+        "record_sha256": "6b29695832fa93c5581f5446386a93bed3f8b9c7972ee5279de4a3096ee18fb0",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 638,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.general": {
+            "context": "The University of Maryland Rehabilitation & Orthopaedic Institute provides rehabilitation and related medical care, including orthopedics and pain management, with programs for spinal cord injury, amputee rehabilitation, and other outpatient therapies.",
+            "end": 114,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "medical care",
+            "start": 102
+          },
+          "need:medical.rehabilitation": {
+            "context": "The University of Maryland Rehabilitation & Orthopaedic Institute provides rehabilitation and related medical care, including orthopedics and pain management, with programs for spinal cord injury, amputee rehabilitation, and other outpatient therapies.",
+            "end": 114,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "rehabilitation and related medical care",
+            "start": 75
+          }
+        },
+        "record_sha256": "9008a42102b25029bc1cc2ac11f59f0b902d26538bd668411040060775ffc3fd",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.general",
+          "need:medical.rehabilitation"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:medical.general": {
+            "context": "The University of Maryland Rehabilitation & Orthopaedic Institute provides rehabilitation and related medical care, including orthopedics and pain management, with programs for spinal cord injury, amputee rehabilitation, and other outpatient therapies.",
+            "end": 114,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "medical care",
+            "start": 102
+          },
+          "need:medical.rehabilitation": {
+            "context": "The University of Maryland Rehabilitation & Orthopaedic Institute provides rehabilitation and related medical care, including orthopedics and pain management, with programs for spinal cord injury, amputee rehabilitation, and other outpatient therapies.",
+            "end": 114,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "rehabilitation and related medical care",
+            "start": 75
+          }
+        },
+        "record_sha256": "9008a42102b25029bc1cc2ac11f59f0b902d26538bd668411040060775ffc3fd",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:medical.general",
+          "need:medical.rehabilitation"
+        ]
+      }
+    },
+    {
+      "resource_id": 703,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "need:housing.supportive_transitional": {
+            "context": "A veteran-focused housing program offering safe, secure housing and related support at a Southeast DC location, including on-site access to a VA Community-based Outpatient Clinic for residents and veterans.",
+            "end": 33,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "housing program",
+            "start": 18
+          },
+          "need:medical.general": {
+            "context": "A veteran-focused housing program offering safe, secure housing and related support at a Southeast DC location, including on-site access to a VA Community-based Outpatient Clinic for residents and veterans.",
+            "end": 178,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Outpatient Clinic",
+            "start": 161
+          },
+          "population.veterans_served": {
+            "context": "A veteran-focused housing program offering safe, secure housing and related support at a Southeast DC location, including on-site access to a VA Community-based Outpatient Clinic for residents and veterans.",
+            "end": 205,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "veterans",
+            "start": 197
+          }
+        },
+        "record_sha256": "e09af3aa7ea38dd65e7c31026c8be3aeb19be0de4f7cc5e96ff0122d24a484b2",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "need:housing.supportive_transitional",
+          "need:medical.general",
+          "population.veterans_served"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "need:housing.supportive_transitional": {
+            "context": "A veteran-focused housing program offering safe, secure housing and related support at a Southeast DC location, including on-site access to a VA Community-based Outpatient Clinic for residents and veterans.",
+            "end": 33,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "housing program",
+            "start": 18
+          },
+          "need:medical.general": {
+            "context": "A veteran-focused housing program offering safe, secure housing and related support at a Southeast DC location, including on-site access to a VA Community-based Outpatient Clinic for residents and veterans.",
+            "end": 178,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "Outpatient Clinic",
+            "start": 161
+          },
+          "population.veterans_served": {
+            "context": "A veteran-focused housing program offering safe, secure housing and related support at a Southeast DC location, including on-site access to a VA Community-based Outpatient Clinic for residents and veterans.",
+            "end": 205,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "veterans",
+            "start": 197
+          }
+        },
+        "record_sha256": "e09af3aa7ea38dd65e7c31026c8be3aeb19be0de4f7cc5e96ff0122d24a484b2",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "need:housing.supportive_transitional",
+          "need:medical.general",
+          "population.veterans_served"
+        ]
+      }
+    },
+    {
+      "resource_id": 1029,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "access.appointment_reported": {
+            "context": "Appointments recommended.",
+            "end": 24,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Appointments recommended",
+            "start": 0
+          },
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance, parking, and restroom.",
+            "end": 56,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 26
+          },
+          "age.children_served": {
+            "context": "Outpatient medical clinic and mental health center at Kennedy Krieger Institute Ashland Outpatient Center offering interdisciplinary pediatric care, including neurodevelopmental evaluations and outpatient therapies.",
+            "end": 142,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "pediatric",
+            "start": 133
+          },
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: 7 AM to 8:30 PM; Tuesday: 7 AM to 8:30 PM; Wednesday: 7 AM to 8:30 PM; Thursday: 7 AM to 8:30 PM; Friday: 7 AM to 8:30 PM; Saturday: Closed; Sunday: Closed",
+            "end": 23,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 8:30 PM",
+            "start": 13
+          },
+          "need:medical.general": {
+            "context": "Outpatient medical clinic and mental health center at Kennedy Krieger Institute Ashland Outpatient Center offering interdisciplinary pediatric care, including neurodevelopmental evaluations and outpatient therapies.",
+            "end": 25,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "medical clinic",
+            "start": 11
+          },
+          "need:mental_health.clinical": {
+            "context": "Outpatient medical clinic and mental health center at Kennedy Krieger Institute Ashland Outpatient Center offering interdisciplinary pediatric care, including neurodevelopmental evaluations and outpatient therapies.",
+            "end": 50,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "mental health center",
+            "start": 30
+          }
+        },
+        "record_sha256": "de8701e8f3c69e3ac7c0da50696272881d4b577b615bb130b6d57390fa295972",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "access.appointment_reported",
+          "accessibility.wheelchair_entrance_reported",
+          "age.children_served",
+          "hours.evening_site_hours_reported",
+          "need:medical.general",
+          "need:mental_health.clinical"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "access.appointment_reported": {
+            "context": "Appointments recommended.",
+            "end": 24,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Appointments recommended",
+            "start": 0
+          },
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance, parking, and restroom.",
+            "end": 56,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 26
+          },
+          "age.children_served": {
+            "context": "Outpatient medical clinic and mental health center at Kennedy Krieger Institute Ashland Outpatient Center offering interdisciplinary pediatric care, including neurodevelopmental evaluations and outpatient therapies.",
+            "end": 142,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "pediatric",
+            "start": 133
+          },
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: 7 AM to 8:30 PM; Tuesday: 7 AM to 8:30 PM; Wednesday: 7 AM to 8:30 PM; Thursday: 7 AM to 8:30 PM; Friday: 7 AM to 8:30 PM; Saturday: Closed; Sunday: Closed",
+            "end": 23,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 8:30 PM",
+            "start": 13
+          },
+          "need:medical.general": {
+            "context": "Outpatient medical clinic and mental health center at Kennedy Krieger Institute Ashland Outpatient Center offering interdisciplinary pediatric care, including neurodevelopmental evaluations and outpatient therapies.",
+            "end": 25,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "medical clinic",
+            "start": 11
+          },
+          "need:mental_health.clinical": {
+            "context": "Outpatient medical clinic and mental health center at Kennedy Krieger Institute Ashland Outpatient Center offering interdisciplinary pediatric care, including neurodevelopmental evaluations and outpatient therapies.",
+            "end": 50,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "mental health center",
+            "start": 30
+          }
+        },
+        "record_sha256": "de8701e8f3c69e3ac7c0da50696272881d4b577b615bb130b6d57390fa295972",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "access.appointment_reported",
+          "accessibility.wheelchair_entrance_reported",
+          "age.children_served",
+          "hours.evening_site_hours_reported",
+          "need:medical.general",
+          "need:mental_health.clinical"
+        ]
+      }
+    },
+    {
+      "resource_id": 1205,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance;",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "accessibility.wheelchair_parking_reported": {
+            "context": "wheelchair accessible parking;",
+            "end": 61,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "wheelchair accessible parking",
+            "start": 32
+          },
+          "need:care.home": {
+            "context": "Johns Hopkins Care at Home provides health care services delivered in patients\u2019 homes.",
+            "end": 78,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "health care services delivered in patients",
+            "start": 36
+          },
+          "need:medical.general": {
+            "context": "Johns Hopkins Care at Home provides health care services delivered in patients\u2019 homes.",
+            "end": 56,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "health care services",
+            "start": 36
+          }
+        },
+        "record_sha256": "dbbc459ba0092f1fab2299cba1ce8dea1bdc431e9b6e9d2f519b327650879c0d",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "accessibility.wheelchair_parking_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance;",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "accessibility.wheelchair_parking_reported": {
+            "context": "wheelchair accessible parking;",
+            "end": 61,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "wheelchair accessible parking",
+            "start": 32
+          },
+          "need:care.home": {
+            "context": "Johns Hopkins Care at Home provides health care services delivered in patients\u2019 homes.",
+            "end": 78,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "health care services delivered in patients",
+            "start": 36
+          },
+          "need:medical.general": {
+            "context": "Johns Hopkins Care at Home provides health care services delivered in patients\u2019 homes.",
+            "end": 56,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "health care services",
+            "start": 36
+          }
+        },
+        "record_sha256": "dbbc459ba0092f1fab2299cba1ce8dea1bdc431e9b6e9d2f519b327650879c0d",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "accessibility.wheelchair_parking_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1236,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "Caring With Love And Compassion Homecare Agency provides in-home health care services in Baltimore, MD, delivering in-home care and supportive nursing services to clients in their own homes.",
+            "end": 40,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Homecare",
+            "start": 32
+          },
+          "need:medical.general": {
+            "context": "Caring With Love And Compassion Homecare Agency provides in-home health care services in Baltimore, MD, delivering in-home care and supportive nursing services to clients in their own homes.",
+            "end": 85,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "health care services",
+            "start": 65
+          }
+        },
+        "record_sha256": "d41d6256a7d10f97ccd4fe1fae00617ce6b83cd641008e2d63f0ef3f0317df01",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "Caring With Love And Compassion Homecare Agency provides in-home health care services in Baltimore, MD, delivering in-home care and supportive nursing services to clients in their own homes.",
+            "end": 40,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "Homecare",
+            "start": 32
+          },
+          "need:medical.general": {
+            "context": "Caring With Love And Compassion Homecare Agency provides in-home health care services in Baltimore, MD, delivering in-home care and supportive nursing services to clients in their own homes.",
+            "end": 85,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "health care services",
+            "start": 65
+          }
+        },
+        "record_sha256": "d41d6256a7d10f97ccd4fe1fae00617ce6b83cd641008e2d63f0ef3f0317df01",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1238,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 40,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 25
+          },
+          "need:medical.general": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 117,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 105
+          },
+          "need:medical.prescriptions": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 310,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "pharmacy",
+            "start": 302
+          },
+          "need:navigation.case_management": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 336,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "case management",
+            "start": 321
+          }
+        },
+        "record_sha256": "8b6c6d6068a99f7dfa3344adb68c4332ba750b3a9b2dd819377ced307f8bbec3",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.prescriptions",
+          "need:navigation.case_management"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.skilled_nursing": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 40,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 25
+          },
+          "need:medical.general": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 117,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "medical care",
+            "start": 105
+          },
+          "need:medical.prescriptions": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 310,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "pharmacy",
+            "start": 302
+          },
+          "need:navigation.case_management": {
+            "context": "FutureCare Homewood is a skilled nursing and rehabilitation center offering short-stay rehab and complex medical care, including cardiac rehabilitation (HeartStrong), orthopedic rehabilitation (WalkStrong), a 31-bed ventilator/pulmonary care unit, on-site dialysis, wound and IV therapy, nutrition and pharmacy services, case management and social services, and comprehensive therapy (PT/OT/ST), all supported by around-the-clock nursing.",
+            "end": 336,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "case management",
+            "start": 321
+          }
+        },
+        "record_sha256": "8b6c6d6068a99f7dfa3344adb68c4332ba750b3a9b2dd819377ced307f8bbec3",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.prescriptions",
+          "need:navigation.case_management"
+        ]
+      }
+    },
+    {
+      "resource_id": 1249,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "age.older_adults_served": {
+            "context": "Adluxe Healthcare Services provides compassionate in-home health care for seniors, offering personal care, medication management, and support for dementia and Alzheimer's, chronic disease management, and post-hospital recovery.",
+            "end": 81,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "seniors",
+            "start": 74
+          },
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.home": {
+            "context": "Adluxe Healthcare Services provides compassionate in-home health care for seniors, offering personal care, medication management, and support for dementia and Alzheimer's, chronic disease management, and post-hospital recovery.",
+            "end": 69,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 50
+          },
+          "need:medical.general": {
+            "context": "Adluxe Healthcare Services provides compassionate in-home health care for seniors, offering personal care, medication management, and support for dementia and Alzheimer's, chronic disease management, and post-hospital recovery.",
+            "end": 26,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "Healthcare Services",
+            "start": 7
+          }
+        },
+        "record_sha256": "ae599cfe8cae530bc5a8ad2a79f500d685aa62148d046d09f3bb1c427e4a9d49",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "age.older_adults_served",
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "age.older_adults_served": {
+            "context": "Adluxe Healthcare Services provides compassionate in-home health care for seniors, offering personal care, medication management, and support for dementia and Alzheimer's, chronic disease management, and post-hospital recovery.",
+            "end": 81,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "seniors",
+            "start": 74
+          },
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.home": {
+            "context": "Adluxe Healthcare Services provides compassionate in-home health care for seniors, offering personal care, medication management, and support for dementia and Alzheimer's, chronic disease management, and post-hospital recovery.",
+            "end": 69,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 50
+          },
+          "need:medical.general": {
+            "context": "Adluxe Healthcare Services provides compassionate in-home health care for seniors, offering personal care, medication management, and support for dementia and Alzheimer's, chronic disease management, and post-hospital recovery.",
+            "end": 26,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Healthcare Services",
+            "start": 7
+          }
+        },
+        "record_sha256": "ae599cfe8cae530bc5a8ad2a79f500d685aa62148d046d09f3bb1c427e4a9d49",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "age.older_adults_served",
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1255,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 66,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 47
+          },
+          "need:care.hospice_palliative": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 211,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "hospice",
+            "start": 204
+          },
+          "need:care.memory": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 188,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "memory care",
+            "start": 177
+          },
+          "need:care.respite": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 202,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "respite care",
+            "start": 190
+          },
+          "need:care.skilled_nursing": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 129,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 114
+          },
+          "need:medical.general": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 75,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "health care services",
+            "start": 55
+          }
+        },
+        "record_sha256": "c5a119bbb3364c03d5b1d5b735e462fb9033d5a81aaf16968cf365cfd0ddfdef",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "need:care.home",
+          "need:care.hospice_palliative",
+          "need:care.memory",
+          "need:care.respite",
+          "need:care.skilled_nursing",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 66,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 47
+          },
+          "need:care.hospice_palliative": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 211,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "hospice",
+            "start": 204
+          },
+          "need:care.memory": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 188,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "memory care",
+            "start": 177
+          },
+          "need:care.respite": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 202,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "respite care",
+            "start": 190
+          },
+          "need:care.skilled_nursing": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 129,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 114
+          },
+          "need:medical.general": {
+            "context": "provides in-home health care services to support clients at home, including skilled nursing, home health aides and personal care, dementia/memory care, respite care, hospice, and transitional care.",
+            "end": 75,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "health care services",
+            "start": 55
+          }
+        },
+        "record_sha256": "c5a119bbb3364c03d5b1d5b735e462fb9033d5a81aaf16968cf365cfd0ddfdef",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "need:care.home",
+          "need:care.hospice_palliative",
+          "need:care.memory",
+          "need:care.respite",
+          "need:care.skilled_nursing",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1259,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance, parking, and restroom.",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "need:care.home": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 56,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "home health",
+            "start": 45
+          },
+          "need:care.skilled_nursing": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 154,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 139
+          },
+          "need:medical.general": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 31,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "Health Care Services",
+            "start": 11
+          },
+          "need:medical.rehabilitation": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 137,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "occupational therapy",
+            "start": 117
+          }
+        },
+        "record_sha256": "33387f398c520d2b9c11f0f65fb0040088f7fcbedd1c4188c44cc2d6162204cd",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "need:care.home",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.rehabilitation"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance, parking, and restroom.",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "need:care.home": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 56,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "home health",
+            "start": 45
+          },
+          "need:care.skilled_nursing": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 154,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 139
+          },
+          "need:medical.general": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 31,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Health Care Services",
+            "start": 11
+          },
+          "need:medical.rehabilitation": {
+            "context": "Solid Rock Health Care Services LLC provides home health care and related support, including personal care, physical/occupational therapy, skilled nursing, companionship, live-in or live-out care, post-hospitalization care, and medication administration.",
+            "end": 137,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "occupational therapy",
+            "start": 117
+          }
+        },
+        "record_sha256": "33387f398c520d2b9c11f0f65fb0040088f7fcbedd1c4188c44cc2d6162204cd",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "need:care.home",
+          "need:care.skilled_nursing",
+          "need:medical.general",
+          "need:medical.rehabilitation"
+        ]
+      }
+    },
+    {
+      "resource_id": 1269,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: 9 AM to 10 PM; Tuesday: 9 AM to 10 PM; Wednesday: 9 AM to 10 PM; Thursday: 9 AM to 10 PM; Friday: 9 AM to 10 PM; Saturday: 9 AM to 8 PM; Sunday: Closed",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 10 PM",
+            "start": 13
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 9 AM to 8 PM",
+            "end": 143,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 9 AM to 8 PM",
+            "start": 121
+          },
+          "need:care.home": {
+            "context": "Beulah Nursing Services LLC offers home health care services.",
+            "end": 46,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "home health",
+            "start": 35
+          },
+          "need:medical.general": {
+            "context": "Beulah Nursing Services LLC offers home health care services.",
+            "end": 60,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "health care services",
+            "start": 40
+          }
+        },
+        "record_sha256": "c7148a12deb2cc44a3949c6f3b874955cc0426736b938748136f76b3058786ea",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.evening_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.evening_site_hours_reported": {
+            "context": "Monday: 9 AM to 10 PM; Tuesday: 9 AM to 10 PM; Wednesday: 9 AM to 10 PM; Thursday: 9 AM to 10 PM; Friday: 9 AM to 10 PM; Saturday: 9 AM to 8 PM; Sunday: Closed",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "to 10 PM",
+            "start": 13
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: 9 AM to 8 PM",
+            "end": 143,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: 9 AM to 8 PM",
+            "start": 121
+          },
+          "need:care.home": {
+            "context": "Beulah Nursing Services LLC offers home health care services.",
+            "end": 46,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "home health",
+            "start": 35
+          },
+          "need:medical.general": {
+            "context": "Beulah Nursing Services LLC offers home health care services.",
+            "end": 60,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "health care services",
+            "start": 40
+          }
+        },
+        "record_sha256": "c7148a12deb2cc44a3949c6f3b874955cc0426736b938748136f76b3058786ea",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.evening_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1321,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "Honeywell Healthcare Services LLC provides private home health care and at\u2011home caregiving services in Maryland, offering personalized care plans and caregiver support.",
+            "end": 62,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "home health",
+            "start": 51
+          },
+          "need:medical.general": {
+            "context": "Honeywell Healthcare Services LLC provides private home health care and at\u2011home caregiving services in Maryland, offering personalized care plans and caregiver support.",
+            "end": 29,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "Healthcare Services",
+            "start": 10
+          }
+        },
+        "record_sha256": "bd488fd89a18c39602718ac256b52ba408b6b8155dbbfc4b1198c4e0fb860a6e",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "Honeywell Healthcare Services LLC provides private home health care and at\u2011home caregiving services in Maryland, offering personalized care plans and caregiver support.",
+            "end": 62,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "home health",
+            "start": 51
+          },
+          "need:medical.general": {
+            "context": "Honeywell Healthcare Services LLC provides private home health care and at\u2011home caregiving services in Maryland, offering personalized care plans and caregiver support.",
+            "end": 29,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Healthcare Services",
+            "start": 10
+          }
+        },
+        "record_sha256": "bd488fd89a18c39602718ac256b52ba408b6b8155dbbfc4b1198c4e0fb860a6e",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1324,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance;",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "accessibility.wheelchair_parking_reported": {
+            "context": "wheelchair accessible parking lot.",
+            "end": 61,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "wheelchair accessible parking",
+            "start": 32
+          },
+          "need:care.home": {
+            "context": "Provides in-home health care services (home health care) as indicated by a Google Maps listing categorized as 'Home health care service'.",
+            "end": 28,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 9
+          },
+          "need:medical.general": {
+            "context": "Provides in-home health care services (home health care) as indicated by a Google Maps listing categorized as 'Home health care service'.",
+            "end": 37,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "health care services",
+            "start": 17
+          }
+        },
+        "record_sha256": "df24ad370121e09cf6f2ef9c56ee5b80e7548960193b61ac9dec660b3dcbf28a",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "accessibility.wheelchair_parking_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "accessibility.wheelchair_entrance_reported": {
+            "context": "Wheelchair accessible entrance;",
+            "end": 30,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "Wheelchair accessible entrance",
+            "start": 0
+          },
+          "accessibility.wheelchair_parking_reported": {
+            "context": "wheelchair accessible parking lot.",
+            "end": 61,
+            "field": "restrictions",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "wheelchair accessible parking",
+            "start": 32
+          },
+          "need:care.home": {
+            "context": "Provides in-home health care services (home health care) as indicated by a Google Maps listing categorized as 'Home health care service'.",
+            "end": 28,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 9
+          },
+          "need:medical.general": {
+            "context": "Provides in-home health care services (home health care) as indicated by a Google Maps listing categorized as 'Home health care service'.",
+            "end": 37,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "health care services",
+            "start": 17
+          }
+        },
+        "record_sha256": "df24ad370121e09cf6f2ef9c56ee5b80e7548960193b61ac9dec660b3dcbf28a",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "accessibility.wheelchair_entrance_reported",
+          "accessibility.wheelchair_parking_reported",
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1329,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.home": {
+            "context": "Beall Care Services Inc provides in-home health care services, including skilled nursing, home health aide, wound/ostomy care, post-surgery and illness management, and support for chronic conditions, delivered in clients\u2019 homes or other living settings.",
+            "end": 52,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 33
+          },
+          "need:care.skilled_nursing": {
+            "context": "Beall Care Services Inc provides in-home health care services, including skilled nursing, home health aide, wound/ostomy care, post-surgery and illness management, and support for chronic conditions, delivered in clients\u2019 homes or other living settings.",
+            "end": 88,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 73
+          },
+          "need:medical.general": {
+            "context": "Beall Care Services Inc provides in-home health care services, including skilled nursing, home health aide, wound/ostomy care, post-surgery and illness management, and support for chronic conditions, delivered in clients\u2019 homes or other living settings.",
+            "end": 61,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "enrolled_clients_or_residents",
+            "snippet": "health care services",
+            "start": 41
+          }
+        },
+        "record_sha256": "4313fdc33310ddb869eecc975c64d9f6596adccd41d0041e281cb3c28b394896",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:care.skilled_nursing",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.continuous_site_hours_reported": {
+            "context": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+            "end": 21,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Open 24 hours",
+            "start": 8
+          },
+          "hours.weekend_site_hours_reported": {
+            "context": "Saturday: Open 24 hours",
+            "end": 144,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Saturday: Open 24 hours",
+            "start": 121
+          },
+          "need:care.home": {
+            "context": "Beall Care Services Inc provides in-home health care services, including skilled nursing, home health aide, wound/ostomy care, post-surgery and illness management, and support for chronic conditions, delivered in clients\u2019 homes or other living settings.",
+            "end": 52,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home health care",
+            "start": 33
+          },
+          "need:care.skilled_nursing": {
+            "context": "Beall Care Services Inc provides in-home health care services, including skilled nursing, home health aide, wound/ostomy care, post-surgery and illness management, and support for chronic conditions, delivered in clients\u2019 homes or other living settings.",
+            "end": 88,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "skilled nursing",
+            "start": 73
+          },
+          "need:medical.general": {
+            "context": "Beall Care Services Inc provides in-home health care services, including skilled nursing, home health aide, wound/ostomy care, post-surgery and illness management, and support for chronic conditions, delivered in clients\u2019 homes or other living settings.",
+            "end": 61,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "health care services",
+            "start": 41
+          }
+        },
+        "record_sha256": "4313fdc33310ddb869eecc975c64d9f6596adccd41d0041e281cb3c28b394896",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.continuous_site_hours_reported",
+          "hours.weekend_site_hours_reported",
+          "need:care.home",
+          "need:care.skilled_nursing",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1335,
+      "reason": "Medical service is tied to residential, post-acute, pediatric specialty or home-care program; not evidence of a general-access primary care clinic.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "Personic Health provides in-home wound care services delivered by clinicians, bringing wound care to patients in their own homes.",
+            "end": 43,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home wound care",
+            "start": 25
+          },
+          "need:medical.general": {
+            "context": "Personic Health provides in-home wound care services delivered by clinicians, bringing wound care to patients in their own homes.",
+            "end": 43,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home wound care",
+            "start": 25
+          }
+        },
+        "record_sha256": "98f8a907ae6c97881bfdb3766128ccfd06bfd69f385e1b21d3884d0e1acb58f8",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "need:care.home",
+          "need:medical.general"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "need:care.home": {
+            "context": "Personic Health provides in-home wound care services delivered by clinicians, bringing wound care to patients in their own homes.",
+            "end": 43,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "in-home wound care",
+            "start": 25
+          },
+          "need:medical.general": {
+            "context": "Personic Health provides in-home wound care services delivered by clinicians, bringing wound care to patients in their own homes.",
+            "end": 43,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "in-home wound care",
+            "start": 25
+          }
+        },
+        "record_sha256": "98f8a907ae6c97881bfdb3766128ccfd06bfd69f385e1b21d3884d0e1acb58f8",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "need:care.home",
+          "need:medical.general"
+        ]
+      }
+    },
+    {
+      "resource_id": 1068,
+      "reason": "Church counseling center does not establish licensed clinical treatment.",
+      "before": {
+        "confidence": "high",
+        "evidence": {
+          "hours.weekend_site_hours_reported": {
+            "context": "Sundays: 7:15 AM, 9:15 AM, 11:30 AM",
+            "end": 35,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Sundays: 7:15 AM, 9:15 AM, 11:30 AM",
+            "start": 0
+          },
+          "need:mental_health.clinical": {
+            "context": "Evidence shows onsite worship, active outreach and spiritual development ministries, and a counseling center connected to the church, along with ministry resources and events listed on the site.",
+            "end": 213,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "described_service",
+            "snippet": "counseling center",
+            "start": 196
+          }
+        },
+        "record_sha256": "40f75ddcf329032c4afe2fae89ce4daa4114546834d2c958297c69c33f6562b1",
+        "reviewed_at": "2026-10-24T12:00:00-04:00",
+        "reviewer": "Codex: unflagged audit activation authorized by repo owner",
+        "tags": [
+          "hours.weekend_site_hours_reported",
+          "need:mental_health.clinical"
+        ]
+      },
+      "after": {
+        "confidence": "high",
+        "evidence": {
+          "hours.weekend_site_hours_reported": {
+            "context": "Sundays: 7:15 AM, 9:15 AM, 11:30 AM",
+            "end": 35,
+            "field": "hours",
+            "hard_filter_eligible": false,
+            "scope": "site_hours_not_program_intake",
+            "snippet": "Sundays: 7:15 AM, 9:15 AM, 11:30 AM",
+            "start": 0
+          },
+          "need:mental_health.clinical": {
+            "context": "Evidence shows onsite worship, active outreach and spiritual development ministries, and a counseling center connected to the church, along with ministry resources and events listed on the site.",
+            "end": 213,
+            "field": "description",
+            "hard_filter_eligible": false,
+            "scope": "program_scope_requires_confirmation",
+            "snippet": "counseling center",
+            "start": 196
+          }
+        },
+        "record_sha256": "40f75ddcf329032c4afe2fae89ce4daa4114546834d2c958297c69c33f6562b1",
+        "reviewed_at": "2026-11-08T21:37:06.174343-05:00",
+        "reviewer": "Codex source-description scope correction (not independent provider verification)",
+        "tags": [
+          "hours.weekend_site_hours_reported",
+          "need:mental_health.clinical"
+        ]
+      }
+    }
+  ]
+}

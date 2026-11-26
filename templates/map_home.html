@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Baltimore Lifeline – Resource Map</title>
+  <title>{{ site_name }} – Resource Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/static/BaltimoreLifelineIcon.png?v=3">
   <link rel="shortcut icon" href="/static/BaltimoreLifelineIcon.png?v=3">
@@ -264,7 +264,13 @@
         <div class="filter-section-label">Reliability</div>
         <div id="reliabilityTags" class="tag-container" aria-label="Filter by reliability"></div>
       </div>
-      <div class="legend" id="legend"></div>
+      <div style="padding:16px 20px;border-top:1px solid rgba(125,211,252,.12)">
+        <label for="serviceFilter" style="display:block;color:#c7dbe5;margin-bottom:8px">Specific service</label>
+        <select id="serviceFilter" style="width:100%;min-height:44px;background:#0c1a25;color:#e8f1f5;border:1px solid #52727f;border-radius:8px;padding:8px"><option value="">All services</option></select>
+        <p style="font-size:12px;color:#9db6c4">Service filters show reviewed listings. Confirm eligibility and availability with the provider.</p>
+      </div>
+      {% include "partials/page_activity.html" with page_key="map" %}
+<div class="legend" id="legend"></div>
     </div>
   </div>
 
@@ -510,12 +516,12 @@
       sidebarTitleEl.textContent = r.name || "Unnamed resource";
       sidebarBodyEl.innerHTML = `
         <div class="sheet-eyebrow">${r.category || 'Uncategorized'}</div>
-        ${r.description ? `<div class="sheet-notes"><span class="label">Description</span><p>${r.description}</p></div>` : ""}
+        ${r.description ? `<div class="sheet-notes"><span class="label">Description</span><p>${r.display_description || r.description}</p></div>` : ""}
         ${r.address ? `<div class="sheet-address"><span class="label">Address</span><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.address)}" target="_blank" rel="noopener noreferrer">${r.address}</a></div>` : ""}
         <div class="sheet-pair">${phoneHtml}${hoursHtml}</div>
         ${r.restrictions ? `<div class="sheet-pair"><div class="sheet-field" style="grid-column:1 / -1"><span class="label">Restrictions</span><div>${r.restrictions}</div></div></div>` : ""}
         ${r.link ? `<div class="sheet-pair"><div class="sheet-field" style="grid-column:1 / -1;overflow-wrap:anywhere"><span class="label">Website</span><a href="${r.link}" target="_blank" rel="noopener noreferrer">${r.link}</a></div></div>` : ""}
-        <div class="sheet-reliability"><span class="label">Reliability</span><div class="meter-row" style="--tier:${reliabilityMeta.color}"><div class="reliability-meter">${meter}</div><span>${reliabilityMeta.label}</span></div></div>
+        <div class="sheet-reliability"><span class="label">Reliability</span><div class="meter-row" style="--tier:${reliabilityMeta.color}"><div class="reliability-meter">${meter}</div><span>${reliabilityMeta.label}${Number.isFinite(r.reliability_score) ? ` · ${r.reliability_score.toFixed(1)}/100` : ""}</span></div></div>
         ${r.condensed_reliability_description ? `<div class="sheet-notes"><span class="label">Reliability Notes</span><p>${r.condensed_reliability_description}</p></div>` : ""}
         <div class="sheet-footer"><a class="link-btn" href="${gmaps}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>${r.link ? `<a class="site-btn" href="${r.link}" target="_blank" rel="noopener noreferrer">Visit site</a>` : ""}</div>
       `;
@@ -571,6 +577,14 @@
     const searchInput = document.getElementById("searchInput");
     const resetBtn = document.getElementById("resetBtn");
 
+    const serviceFilter = document.getElementById("serviceFilter");
+    [...new Set(resources.flatMap(r=>r.tags||[]))].sort().forEach(tag=>{
+      const option=document.createElement('option');option.value=tag;
+      option.textContent=tag.replace('need:','').replace('.', ' · ').replaceAll('_',' ')+' ('+resources.filter(r=>(r.tags||[]).includes(tag)).length+')';
+      serviceFilter.append(option);
+    });
+    serviceFilter.addEventListener('change',applyFilters);
+
     function applyFilters() {
       const q = (searchInput.value || "").toLowerCase().trim();
       const useAllCats = activeCategories.size === 0;
@@ -582,7 +596,7 @@
         const inReliability = useAllReliability || activeReliability.has(reliabilityMeta.key);
         const text = `${r.name || ""} ${r.address || ""}`.toLowerCase();
         const matches = !q || text.includes(q);
-        return inCat && inReliability && matches;
+        return inCat && inReliability && matches && (!serviceFilter.value || (r.tags||[]).includes(serviceFilter.value));
       });
 
       closeSidebar();
@@ -592,6 +606,7 @@
     searchInput.addEventListener("input", applyFilters);
     resetBtn.addEventListener("click", () => {
       searchInput.value = "";
+      serviceFilter.value = "";
       activeCategories.clear();
       activeReliability.clear();
       updatePillStates();
@@ -656,7 +671,7 @@
     if (!bar || !panel || !toggle) return;
     const sheetHead=document.createElement('div');sheetHead.className='filter-sheet-head';sheetHead.innerHTML='<span class="filter-sheet-title">TYPE OF HELP</span><button class="filter-sheet-clear" type="button">CLEAR · RESET</button>';panel.prepend(sheetHead);
     const scrim=document.createElement('div');scrim.className='filter-scrim';document.body.append(scrim);
-    function refreshToolbar(){const selected=panel.querySelectorAll('.filter-pill.active').length;toggle.innerHTML=`Filters <span class="caret">⌄</span>${selected?`<span class="fb__badge">${selected}</span>`:''}`;reset.classList.toggle('active',selected>0||search.value.length>0)}
+    function refreshToolbar(){const selected=panel.querySelectorAll('.filter-pill.active').length+(document.getElementById('serviceFilter').value?1:0);toggle.innerHTML=`Filters <span class="caret">⌄</span>${selected?`<span class="fb__badge">${selected}</span>`:''}`;reset.classList.toggle('active',selected>0||search.value.length>0)}
     panel.classList.add('open');
     refreshToolbar();
     function close(){panel.classList.remove('open');toggle.classList.remove('open');toggle.setAttribute('aria-expanded','false');scrim.classList.remove('open');document.body.classList.remove('filter-sheet-open')}
@@ -665,7 +680,7 @@
     hide.addEventListener('click',()=>{bar.classList.add('is-hidden');close()});
     sheetHead.querySelector('button').addEventListener('click',()=>reset.click()); scrim.addEventListener('click',close);
     document.addEventListener('click',event=>{if(!bar.contains(event.target))close()});document.addEventListener('keydown',event=>{if(event.key==='Escape')close()});
-    document.getElementById('map').addEventListener('click',close);panel.addEventListener('click',()=>setTimeout(refreshToolbar,0));reset.addEventListener('click',()=>setTimeout(refreshToolbar,0));search.addEventListener('input',refreshToolbar);addEventListener('resize',()=>{search.placeholder=innerWidth>1200?'Search address or name':'Search';panel.scrollTop=0;if(innerWidth>640){panel.classList.add('open');toggle.classList.add('open');toggle.setAttribute('aria-expanded','true');scrim.classList.remove('open');document.body.classList.remove('filter-sheet-open')}});search.placeholder=innerWidth>1200?'Search address or name':'Search';
+    document.getElementById('map').addEventListener('click',close);panel.addEventListener('click',()=>setTimeout(refreshToolbar,0));panel.addEventListener('change',refreshToolbar);reset.addEventListener('click',()=>setTimeout(refreshToolbar,0));search.addEventListener('input',refreshToolbar);addEventListener('resize',()=>{search.placeholder=innerWidth>1200?'Search address or name':'Search';panel.scrollTop=0;if(innerWidth>640){panel.classList.add('open');toggle.classList.add('open');toggle.setAttribute('aria-expanded','true');scrim.classList.remove('open');document.body.classList.remove('filter-sheet-open')}});search.placeholder=innerWidth>1200?'Search address or name':'Search';
     if(safety)safety.addEventListener('click',event=>{if(event.offsetX>safety.clientWidth-32)safety.style.display='none'});
   })();
 </script>

@@ -1,0 +1,1184 @@
+{
+  "automatically_tagged_records": 585,
+  "removed_resource_ids": [
+    21,
+    23,
+    44,
+    104,
+    146,
+    208,
+    298,
+    303,
+    371,
+    485,
+    491,
+    541,
+    654,
+    785,
+    868,
+    991,
+    1213,
+    1252,
+    1269,
+    1294,
+    1307
+  ],
+  "source_sha256": "e7bd62fdcd50bfd08648a12df9c0a374771e4a1949823611d85b7e9e47b52f41",
+  "tagged_records": 1154,
+  "transferred_tags": 1650,
+  "withheld_tags_by_resource": {
+    "1001": [
+      "cost.free_program_reported",
+      "need:education.learning"
+    ],
+    "1005": [
+      "age.youth_served"
+    ],
+    "1018": [
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "1025": [
+      "need:mental_health.clinical"
+    ],
+    "1027": [
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "1029": [
+      "age.children_served",
+      "need:medical.general"
+    ],
+    "1032": [
+      "access.appointment_reported",
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "1037": [
+      "need:navigation.case_management"
+    ],
+    "1042": [
+      "need:benefits.enrollment_navigation"
+    ],
+    "1047": [
+      "age.children_served"
+    ],
+    "1052": [
+      "need:financial.emergency_assistance"
+    ],
+    "1065": [
+      "need:food.pantry"
+    ],
+    "1068": [
+      "hours.weekend_site_hours_reported",
+      "need:mental_health.clinical"
+    ],
+    "1071": [
+      "hours.evening_site_hours_reported"
+    ],
+    "1089": [
+      "need:food.general_assistance"
+    ],
+    "1091": [
+      "age.children_served",
+      "hours.evening_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:childcare.early_learning"
+    ],
+    "11": [
+      "need:family.youth_parenting",
+      "need:food.general_assistance"
+    ],
+    "1113": [
+      "need:legal.civil_aid"
+    ],
+    "1118": [
+      "need:disability.independent_living"
+    ],
+    "1121": [
+      "need:financial.disaster_grants"
+    ],
+    "1122": [
+      "need:legal.assistance",
+      "need:legal.criminal_defense"
+    ],
+    "1125": [
+      "need:legal.assistance",
+      "need:legal.criminal_defense"
+    ],
+    "1128": [
+      "need:legal.advocacy_information"
+    ],
+    "1137": [
+      "need:legal.assistance",
+      "need:legal.criminal_defense"
+    ],
+    "1145": [
+      "need:housing.counseling_navigation",
+      "need:language.interpretation",
+      "need:legal.housing_disputes"
+    ],
+    "1146": [
+      "need:language.interpretation",
+      "population.immigrants_served"
+    ],
+    "1153": [
+      "need:navigation.case_management"
+    ],
+    "1154": [
+      "need:legal.advocacy_information"
+    ],
+    "1156": [
+      "need:legal.assistance",
+      "need:legal.criminal_defense"
+    ],
+    "1166": [
+      "age.children_served"
+    ],
+    "1174": [
+      "need:housing.emergency_shelter"
+    ],
+    "1176": [
+      "need:medical.general",
+      "service_area.baltimore_county_reported"
+    ],
+    "1183": [
+      "age.children_served",
+      "need:medical.sexual_reproductive"
+    ],
+    "1184": [
+      "access.telehealth_reported",
+      "age.children_served",
+      "age.youth_served",
+      "hours.weekend_site_hours_reported",
+      "need:medical.sexual_reproductive",
+      "need:mental_health.clinical"
+    ],
+    "1188": [
+      "need:medical.emergency"
+    ],
+    "1193": [
+      "need:disability.independent_living"
+    ],
+    "1194": [
+      "hours.weekend_site_hours_reported",
+      "need:housing.homeownership_repairs"
+    ],
+    "1195": [
+      "need:housing.accessibility_modifications"
+    ],
+    "1197": [
+      "service_area.baltimore_city_reported",
+      "service_area.local_restriction_reported"
+    ],
+    "1201": [
+      "accessibility.wheelchair_entrance_reported",
+      "need:substance_use.treatment"
+    ],
+    "1203": [
+      "need:employment.training_search"
+    ],
+    "1204": [
+      "need:housing.counseling_navigation",
+      "need:mental_health.peer_support",
+      "need:substance_use.medications"
+    ],
+    "1206": [
+      "need:substance_use.detox"
+    ],
+    "1207": [
+      "need:financial.emergency_assistance"
+    ],
+    "1209": [
+      "age.youth_served",
+      "need:disability.independent_living",
+      "need:housing.rental"
+    ],
+    "1212": [
+      "need:education.learning"
+    ],
+    "1222": [
+      "need:disability.independent_living"
+    ],
+    "1223": [
+      "age.older_adults_served"
+    ],
+    "1227": [
+      "need:medical.rehabilitation",
+      "need:navigation.case_management"
+    ],
+    "1228": [
+      "age.older_adults_served"
+    ],
+    "1232": [
+      "need:medical.rehabilitation"
+    ],
+    "1234": [
+      "population.disabilities_served"
+    ],
+    "1236": [
+      "need:medical.general"
+    ],
+    "1238": [
+      "need:medical.prescriptions",
+      "need:navigation.case_management"
+    ],
+    "1241": [
+      "need:medical.emergency"
+    ],
+    "1242": [
+      "hours.weekend_site_hours_reported",
+      "need:education.learning",
+      "need:employment.training_search"
+    ],
+    "1249": [
+      "need:medical.general"
+    ],
+    "1255": [
+      "need:medical.general"
+    ],
+    "1258": [
+      "access.appointment_reported",
+      "age.children_served",
+      "hours.evening_site_hours_reported",
+      "need:mental_health.clinical"
+    ],
+    "1261": [
+      "need:medical.prescriptions",
+      "need:navigation.case_management"
+    ],
+    "1263": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:medical.prescriptions",
+      "need:navigation.case_management"
+    ],
+    "1265": [
+      "need:care.skilled_nursing"
+    ],
+    "1279": [
+      "accessibility.wheelchair_entrance_reported",
+      "hours.evening_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:disability.independent_living",
+      "population.disabilities_served"
+    ],
+    "1283": [
+      "age.youth_served",
+      "need:digital.computers_internet"
+    ],
+    "1285": [
+      "need:care.respite",
+      "need:medical.equipment"
+    ],
+    "1293": [
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported",
+      "age.youth_served",
+      "need:family.youth_parenting"
+    ],
+    "1296": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:care.adult_day",
+      "need:medical.equipment",
+      "population.disabilities_served"
+    ],
+    "1297": [
+      "age.youth_served",
+      "need:family.youth_parenting"
+    ],
+    "130": [
+      "language.spanish_reported"
+    ],
+    "1301": [
+      "need:disaster.preparedness",
+      "need:navigation.case_management",
+      "service_area.maryland_reported"
+    ],
+    "1302": [
+      "need:housing.counseling_navigation",
+      "need:housing.rental",
+      "need:housing.supportive_transitional"
+    ],
+    "1323": [
+      "age.older_adults_served"
+    ],
+    "1324": [
+      "need:medical.general"
+    ],
+    "1325": [
+      "need:medical.rehabilitation"
+    ],
+    "1329": [
+      "need:medical.general"
+    ],
+    "1334": [
+      "need:care.respite",
+      "need:transportation.assistance"
+    ],
+    "1345": [
+      "hours.weekend_site_hours_reported",
+      "need:pets.food_veterinary"
+    ],
+    "1347": [
+      "age.adults_served"
+    ],
+    "1355": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported"
+    ],
+    "1358": [
+      "need:substance_use.detox"
+    ],
+    "1359": [
+      "age.adults_served",
+      "age.older_adults_served",
+      "need:family.youth_parenting"
+    ],
+    "1361": [
+      "service_area.maryland_reported"
+    ],
+    "1362": [
+      "cost.free_program_reported"
+    ],
+    "140": [
+      "age.youth_served"
+    ],
+    "153": [
+      "age.youth_served",
+      "need:family.youth_parenting"
+    ],
+    "157": [
+      "need:financial.counseling"
+    ],
+    "16": [
+      "age.adults_served",
+      "age.children_served",
+      "age.older_adults_served"
+    ],
+    "172": [
+      "food.fresh_produce_reported"
+    ],
+    "174": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:housing.emergency_shelter"
+    ],
+    "178": [
+      "age.children_served",
+      "age.youth_served",
+      "need:community.social_recreation",
+      "need:employment.training_search",
+      "need:family.youth_parenting",
+      "need:food.pantry",
+      "need:food.prepared_meals",
+      "need:navigation.case_management",
+      "need:substance_use.treatment"
+    ],
+    "195": [
+      "need:family.youth_parenting",
+      "need:food.pantry",
+      "need:food.prepared_meals"
+    ],
+    "201": [
+      "access.appointment_reported"
+    ],
+    "207": [
+      "need:food.pantry"
+    ],
+    "211": [
+      "need:food.prepared_meals"
+    ],
+    "220": [
+      "age.adults_served"
+    ],
+    "222": [
+      "need:care.skilled_nursing"
+    ],
+    "229": [
+      "need:community.social_recreation"
+    ],
+    "247": [
+      "accessibility.wheelchair_entrance_reported",
+      "need:care.residential_unspecified"
+    ],
+    "250": [
+      "need:care.assisted_living"
+    ],
+    "252": [
+      "age.adults_served",
+      "age.older_adults_served",
+      "need:community.social_recreation"
+    ],
+    "253": [
+      "need:care.respite"
+    ],
+    "255": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "258": [
+      "age.children_served",
+      "need:medical.rehabilitation"
+    ],
+    "263": [
+      "age.adults_served"
+    ],
+    "265": [
+      "need:care.respite"
+    ],
+    "276": [
+      "age.adults_served",
+      "age.older_adults_served"
+    ],
+    "277": [
+      "cost.free_program_reported"
+    ],
+    "283": [
+      "need:medical.rehabilitation"
+    ],
+    "295": [
+      "age.all_ages_reported",
+      "age.children_served"
+    ],
+    "301": [
+      "need:transportation.assistance"
+    ],
+    "305": [
+      "need:medical.rehabilitation"
+    ],
+    "306": [
+      "age.adults_served",
+      "age.older_adults_served"
+    ],
+    "323": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "326": [
+      "need:care.residential_unspecified"
+    ],
+    "330": [
+      "age.adults_served"
+    ],
+    "333": [
+      "age.adults_served",
+      "age.older_adults_served",
+      "need:care.memory"
+    ],
+    "334": [
+      "need:care.memory",
+      "need:care.respite",
+      "need:housing.rental"
+    ],
+    "337": [
+      "need:medical.general",
+      "need:medical.rehabilitation",
+      "need:navigation.case_management"
+    ],
+    "340": [
+      "age.adults_served",
+      "age.older_adults_served"
+    ],
+    "349": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "350": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "366": [
+      "need:care.skilled_nursing"
+    ],
+    "368": [
+      "need:care.respite",
+      "need:medical.prescriptions"
+    ],
+    "369": [
+      "age.all_ages_reported",
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "373": [
+      "need:care.hospice_palliative",
+      "need:care.respite"
+    ],
+    "374": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "381": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "384": [
+      "age.adults_served"
+    ],
+    "386": [
+      "age.children_served",
+      "age.youth_served",
+      "need:employment.training_search"
+    ],
+    "392": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "393": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "401": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "404": [
+      "need:care.skilled_nursing"
+    ],
+    "408": [
+      "age.all_ages_reported",
+      "age.children_served",
+      "age.youth_served",
+      "hours.evening_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "415": [
+      "need:medical.rehabilitation"
+    ],
+    "416": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "42": [
+      "need:housing.counseling_navigation",
+      "need:legal.identity_documents"
+    ],
+    "420": [
+      "accessibility.wheelchair_entrance_reported",
+      "need:care.assisted_living"
+    ],
+    "424": [
+      "accessibility.wheelchair_entrance_reported"
+    ],
+    "430": [
+      "need:medical.general"
+    ],
+    "437": [
+      "need:care.adult_day"
+    ],
+    "438": [
+      "age.adults_served",
+      "age.older_adults_served"
+    ],
+    "440": [
+      "need:medical.rehabilitation"
+    ],
+    "441": [
+      "need:medical.rehabilitation"
+    ],
+    "449": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search",
+      "need:essentials.clothing_supplies",
+      "need:food.general_assistance"
+    ],
+    "451": [
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "456": [
+      "need:care.hospice_palliative",
+      "need:medical.rehabilitation"
+    ],
+    "457": [
+      "age.older_adults_served",
+      "need:housing.rental"
+    ],
+    "459": [
+      "age.adults_served",
+      "need:care.residential_unspecified"
+    ],
+    "469": [
+      "need:medical.emergency"
+    ],
+    "48": [
+      "need:benefits.enrollment_navigation",
+      "need:medical.dental",
+      "need:mental_health.clinical",
+      "need:navigation.case_management",
+      "need:substance_use.treatment"
+    ],
+    "483": [
+      "need:housing.emergency_shelter"
+    ],
+    "486": [
+      "need:care.adult_day"
+    ],
+    "493": [
+      "need:medical.rehabilitation"
+    ],
+    "495": [
+      "need:medical.emergency"
+    ],
+    "496": [
+      "need:digital.computers_internet"
+    ],
+    "5": [
+      "need:mental_health.clinical"
+    ],
+    "50": [
+      "age.children_served",
+      "need:medical.general",
+      "need:medical.prescriptions",
+      "need:medical.sexual_reproductive",
+      "need:mental_health.clinical"
+    ],
+    "501": [
+      "need:care.residential_unspecified"
+    ],
+    "502": [
+      "need:housing.rental"
+    ],
+    "504": [
+      "need:medical.rehabilitation"
+    ],
+    "511": [
+      "age.older_adults_served",
+      "need:housing.rental"
+    ],
+    "512": [
+      "need:medical.rehabilitation"
+    ],
+    "517": [
+      "need:transportation.assistance"
+    ],
+    "521": [
+      "age.older_adults_served"
+    ],
+    "523": [
+      "need:community.social_recreation"
+    ],
+    "527": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "533": [
+      "age.older_adults_served",
+      "need:medical.rehabilitation"
+    ],
+    "538": [
+      "need:community.social_recreation"
+    ],
+    "539": [
+      "need:housing.supportive_transitional"
+    ],
+    "540": [
+      "need:mental_health.clinical"
+    ],
+    "544": [
+      "age.older_adults_served"
+    ],
+    "545": [
+      "age.all_ages_reported",
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "549": [
+      "need:community.social_recreation",
+      "need:medical.rehabilitation"
+    ],
+    "553": [
+      "age.all_ages_reported",
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet",
+      "need:employment.training_search"
+    ],
+    "554": [
+      "age.adults_served",
+      "need:care.residential_unspecified"
+    ],
+    "562": [
+      "age.adults_served",
+      "age.older_adults_served"
+    ],
+    "564": [
+      "age.older_adults_served",
+      "need:housing.rental"
+    ],
+    "565": [
+      "age.older_adults_served"
+    ],
+    "569": [
+      "population.disabilities_served"
+    ],
+    "571": [
+      "age.older_adults_served"
+    ],
+    "572": [
+      "age.older_adults_served",
+      "hours.weekend_site_hours_reported"
+    ],
+    "581": [
+      "need:medical.general"
+    ],
+    "586": [
+      "age.adults_served"
+    ],
+    "589": [
+      "need:community.social_recreation"
+    ],
+    "598": [
+      "need:care.residential_unspecified"
+    ],
+    "601": [
+      "need:medical.general"
+    ],
+    "602": [
+      "age.adults_served"
+    ],
+    "605": [
+      "need:transportation.assistance"
+    ],
+    "607": [
+      "age.adults_served"
+    ],
+    "609": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:care.assisted_living",
+      "need:care.memory"
+    ],
+    "614": [
+      "age.older_adults_served"
+    ],
+    "621": [
+      "need:crisis.intervention"
+    ],
+    "623": [
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "625": [
+      "age.older_adults_served",
+      "need:care.assisted_living"
+    ],
+    "629": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:medical.general"
+    ],
+    "631": [
+      "need:care.assisted_living",
+      "need:care.home"
+    ],
+    "634": [
+      "age.older_adults_served"
+    ],
+    "635": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:mental_health.clinical"
+    ],
+    "638": [
+      "need:medical.general"
+    ],
+    "640": [
+      "age.older_adults_served"
+    ],
+    "641": [
+      "age.older_adults_served"
+    ],
+    "648": [
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet"
+    ],
+    "653": [
+      "age.adults_served",
+      "age.children_served",
+      "age.youth_served",
+      "need:digital.computers_internet"
+    ],
+    "664": [
+      "need:community.social_recreation"
+    ],
+    "668": [
+      "age.older_adults_served"
+    ],
+    "678": [
+      "need:housing.emergency_shelter"
+    ],
+    "681": [
+      "need:housing.emergency_shelter",
+      "need:substance_use.treatment"
+    ],
+    "684": [
+      "need:safety.survivor_support"
+    ],
+    "686": [
+      "population.homelessness_served",
+      "service_area.baltimore_city_reported"
+    ],
+    "687": [
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported",
+      "age.adults_served",
+      "need:care.respite"
+    ],
+    "688": [
+      "age.children_served",
+      "age.threshold_reported",
+      "need:employment.training_search"
+    ],
+    "691": [
+      "need:mental_health.peer_support"
+    ],
+    "692": [
+      "need:employment.training_search",
+      "need:medical.rehabilitation"
+    ],
+    "693": [
+      "age.youth_served",
+      "need:family.youth_parenting"
+    ],
+    "696": [
+      "age.older_adults_served"
+    ],
+    "698": [
+      "need:transportation.assistance"
+    ],
+    "699": [
+      "need:education.learning"
+    ],
+    "70": [
+      "need:crisis.intervention"
+    ],
+    "702": [
+      "need:education.learning",
+      "need:employment.training_search",
+      "population.homelessness_served"
+    ],
+    "703": [
+      "need:housing.supportive_transitional",
+      "need:medical.general",
+      "population.veterans_served"
+    ],
+    "706": [
+      "age.older_adults_served"
+    ],
+    "719": [
+      "age.older_adults_served"
+    ],
+    "72": [
+      "cost.free_program_reported",
+      "hours.weekend_site_hours_reported",
+      "need:food.pantry"
+    ],
+    "722": [
+      "age.adults_served",
+      "age.youth_served",
+      "cost.private_pay_reported"
+    ],
+    "730": [
+      "access.telehealth_reported",
+      "need:substance_use.treatment"
+    ],
+    "734": [
+      "need:crisis.intervention"
+    ],
+    "735": [
+      "need:employment.training_search",
+      "need:housing.supportive_transitional"
+    ],
+    "738": [
+      "need:financial.counseling"
+    ],
+    "739": [
+      "need:family.youth_parenting"
+    ],
+    "743": [
+      "need:disability.independent_living",
+      "population.disabilities_served"
+    ],
+    "744": [
+      "need:navigation.case_management"
+    ],
+    "75": [
+      "age.youth_served",
+      "cost.free_program_reported",
+      "need:food.pantry"
+    ],
+    "760": [
+      "age.adults_served",
+      "age.older_adults_served",
+      "need:community.social_recreation"
+    ],
+    "761": [
+      "age.adults_served",
+      "hours.weekend_site_hours_reported",
+      "need:financial.emergency_assistance"
+    ],
+    "765": [
+      "age.adults_served",
+      "age.children_served",
+      "age.older_adults_served",
+      "age.youth_served"
+    ],
+    "767": [
+      "age.adults_served",
+      "age.older_adults_served",
+      "need:care.assisted_living",
+      "need:housing.rental"
+    ],
+    "786": [
+      "need:legal.assistance"
+    ],
+    "789": [
+      "need:housing.rent_eviction_help",
+      "need:utilities.bill_assistance"
+    ],
+    "79": [
+      "food.client_choice_reported",
+      "food.fresh_produce_reported"
+    ],
+    "790": [
+      "need:housing.rental"
+    ],
+    "791": [
+      "cost.free_program_reported"
+    ],
+    "793": [
+      "need:employment.training_search"
+    ],
+    "794": [
+      "need:care.memory"
+    ],
+    "796": [
+      "need:medical.general"
+    ],
+    "798": [
+      "cost.private_pay_reported",
+      "insurance.medicaid_reported"
+    ],
+    "799": [
+      "need:transportation.assistance"
+    ],
+    "800": [
+      "insurance.medicaid_reported"
+    ],
+    "804": [
+      "need:financial.emergency_assistance",
+      "need:medical.cost_assistance",
+      "need:medical.patient_support"
+    ],
+    "807": [
+      "need:housing.supportive_transitional"
+    ],
+    "808": [
+      "age.adults_served"
+    ],
+    "815": [
+      "need:substance_use.treatment"
+    ],
+    "821": [
+      "need:substance_use.treatment"
+    ],
+    "825": [
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "829": [
+      "age.adults_served",
+      "age.children_served",
+      "age.youth_served"
+    ],
+    "830": [
+      "age.adults_served",
+      "age.children_served"
+    ],
+    "834": [
+      "access.telehealth_reported",
+      "age.adults_served"
+    ],
+    "835": [
+      "need:mental_health.peer_support"
+    ],
+    "837": [
+      "need:mental_health.clinical"
+    ],
+    "839": [
+      "need:substance_use.treatment"
+    ],
+    "844": [
+      "accessibility.wheelchair_entrance_reported",
+      "age.youth_served"
+    ],
+    "85": [
+      "food.nonperishable_reported",
+      "need:essentials.clothing_supplies",
+      "need:food.pantry"
+    ],
+    "853": [
+      "age.adults_served",
+      "age.children_served"
+    ],
+    "863": [
+      "age.adults_served",
+      "age.threshold_reported"
+    ],
+    "865": [
+      "accessibility.wheelchair_entrance_reported",
+      "age.adults_served",
+      "age.children_served"
+    ],
+    "872": [
+      "need:mental_health.clinical"
+    ],
+    "875": [
+      "age.adults_served",
+      "age.children_served"
+    ],
+    "879": [
+      "need:housing.counseling_navigation",
+      "need:immigration.support",
+      "need:transportation.assistance"
+    ],
+    "880": [
+      "hours.evening_site_hours_reported",
+      "hours.weekend_site_hours_reported"
+    ],
+    "881": [
+      "need:substance_use.treatment"
+    ],
+    "882": [
+      "age.adults_served",
+      "age.children_served",
+      "age.youth_served"
+    ],
+    "890": [
+      "access.appointment_reported"
+    ],
+    "892": [
+      "need:housing.rental"
+    ],
+    "897": [
+      "age.adults_served",
+      "age.children_served",
+      "age.youth_served"
+    ],
+    "900": [
+      "access.appointment_reported"
+    ],
+    "910": [
+      "need:mental_health.clinical"
+    ],
+    "911": [
+      "hours.continuous_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:medical.emergency",
+      "need:medical.general"
+    ],
+    "913": [
+      "age.youth_served",
+      "insurance.medicaid_reported"
+    ],
+    "928": [
+      "need:substance_use.treatment"
+    ],
+    "929": [
+      "need:housing.counseling_navigation"
+    ],
+    "93": [
+      "hours.weekend_site_hours_reported",
+      "need:food.pantry"
+    ],
+    "932": [
+      "age.adults_served",
+      "age.older_adults_served",
+      "age.youth_served"
+    ],
+    "933": [
+      "need:family.youth_parenting"
+    ],
+    "94": [
+      "hours.weekend_site_hours_reported",
+      "need:essentials.clothing_supplies",
+      "need:financial.emergency_assistance",
+      "need:food.pantry",
+      "need:housing.counseling_navigation",
+      "need:navigation.case_management"
+    ],
+    "940": [
+      "age.youth_served",
+      "need:family.youth_parenting"
+    ],
+    "942": [
+      "insurance.medicare_reported",
+      "need:mental_health.peer_support"
+    ],
+    "943": [
+      "hours.evening_site_hours_reported",
+      "hours.weekend_site_hours_reported",
+      "need:mental_health.clinical"
+    ],
+    "945": [
+      "need:care.home",
+      "population.disabilities_served"
+    ],
+    "950": [
+      "need:crisis.intervention",
+      "need:mental_health.clinical"
+    ],
+    "951": [
+      "age.adults_served",
+      "age.children_served",
+      "hours.evening_site_hours_reported",
+      "hours.weekend_site_hours_reported"
+    ],
+    "952": [
+      "need:housing.counseling_navigation"
+    ],
+    "954": [
+      "need:mental_health.clinical"
+    ],
+    "957": [
+      "need:mental_health.peer_support"
+    ],
+    "961": [
+      "need:mental_health.clinical"
+    ],
+    "966": [
+      "accessibility.wheelchair_parking_reported"
+    ],
+    "979": [
+      "insurance.medicaid_reported"
+    ],
+    "98": [
+      "need:medical.emergency"
+    ],
+    "993": [
+      "need:safety.survivor_support"
+    ],
+    "997": [
+      "need:housing.counseling_navigation"
+    ],
+    "998": [
+      "access.telehealth_reported",
+      "accessibility.wheelchair_entrance_reported",
+      "accessibility.wheelchair_parking_reported"
+    ]
+  },
+  "workbook_records": 1341
+}

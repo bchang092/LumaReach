@@ -1,0 +1,5 @@
+<div class="sample" aria-hidden="true"><div class="feedback-sample">
+  {% for item in feedback_items %}<article><strong>{{ item.title }}</strong><p>{{ item.body }}</p></article>
+  {% empty %}<div class="sample-chips"><span>Correction</span><span>Bug report</span><span>Service experience</span></div>
+  <p class="mock-field">What would you like to share?</p><span class="mock-send">Send →</span>{% endfor %}
+</div></div>

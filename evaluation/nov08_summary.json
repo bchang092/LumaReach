@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-08",
+  "source_sha256": "d36da671b9ec19ef8b94aa6512682bbcefb987b82567f07775cc084baa138d41",
+  "live_model_validated": false,
+  "live_transcription_validated": false,
+  "tests": {
+    "django": 73,
+    "tag_audit": 25,
+    "dom_ui": 16,
+    "stdio_mcp": "passed",
+    "http_mcp": "passed",
+    "migration_io": "passed",
+    "chromium_synthetic_voice": "passed"
+  },
+  "authored": {
+    "inputs": 104,
+    "category_exact": 103,
+    "route_exact": 86,
+    "crisis_cases": 40,
+    "crisis_passed": 40,
+    "grounding_passed": 104,
+    "matches": 31,
+    "no_match": 21
+  },
+  "variants": {
+    "inputs": 4160,
+    "grounding_passed": 4160,
+    "ranking_passed": 4160,
+    "crisis_inputs": 1600,
+    "crisis_passed": 1600
+  },
+  "interpretation": "Development/regression sets, not independent or clinical validation. Tag-level precision is not eligibility accuracy. Variants repeat authored meanings. No live OpenAI extraction or transcription was tested in this pass."
+}
