@@ -14,6 +14,8 @@ ALLOWED_HOSTS = [
     '.herokuapp.com',
     'baltimorelifeline.site',
     'www.baltimorelifeline.site',
+    'lumareach.org',
+    'www.lumareach.org',
 ]
 #test
 INSTALLED_APPS = [
