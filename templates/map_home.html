@@ -1,12 +1,13 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>{{ site_name }} – Resource Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="/static/BaltimoreLifelineIcon.png?v=3">
-  <link rel="shortcut icon" href="/static/BaltimoreLifelineIcon.png?v=3">
-  <link rel="apple-touch-icon" href="/static/BaltimoreLifelineIcon.png?v=3">
+  <link rel="icon" type="image/png" href="{% static 'images/lumareach-logo.png' %}">
+  <link rel="shortcut icon" href="{% static 'images/lumareach-logo.png' %}">
+  <link rel="apple-touch-icon" href="{% static 'images/lumareach-logo.png' %}">
 
   <!-- Leaflet CSS -->
   <link

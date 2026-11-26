@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>{{ site_name }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/static/BaltimoreLifelineIcon.png?v=3">
+  <link rel="icon" type="image/png" href="{% static 'images/lumareach-logo.png' %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&family=Inter:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -20,7 +20,6 @@
     .hero { min-height:calc(100vh - var(--header-h)); padding:120px 72px 72px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
     .hero h1 { width:100%; max-width:1280px; margin:0 auto 32px; font:500 clamp(48px,8vw,104px)/.94 "Space Grotesk",sans-serif; letter-spacing:-.04em; text-wrap:balance; }
     .hero p { max-width:720px; margin:0 auto; color:var(--text-3); font-size:19px; line-height:1.55; }
-    .hero__cta { display:inline-block; margin-top:36px; padding:15px 26px; border-radius:10px; background:linear-gradient(90deg,#35d6c0,#86efac); color:#06131a; font:600 15px "IBM Plex Sans",system-ui,sans-serif; text-decoration:none; }
     .scroll-cue { display:inline-block; margin-top:64px; color:var(--text-6); letter-spacing:.2em; }
     .progress { position:fixed; z-index:11; right:26px; top:50%; display:flex; flex-direction:column; align-items:center; gap:14px; transform:translateY(-50%); }
     .progress[hidden] { display:none; }
@@ -42,7 +41,7 @@
 </head>
 <body>{% include "partials/site_header.html" %}
   <main>
-    <section class="hero" id="hero" aria-labelledby="hero-title"><h1 class="page-title home-title" id="hero-title" data-hero style="--d:0">{{ brand_name }} <small>(Formerly {{ former_name }})</small></h1><p data-hero style="--d:1">Find support through a transparent, community-informed directory. We combine AI-assisted source review with local feedback to keep listings reliable and current.</p><a class="hero__cta" data-hero style="--d:2" href="{% url 'resources_map' %}">Open the map →</a><span class="scroll-cue mono" data-hero style="--d:3">Scroll ↓</span></section>
+    <section class="hero" id="hero" aria-labelledby="hero-title"><h1 class="page-title home-title" id="hero-title" data-hero style="--d:0">{{ brand_name }} <small>(Formerly {{ former_name }})</small></h1><p data-hero style="--d:1">Find support through a transparent, community-informed directory. We combine AI-assisted source review with local feedback to keep listings reliable and current.</p><span class="scroll-cue mono" data-hero style="--d:2">Scroll ↓</span></section>
     <div class="home-design">
     {% url 'resources_map' as map_url %}{% url 'intake' as guided_url %}{% url 'community' as feedback_url %}
     {% include 'partials/home/section.html' with anchor='browse' number='01' title='Browse the Map' description='See every verified resource near you, all in one place.' buttonLabel='Open the map' buttonHref=map_url visual='partials/home/map.html' %}
@@ -50,7 +49,7 @@
     {% include 'partials/home/section.html' with anchor='feedback' number='03' title='Share Feedback' description='Share corrections, bug reports, and service experiences. Local knowledge keeps the dataset honest.' buttonLabel='Share feedback' buttonHref=feedback_url visual='partials/home/feedback.html' %}
     {% include 'partials/home/verification.html' %}
     <section class="home-rule"><div class="home-wrap partner-wrap"><div class="partner">
-      <div><div class="logos"><img src="{% static 'BaltimoreLifelineIcon.png' %}" alt="{{ site_name }}"><span aria-hidden="true">×</span><img src="{% static 'images/path-to-success.png' %}" alt="Path to Success"></div>
+      <div><div class="logos"><img src="{% static 'images/lumareach-logo.png' %}" alt="{{ site_name }}"><span aria-hidden="true">×</span><img src="{% static 'images/path-to-success.png' %}" alt="Path to Success"></div>
       <span>In collaboration with</span><h2>Path to Success</h2><p>We help you today. Path to Success helps with what comes next: long-term goals and a plan to reach them.</p>
       {% include 'partials/home/button.html' with href='https://www.pathtosuccessplan.com/' label='Visit Path to Success' external=True only %}</div>
       <ol><li>Name your goals</li><li>Build a personal next-step plan</li><li>Use our map to find help along the way</li></ol>

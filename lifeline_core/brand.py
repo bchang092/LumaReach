@@ -1,4 +1,4 @@
-NAME = "LumaReach – Lifeline"
+NAME = "LumaReach"
 FORMER_NAME = "Baltimore Lifeline"
 DISPLAY_NAME = f"{NAME} (Formerly {FORMER_NAME})"
 

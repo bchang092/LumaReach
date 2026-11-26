@@ -1,9 +1,10 @@
+{% load static %}
 <style>
   :root{--header-h:68px}
   .site-header{position:sticky;top:0;z-index:1000;height:var(--header-h);box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 32px 0 40px;background:#0c1a25;border-bottom:1px solid rgba(125,211,252,.10);font-family:"IBM Plex Sans",system-ui,sans-serif}
   .site-header__home{display:flex;align-items:center;gap:12px;height:36px;margin-left:-10px;padding:0 12px 0 10px;border-radius:8px;color:#e8f1f5;text-decoration:none;transition:background 120ms ease}
   .site-header__home:hover,.site-menu:hover{background:rgba(125,211,252,.07)}
-  .site-header__icon{display:grid;place-items:center;width:15px;height:15px;color:#8ba3b2}.site-header__home:hover .site-header__icon{color:#35d6c0}
+  .site-header__icon{display:block;flex:none;object-fit:contain}
   .site-header__mark{font:500 10.5px "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.18em;white-space:nowrap}
   .site-header__right,.site-header__nav{display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);min-width:0}
   .site-header__nav a{padding:8px 4px;color:#9db6c4;font-size:clamp(12px,1.05vw,13.5px);text-decoration:none;white-space:nowrap;transition:color 120ms ease}.site-header__nav a:hover{color:#e8f1f5}.site-header__nav a[aria-current]{color:#35d6c0}
@@ -17,7 +18,7 @@
 </style>
 <header class="site-header">
   <a class="site-header__home" href="{% url 'homepage' %}" aria-label="Home">
-    <span class="site-header__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+    <img class="site-header__icon" src="{% static 'images/lumareach-logo.png' %}" alt="" width="29" height="32">
     <span class="site-header__mark">{{ brand_name }} <small>(Formerly {{ former_name }})</small></span>
   </a>
   <div class="site-header__right"><span class="site-header__count" id="site-resource-count"></span><nav class="site-header__nav" aria-label="Primary"><a href="{% url 'resources_map' %}">Map</a><a href="{% url 'intake' %}">Guided Help</a><a href="{% url 'about' %}">About</a><a href="{% url 'community' %}">Feedback</a></nav><button class="site-menu" type="button" aria-expanded="false">Menu<span class="site-menu__caret">⌄</span></button></div>
