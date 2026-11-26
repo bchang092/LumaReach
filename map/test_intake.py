@@ -156,36 +156,15 @@ class IntakeWebTests(TestCase):
             self.assertContains(r,value)
         self.assertIn('no-store',r['Cache-Control'])
 
-    def test_search_method_reaches_extractor_and_respects_server_setting(self):
-        from lifeline_core.extraction import extract
-
-        for enabled, selected, expected in [(True, False, False), (True, True, True), (False, True, False)]:
-            with self.subTest(enabled=enabled, selected=selected), patch.dict(os.environ, {
-                'TRIAGE_USE_LLM': str(enabled).lower(), 'OPENAI_API_KEY': 'test-only',
-            }), patch('lifeline_core.service.extract') as parser:
-                parser.side_effect = lambda text, allowed, use_llm: extract(text, allowed, use_llm=False)
-                page = self.client.get('/help/mcp/')
-                self.assertNotContains(page, 'id="search-method"')
-                result = self.post('/api/triage/', {'need_text': 'groceries', 'use_llm': selected})
-                self.assertEqual(result.status_code, 200)
-                self.assertEqual(parser.call_args.kwargs['use_llm'], expected)
-
-    def test_ai_request_falls_back_to_the_same_resource_matches(self):
-        body = {'need_text': 'food pantry groceries'}
-        expected = self.post('/api/triage/', {**body, 'use_llm': False}).json()
-        self.assertTrue(expected['matches'])
-        for key in ['', '   ', 'test-only']:
-            with self.subTest(key=key), patch.dict(os.environ, {
-                'TRIAGE_USE_LLM': 'true', 'OPENAI_API_KEY': key,
-            }), patch('lifeline_core.extraction._RETRY_AFTER', 0), patch('openai.OpenAI') as provider:
-                provider.side_effect = ConnectionError('offline')
-                for _ in range(2):
-                    response = self.post('/api/triage/', {**body, 'use_llm': True})
-                    self.assertEqual(response.status_code, 200)
-                    data = response.json()
-                    self.assertEqual(data['matches'], expected['matches'])
-                    self.assertEqual(data['extraction_mode'], 'local_fallback' if key.strip() else 'local')
-                self.assertEqual(provider.call_count, 1 if key.strip() else 0)
+    def test_guided_help_runs_locally_even_with_ai_credentials(self):
+        with patch.dict(os.environ, {'TRIAGE_USE_LLM': 'true', 'OPENAI_API_KEY': 'test-only'}):
+            with patch('openai.OpenAI') as provider:
+                for options in ({}, {'use_llm': True}):
+                    result = self.post('/api/triage/', {'need_text': 'groceries', **options})
+                    self.assertEqual(result.status_code, 200)
+                    self.assertEqual(result.json()['extraction_mode'], 'local')
+                    self.assertTrue(result.json()['matches'])
+                provider.assert_not_called()
 
     def test_full_length_local_search(self):
         cases = [
@@ -207,6 +186,14 @@ class IntakeWebTests(TestCase):
                 self.assertEqual(set(data['needs']), {'need:' + n for n in expected})
                 covered = {n for item in data['matches'] for n in item['matched_needs']}
                 self.assertEqual(covered, set(data['needs']))
+
+    def test_general_food_opens_priorities_without_a_question(self):
+        data = self.post('/api/triage/', {'need_text': 'I need food'}).json()
+        self.assertEqual(data['questions'], [])
+        groups = {p['need']: p for p in data['priorities']}
+        self.assertTrue(groups['need:food.pantry']['sources'])
+        self.assertIn('need:food.prepared_meals', groups)
+        self.assertIn('need:food.delivery', groups)
 
     def test_api_core_parity(self):
         body={'need_text':'food pantry groceries'}

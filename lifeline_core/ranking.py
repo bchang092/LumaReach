@@ -139,7 +139,7 @@ def rank(directory, extraction, text, limit=10, constraint_scopes=None, priority
             record = candidate['record']
             for need in candidate['needs']:
                 group = priority_lists[need]
-                if len(group) >= limit:
+                if len(group) >= min(7, limit):
                     continue
                 key = provider_location(record)
                 if key in seen_by_need[need]:
@@ -165,7 +165,7 @@ def rank(directory, extraction, text, limit=10, constraint_scopes=None, priority
                     'resource_id': rid, 'distance_miles_approx': round(distance, 1),
                     'distance_origin': origin_label, 'unverified_requirements': unknown,
                 })
-                if len(priority_lists[need]) >= min(3, limit):
+                if len(priority_lists[need]) >= min(7, limit):
                     break
     # Reserve coverage for multiple needs, then sort the chosen set by actual score.
     chosen = []

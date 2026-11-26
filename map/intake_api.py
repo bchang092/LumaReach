@@ -10,7 +10,6 @@ from django.views.decorators.debug import sensitive_variables, sensitive_post_pa
 from django.views.decorators.cache import never_cache
 from django.utils.crypto import salted_hmac
 from pydantic import ValidationError
-from lifeline_core.extraction import ai_search_configured
 from lifeline_core.schemas import Intake, FeedbackInput, MAX_INTAKE_BODY_BYTES, MAX_NEED_TEXT_LENGTH
 from asgiref.sync import async_to_sync
 from mcp_server.web_client import search_resources
@@ -88,4 +87,4 @@ def intake_page(request):
 @ensure_csrf_cookie
 def mcp_search_page(request):
     from .voice_api import voice_enabled
-    return render(request,'intake.html',{'max_need_text_length': MAX_NEED_TEXT_LENGTH, 'voice_api_enabled':voice_enabled(),'llm_enabled':ai_search_configured()})
+    return render(request,'intake.html',{'max_need_text_length': MAX_NEED_TEXT_LENGTH, 'voice_api_enabled':voice_enabled()})

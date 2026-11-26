@@ -26,9 +26,9 @@ def find_resources(need_text: Annotated[str, Field(max_length=MAX_NEED_TEXT_LENG
     """Find up to 10 grounded resources ranked by service fit, ask up to two questions, or return crisis contacts.
     Use selected_needs for a choice-only search. Free text is optional.
     constraints: [{kind:cost|insurance|language|age|hours|documents|accessibility|access|food|service_area, value:string, hard:bool}].
-    Text is processed transiently; the configured LLM may process it externally.
+    Resource searches use local keyword matching.
     """
-    try: return match(need_text,location,constraints,limit=limit,selected_needs=selected_needs,use_llm=use_llm)
+    try: return match(need_text,location,constraints,limit=limit,selected_needs=selected_needs,use_llm=False)
     except Exception: return {'error':'Could not process this request. Check input or try the website map.'}
 
 @mcp.tool(annotations=READ)

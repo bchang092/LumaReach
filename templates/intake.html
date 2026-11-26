@@ -1,54 +1,52 @@
 {% extends 'base.html' %}{% load static %}
-{% block title %}MCP resource search · {{ site_name }}{% endblock %}
+{% block title %}Find resources · {{ site_name }}{% endblock %}
 {% block content %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600&amp;display=swap">
 <link rel="stylesheet" href="{% static 'intake.css' %}">
 {% include 'partials/site_header.html' %}
-<main id="main">
+<main id="main" class="resource-search" data-feedback-url="{% url 'community' %}">
   <a class="exit" href="https://www.weather.gov/" rel="noreferrer">Leave this page</a>
   <a class="back-to-help" href="{% url 'intake' %}">← Guided Help</a>
-  <h1 class="page-title">MCP resource search</h1>
-  <p class="intro">Choose the services you need, or describe what would help. You can search with a single selection.</p>
+  <header class="search-heading"><div><h1>Find resources</h1>
+    <p>Pick what you need, add details if you want, and we'll match you with checked services.</p></div>
+    <span id="checked-count" class="pill checked" hidden><i data-icon="shield"></i><span></span></span>
+  </header>
   <div class="intake-grid">
-    <section class="panel" aria-label="Describe your needs">
-      <noscript><style>#intake-form{display:none}</style><p>MCP search needs JavaScript. <a href="{% url 'questionnaire' %}">Start the questionnaire</a> to build a help plan.</p></noscript>
+    <section aria-label="Describe your needs">
+      <noscript><style>#intake-form{display:none}</style><a href="{% url 'questionnaire' %}">Start the questionnaire</a></noscript>
       <form id="intake-form" action="{% url 'triage_api' %}" method="post" autocomplete="off" data-voice-api="{{ voice_api_enabled|yesno:'true,false' }}">
         {% csrf_token %}
-        <fieldset class="service-choices"><legend>What would help?</legend>
-          <p class="choice-hint">Select all that apply.</p>
+        <section class="step" aria-labelledby="choices-title"><h2 id="choices-title"><b>1</b> What do you need? <small>Pick one or more</small></h2>
           <div class="choice-grid">
-            <label><input type="checkbox" name="service" value="need:food.pantry"><span>Groceries</span></label>
-            <label><input type="checkbox" name="service" value="need:food.prepared_meals"><span>A prepared meal</span></label>
-            <label><input type="checkbox" name="service" value="need:housing.emergency_shelter"><span>A place to stay</span></label>
-            <label><input type="checkbox" name="service" value="need:utilities.bill_assistance"><span>Utility bills</span></label>
-            <label><input type="checkbox" name="service" value="need:medical.general"><span>Medical care</span></label>
-            <label><input type="checkbox" name="service" value="need:mental_health.clinical"><span>Mental health support</span></label>
-            <label><input type="checkbox" name="service" value="need:employment.training_search"><span>Work or training</span></label>
-            <label><input type="checkbox" name="service" value="need:transportation.assistance"><span>Transportation</span></label>
-          </div>
-        </fieldset>
-        <div class="extra-details">
-        <label for="need-text">Tell us what would help <span class="muted">(optional)</span></label>
-        <textarea id="need-text" name="need_text" maxlength="{{ max_need_text_length }}" rows="3" placeholder="For example, I need groceries I can pick up after work." aria-describedby="privacy voice-notice"></textarea>
-        <div class="voice-row"><button id="mic" class="secondary" type="button" aria-pressed="false">🎙 Speak instead</button><label class="voice-language" for="voice-language">Voice language <select id="voice-language"><option value="en-US">English</option><option value="es-US">Español</option></select></label></div>
-        <p id="voice-status" role="status"></p>
-        <p id="voice-notice" class="small">{% if voice_api_enabled %}Voice records up to 60 seconds and sends audio to OpenAI for transcription when you stop. Audio is processed in memory and isn’t saved by {{ site_name }}; provider retention policies apply.{% else %}Voice uses your browser’s speech service, which may process audio remotely. We don’t record or store audio.{% endif %} Review and edit your words before searching.</p>
-        </div>
-        <label for="location">ZIP code or neighborhood <span class="muted">(optional)</span></label>
-        <input id="location" name="location" maxlength="120" placeholder="For example, 21229 or West Baltimore" autocomplete="off">
-        <p id="privacy" class="small">Please leave out names, phone numbers, street addresses and dates of birth. Your words are used for this search and aren’t saved by {{ site_name }}.{% if llm_enabled %} Search text may be sent to OpenAI to interpret your request. Provider retention policies apply.{% endif %} Helpful/not helpful responses are saved without your words.</p>
-        <button id="submit" class="primary" type="submit">Find resources <span aria-hidden="true">→</span></button>
-        <button id="clear" class="secondary" type="button">Clear search</button>
+            <button type="button" name="service" value="need:food.pantry" aria-pressed="false"><i class="tile" data-icon="basket"></i>Groceries<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:food.prepared_meals" aria-pressed="false"><i class="tile" data-icon="meal"></i>A prepared meal<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:housing.emergency_shelter" aria-pressed="false"><i class="tile" data-icon="house"></i>A place to stay<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:utilities.bill_assistance" aria-pressed="false"><i class="tile" data-icon="bolt"></i>Utility bills<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:medical.general" aria-pressed="false"><i class="tile" data-icon="heart"></i>Medical care<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:mental_health.clinical" aria-pressed="false"><i class="tile" data-icon="chat"></i>Mental health support<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:employment.training_search" aria-pressed="false"><i class="tile" data-icon="work"></i>Work or training<i class="tick" data-icon="check"></i></button>
+            <button type="button" name="service" value="need:transportation.assistance" aria-pressed="false"><i class="tile" data-icon="bus"></i>Transportation<i class="tick" data-icon="check"></i></button>
+          </div></section>
+        <section class="step"><h2><b>2</b><label for="need-text">Tell us more</label><small>Optional</small></h2>
+          <div class="words"><textarea id="need-text" name="need_text" maxlength="{{ max_need_text_length }}" aria-describedby="words-hint" placeholder="e.g. I don't understand which benefits I qualify for and want someone to walk me through them."></textarea>
+            <div class="voice-controls"><select id="voice-language" aria-label="Voice language"><option value="en-US">English</option><option value="es-US">Español</option></select>
+            <button id="mic" type="button" aria-pressed="false"><i data-icon="mic"></i><span>Speak instead</span></button></div></div>
+          <p id="words-hint">Skip names, phone numbers, addresses and birthdays.</p><p id="voice-status" role="status"></p></section>
+        <section class="step"><h2><b>3</b><label for="location">Where are you?</label><small>Optional</small></h2>
+          <input id="location" name="location" maxlength="120" placeholder="ZIP code or neighborhood" autocomplete="off"></section>
+        <div class="step form-actions"><button type="submit" id="submit">Find resources<i data-icon="arrow"></i></button>
+          <button type="button" id="clear">Clear</button><span id="choice-count" aria-live="polite">Nothing selected yet</span></div>
       </form>
-      <div id="status" role="status" aria-live="polite"></div>
-      <section id="questions" aria-label="A little more detail"></section>
+      <div id="status" role="status" aria-live="polite"></div><section id="questions" aria-label="A little more detail"></section>
     </section>
-    <aside class="guide" aria-label="Suggestions">
-      <h2>Other ways to find help</h2>
-      <a class="guide-link" href="{% url 'questionnaire' %}"><strong>Take the questionnaire <span aria-hidden="true">→</span></strong><span>Work through your priorities and build a help plan.</span></a>
-      <a class="guide-link" href="{% url 'resources_map' %}"><strong>Explore the map <span aria-hidden="true">→</span></strong><span>Browse nearby services and filter by the help you need.</span></a>
-      <p class="small">Leaving this page does not erase browser history.</p>
-    </aside>
-  </div>
+    <aside class="search-sidebar"><h2>Other ways to find help</h2>
+      <a href="{% url 'questionnaire' %}"><i class="tile" data-icon="list"></i><span><strong>Take the questionnaire</strong><small>Get a ranked list of your priorities.</small></span><i data-icon="right"></i></a>
+      <a href="{% url 'resources_map' %}"><i class="tile" data-icon="map"></i><span><strong>Explore the map</strong><small>Browse nearby services and filter.</small></span><i data-icon="right"></i></a>
+      <details><summary><i data-icon="shield"></i> Your words aren't saved</summary>
+      <p id="voice-notice" class="small">{% if voice_api_enabled %}Voice records up to 60 seconds and sends audio to OpenAI for transcription when you stop. Audio is processed in memory and isn’t saved by {{ site_name }}; provider retention policies apply.{% else %}Voice uses your browser’s speech service, which may process audio remotely. We don’t record or store audio.{% endif %} Review and edit your words before searching.</p>
+      <p id="privacy">Your words are used only for this search and aren’t saved by {{ site_name }}. Helpful/not helpful responses are saved without your words.</p>
+      <p>Leaving this page does not erase browser history.</p></details>
+    </aside></div>
   <section id="results" tabindex="-1" aria-label="Your resources"></section>
 </main>
 {% include "partials/page_activity.html" with page_key="mcp-search" %}

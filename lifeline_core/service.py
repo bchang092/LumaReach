@@ -41,6 +41,11 @@ def find_resources(need_text="", location=None, constraints=None, *, selected_ne
         extraction.follow_up = [q for q in extraction.follow_up if q not in answered]
         if not request.need_text:
             mode = 'structured'
+    if 'need:food.general_assistance' in extraction.needs:
+        food_options = ['need:food.pantry', 'need:food.prepared_meals', 'need:food.delivery']
+        extraction.needs = list(dict.fromkeys([*extraction.needs, *food_options]))
+    if any(need.startswith('need:food.') for need in extraction.needs):
+        extraction.follow_up = [question for question in extraction.follow_up if question != 'food_type']
     if extraction.safety=='crisis': return crisis_result(repo)
     if request.location: extraction.location=request.location
     # Explicit constraints are authoritative; an LLM cannot loosen them.
@@ -71,6 +76,9 @@ def find_resources(need_text="", location=None, constraints=None, *, selected_ne
     scopes = {}
     if mode in {'local', 'local_fallback'}:
         scopes = local_constraint_scopes(extraction)
+        for targets in scopes.values():
+            if 'need:food.general_assistance' in extraction.needs and 'need:food.general_assistance' in targets:
+                targets.update(food_options)
         for constraint in request.constraints:
             scopes.pop((constraint.kind, constraint.value), None)
     # Start with selected services, then immediate shelter and meals, followed

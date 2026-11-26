@@ -37,7 +37,7 @@ const fs=require('node:fs');const os=require('node:os');const path=require('node
   await page.getByRole('heading',{name:'Your help plan'}).waitFor();
   assert.equal(triageRequests.length,0);
   await page.goto(base+'/help/');
-  await page.setViewportSize({width:390,height:844});
+  await page.setViewportSize({width:360,height:844});
   const questionnaireLink=page.getByRole('link',{name:'Start the questionnaire'});
   const mcpLink=page.getByRole('link',{name:'Search with MCP'});
   assert.ok((await mcpLink.boundingBox()).y>(await questionnaireLink.boundingBox()).y);
@@ -56,40 +56,53 @@ const fs=require('node:fs');const os=require('node:os');const path=require('node
   await page.getByRole('button',{name:'Find resources'}).click();
   await page.getByText('Choose a service or add your own words to search.').waitFor();
   assert.equal(triageRequests.length,0);
-  await page.getByRole('checkbox',{name:'Groceries',exact:true}).check();
+  await page.getByRole('button',{name:'Groceries',exact:true}).click();
   await page.getByRole('button',{name:'Find resources'}).click();
-  await page.locator('.resource-card').nth(9).waitFor();
-  assert.equal(await page.locator('.resource-card').count(),10);
+  await page.locator('.priority-toggle').first().click();
+  await page.locator('.resource-card').nth(6).waitFor();
+  assert.equal(await page.locator('.resource-card').count(),7);
   assert.match(await page.locator('.resource-card h3').first().innerText(),/^1\./);
-  assert.match(await page.locator('.resource-card h3').last().innerText(),/^10\./);
+  assert.match(await page.locator('.resource-card h3').last().innerText(),/^7\./);
   await page.addScriptTag({path:require.resolve('../.local/browser-tests/node_modules/axe-core/axe.min.js')});
   const audit=await page.evaluate(async()=>await axe.run(document.querySelector('main')));
   assert.deepEqual(audit.violations.filter(v=>['serious','critical'].includes(v.impact)).map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);
   fs.mkdirSync('.local/browser-results',{recursive:true});
   await page.screenshot({path:'.local/browser-results/desktop.png',fullPage:true});
   await page.screenshot({path:'.local/browser-results/desktop-viewport.png'});
-  await page.getByRole('button',{name:'Clear search'}).click();
+  await page.getByRole('button',{name:'Clear'}).click();
   await page.locator('#need-text').fill('I need groceries. I need a dentist.');
   await page.getByRole('button',{name:'Find resources'}).click();
-  const priorities=page.locator('.priorities > li > details');
+  const priorities=page.locator('.priorities > li');
   await priorities.nth(1).waitFor();
+  assert.equal(await priorities.first().locator('.priority-toggle').getAttribute('aria-expanded'),'false');
+  assert.equal(await priorities.nth(1).locator('.priority-toggle').getAttribute('aria-expanded'),'false');
+  await page.getByText(/^\d+ resources checked$/).waitFor();
   for(const panel of await priorities.all()){
-    await panel.locator('summary').first().focus();
-    await page.keyboard.press('Enter');
+    const toggle=panel.locator('.priority-toggle');
+    if(await toggle.getAttribute('aria-expanded')==='false'){await toggle.focus();await page.keyboard.press('Enter');}
     await panel.locator('.resource-card').first().waitFor();
   }
+  assert.ok(await page.locator('.rating-ring svg').first().isVisible());
   assert.doesNotMatch(await page.locator('#results').innerText(),/Still to check/);
-  await page.getByRole('button',{name:'Clear search'}).click();
+  await page.getByRole('button',{name:'Clear'}).click();
+  const textarea=page.locator('#need-text');
+  const voiceToolbar=page.locator('.voice-controls');
+  await textarea.fill('Long message\n'.repeat(200));
+  await textarea.press('End');
+  const editorBox=await textarea.boundingBox();
+  const toolbarBox=await voiceToolbar.boundingBox();
+  assert.ok(toolbarBox.y>=editorBox.y+editorBox.height);
   await verifyTextLimit(page.locator('#need-text'));
   await page.locator('#need-text').fill('I need help finding a doctor.');
   await page.getByRole('button',{name:'Find resources'}).click();
+  await page.locator('.priority-toggle').first().click();
   await page.locator('.resource-card').first().waitFor();
   assert.doesNotMatch(await page.locator('#results').innerText(),/Ronald McDonald/);
-  await page.setViewportSize({width:390,height:844});
+  await page.setViewportSize({width:360,height:844});
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
   await page.screenshot({path:'.local/browser-results/mobile.png',fullPage:true});
   await page.screenshot({path:'.local/browser-results/mobile-viewport.png'});
-  await page.getByRole('button',{name:'Clear search'}).click();
+  await page.getByRole('button',{name:'Clear'}).click();
   let audioBytes=0;
   await page.route('**/api/transcribe/**',async route=>{audioBytes=route.request().postDataBuffer().length;await route.fulfill({json:{text:'I need groceries from a food pantry'}});});
   await page.getByRole('button',{name:'Speak instead'}).click();
@@ -99,7 +112,8 @@ const fs=require('node:fs');const os=require('node:os');const path=require('node
   await page.waitForFunction(()=>document.querySelector('#need-text').value.includes('groceries'));
   assert.ok(audioBytes>16);assert.equal(await page.locator('.resource-card').count(),0);
   await page.getByRole('button',{name:'Find resources'}).click();
-  await page.locator('.resource-card').nth(9).waitFor();
+  await page.locator('.priority-toggle').first().click();
+  await page.locator('.resource-card').nth(6).waitFor();
   const vote = page.waitForResponse(r=>r.url().endsWith('/api/page-activity/') && r.request().postData().includes('event=helpful'));
   await page.getByRole('button',{name:'Yes, this page was helpful'}).click();
   assert.equal((await vote).status(),204);
@@ -116,7 +130,7 @@ const fs=require('node:fs');const os=require('node:os');const path=require('node
   await basicPage.getByRole('heading',{name:'Get immediate support'}).waitFor();
   await basic.close();
   assert.deepEqual(errors,[]);
-  console.log(JSON.stringify({browser:'Chromium',ranked_cards:10,doctor_regression:'passed',mobile_width:390,horizontal_overflow:false,serious_or_critical_a11y_issues:0,synthetic_audio_bytes:audioBytes,voice_auto_submit:false,page_errors:errors},null,2));
+  console.log(JSON.stringify({browser:'Chromium',ranked_cards:7,doctor_regression:'passed',mobile_width:360,horizontal_overflow:false,serious_or_critical_a11y_issues:0,synthetic_audio_bytes:audioBytes,voice_auto_submit:false,page_errors:errors},null,2));
  }finally{
   if(browser)await browser.close();server.kill();await new Promise(resolve=>server.once('exit',resolve));fs.rmSync(temp,{recursive:true,force:true});
  }
