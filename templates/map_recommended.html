@@ -88,7 +88,7 @@
 </div>
 </article>{% endfor %}{% if group.count > 3 %}<button class="more open-sheet" type="button" data-group="{{ group.tier }}">+ {{ group.count|add:"-3" }} more sources in this group</button>{% endif %}</div>
 </div>
-</section>{% endfor %}<footer class="legal mono">© 2026 {{ site_name }}</footer>
+</section>{% endfor %}<footer class="legal mono">© 2026 {{ site_name }} <div>{% include "partials/sponsor_credit.html" %}</div></footer>
 </main>
 </div>
 <div class="scrim" id="scrim">

@@ -12,8 +12,10 @@
   <link rel="shortcut icon" href="{% static 'images/lumareach-logo.png' %}">
   <link rel="apple-touch-icon" href="{% static 'images/lumareach-logo.png' %}">
 <link rel="stylesheet" href="{% static 'page_titles.css' %}">
+  {% include "partials/brand_styles.html" %}
 </head>
 <body>
   {% block content %}{% endblock %}
+{% include "partials/sponsor_footer.html" %}
 </body>
 </html>

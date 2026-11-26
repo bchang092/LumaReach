@@ -26,6 +26,20 @@ const fs=require('node:fs');const os=require('node:os');const path=require('node
   const base='http://127.0.0.1:8765';
   const triageRequests=[];
   page.on('request',req=>{if(req.url().endsWith('/api/triage/'))triageRequests.push(req)});
+  for (const width of [360, 1440]) {
+    await page.setViewportSize({width,height:850});
+    await page.goto(base+'/');
+    assert.equal(await page.locator('#hero-title').textContent(), 'LumaReach');
+    assert.ok(await page.locator('.hero-logo').evaluate(img=>img.complete && img.naturalWidth>0));
+    assert.ok(await page.locator('.hero-sponsor a').isVisible());
+    assert.ok(await page.locator('footer .sponsor-credit a').isVisible());
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
+    if(width===360){
+      await page.getByRole('button',{name:'Menu'}).click();
+      assert.ok(await page.locator('.nav-drawer').getByRole('link',{name:'Guided Help'}).isVisible());
+      await page.keyboard.press('Escape');
+    }
+  }
   await page.goto(base+'/actions/');
   await page.getByRole('link',{name:'Start Guided Help'}).click();
   await page.waitForURL(base+'/help/');
